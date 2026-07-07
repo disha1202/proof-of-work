@@ -11,15 +11,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(HERE, "docs")
 USERNAME = "disha1202"
 
-# (filename, key, label) — index.html is the default (techno).
+# (filename, key, label) — index.html is the default theme.
+# CSS for techno/pixels/modern is retained below (STYLES) but unused; to re-add a
+# theme, just add its row back here.
 THEMES = [
-    ("index.html",        "techno", "techno"),
-    ("index-pixels.html", "pixels", "pixels"),
-    ("index-modern.html", "modern", "modern"),
-    ("index-retro.html",  "retro",  "retro"),
-    ("index-news.html",   "news",   "newspaper"),
-    ("index-comic.html",  "comic",  "comic"),
-    ("index-notebook.html", "notebook", "notebook"),
+    ("index.html",       "notebook", "notebook"),
+    ("index-comic.html", "comic",    "comic"),
+    ("index-retro.html", "retro",    "retro"),
+    ("index-news.html",  "news",     "newspaper"),
 ]
 
 
