@@ -6,88 +6,98 @@
   <title>disha1202 · proof of work</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f2e4c9;
-      --bg-2: #e8d5ad;
-      --paper: #fbf3df;
-      --ink: #3a2718;
-      --ink-soft: #6b4f34;
-      --ink-faint: #9c7c56;
-      --line: #d8c199;
-      --accent: #d1622a;
-      --accent-2: #7a8b3c;
-      --merged: #5e7d2a;
-      --open: #cf9526;
-      --closed: #b5462f;
+      --bg: #ffe74c;
+      --bg-2: #fff4bf;
+      --paper: #ffffff;
+      --ink: #1a1a1a;
+      --ink-soft: #3a3a3a;
+      --ink-faint: #6b6b6b;
+      --line: #1a1a1a;
+      --accent: #ff2b4e;
+      --accent-2: #2b6cff;
+      --merged: #17a54a;
+      --open: #ff9d0a;
+      --closed: #ff2b4e;
     }
     * { box-sizing: border-box; }
     html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
     body {
-      font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-      background-image:
-        radial-gradient(circle at 20% -5%, rgba(209,98,42,0.20), transparent 45%),
-        radial-gradient(circle at 90% 8%, rgba(122,139,60,0.18), transparent 42%),
-        repeating-linear-gradient(45deg, rgba(154,124,86,0.05) 0 2px, transparent 2px 8px);
-      background-attachment: fixed;
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif; font-weight: 700;
+      background-image: radial-gradient(circle, rgba(26,26,26,0.10) 1.6px, transparent 1.7px);
+      background-size: 18px 18px; background-attachment: fixed;
     }
-    .serif { font-family: 'DM Serif Display', Georgia, serif; }
-    main { max-width: 900px; margin: 0 auto; padding: 60px 24px 96px; }
+    .bangers { font-family: 'Bangers', cursive; }
+    main { max-width: 920px; margin: 0 auto; padding: 52px 24px 96px; }
 
-    .switch { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; font-size: 0.82rem; }
-    .switch a { color: var(--ink-soft); text-decoration: none; padding: 7px 16px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); font-weight: 500; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
-    .switch a:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
-    .switch a.current { color: var(--paper); background: var(--accent); border-color: var(--ink); }
+    .switch { display: flex; gap: 10px; margin-bottom: 34px; flex-wrap: wrap; }
+    .switch a {
+      font-family: 'Bangers', cursive; letter-spacing: 0.06em; font-size: 1.05rem;
+      color: var(--ink); text-decoration: none; padding: 6px 16px; background: var(--paper);
+      border: 3px solid var(--ink); border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: transform 0.08s;
+    }
+    .switch a:hover { transform: translate(-1px,-1px); color: var(--accent-2); }
+    .switch a.current { background: var(--accent); color: #fff; }
 
-    .title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-style: italic; font-size: clamp(3rem, 9vw, 5rem); letter-spacing: -0.01em; line-height: 0.95; margin: 0 0 12px; color: var(--accent); text-shadow: 3px 3px 0 var(--bg-2); }
-    .subtitle { margin: 0 0 36px; color: var(--ink-soft); font-size: 1.05rem; }
-    .subtitle b { color: var(--ink); font-weight: 600; }
-    .subtitle .dot { color: var(--accent); margin: 0 6px; }
+    .title {
+      font-family: 'Bangers', cursive; font-weight: 400; font-size: clamp(3.4rem, 11vw, 6.5rem);
+      letter-spacing: 0.02em; line-height: 0.9; margin: 0 0 14px; color: var(--open);
+      -webkit-text-stroke: 3px var(--ink); text-shadow: 6px 6px 0 var(--accent), 6px 6px 0 var(--ink);
+      transform: rotate(-2deg);
+    }
+    .subtitle { font-family: 'Bangers', cursive; letter-spacing: 0.04em; margin: 0 0 32px; color: var(--ink); font-size: 1.3rem; }
+    .subtitle b { color: var(--accent); }
+    .subtitle .dot { color: var(--accent-2); margin: 0 8px; }
 
-    .stats { display: flex; flex-wrap: wrap; gap: 28px; padding: 22px 26px; margin-bottom: 28px; background: var(--paper); border: 2px solid var(--ink); border-radius: 22px; box-shadow: 5px 5px 0 var(--ink); }
-    .stat { display: flex; flex-direction: column; gap: 3px; }
-    .stat .v { font-family: 'DM Serif Display', Georgia, serif; font-size: 2rem; line-height: 1; color: var(--ink); }
-    .stat .l { font-size: 0.72rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.1em; }
+    .stats { display: flex; flex-wrap: wrap; gap: 16px; padding: 22px 24px; margin-bottom: 28px; background: var(--paper); border: 4px solid var(--ink); border-radius: 18px; box-shadow: 7px 7px 0 var(--ink); }
+    .stat { display: flex; flex-direction: column; gap: 2px; align-items: center; }
+    .stat .v { font-family: 'Bangers', cursive; font-size: 2.4rem; line-height: 1; color: var(--accent-2); -webkit-text-stroke: 1.5px var(--ink); }
+    .stat .l { font-family: 'Bangers', cursive; letter-spacing: 0.05em; font-size: 0.92rem; color: var(--ink-faint); text-transform: uppercase; }
     .stat.merged .v { color: var(--merged); }
     .stat.open .v { color: var(--open); }
-    .stat.closed .v { color: var(--closed); }
+    .stat.closed .v { color: var(--accent); }
 
-    .filters { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
-    .filters button { background: var(--paper); color: var(--ink-soft); border: 2px solid var(--ink); padding: 8px 18px; font-family: inherit; font-size: 0.86rem; font-weight: 600; cursor: pointer; border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
-    .filters button:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
-    .filters button.active { color: var(--paper); background: var(--accent); }
+    .filters { display: flex; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+    .filters button {
+      font-family: 'Bangers', cursive; letter-spacing: 0.05em; font-size: 1.05rem; color: var(--ink);
+      background: var(--paper); border: 3px solid var(--ink); padding: 6px 20px; cursor: pointer;
+      border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: transform 0.08s;
+    }
+    .filters button:hover { transform: translate(-1px,-1px); color: var(--accent-2); }
+    .filters button.active { background: var(--accent); color: #fff; }
 
-    .org { border: 2px solid var(--ink); background: var(--paper); border-radius: 18px; margin-bottom: 16px; overflow: hidden; box-shadow: 4px 4px 0 var(--ink); transition: all 0.15s; }
-    .org:hover { transform: translate(-1px,-1px); box-shadow: 6px 6px 0 var(--ink); }
-    .org-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; cursor: pointer; user-select: none; }
+    .org { border: 4px solid var(--ink); background: var(--paper); border-radius: 16px; margin-bottom: 16px; overflow: hidden; box-shadow: 6px 6px 0 var(--ink); transition: transform 0.1s; }
+    .org:hover { transform: translate(-2px,-2px); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 15px 20px; cursor: pointer; user-select: none; }
     .org-header:hover { background: var(--bg-2); }
-    .chev { color: var(--accent); font-size: 0.85rem; transition: transform 0.2s; width: 14px; }
+    .chev { color: var(--accent); font-size: 1rem; transition: transform 0.2s; width: 16px; }
     .org.open .chev { transform: rotate(90deg); }
-    .org-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 2px solid var(--ink); }
-    .org-name { flex: 1; font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--ink); }
-    .org-meta { font-size: 0.86rem; color: var(--ink-soft); font-family: 'DM Mono', monospace; }
-    .org-meta b { color: var(--ink); font-weight: 500; }
-    .org-meta .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent-2); color: var(--paper); margin-left: 8px; font-size: 0.74rem; }
+    .org-logo { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 3px solid var(--ink); }
+    .org-name { flex: 1; font-family: 'Bangers', cursive; letter-spacing: 0.03em; font-size: 1.6rem; color: var(--ink); }
+    .org-meta { font-size: 0.9rem; color: var(--ink-soft); font-weight: 700; }
+    .org-meta b { color: var(--accent-2); }
+    .org-meta .pill { display: inline-block; padding: 2px 12px; border-radius: 999px; background: var(--merged); color: #fff; margin-left: 10px; font-size: 0.78rem; border: 2px solid var(--ink); }
 
-    .prs { display: none; border-top: 2px solid var(--ink); background: var(--bg); }
+    .prs { display: none; border-top: 4px solid var(--ink); background: var(--bg-2); }
     .org.open .prs { display: block; }
-    .pr { display: grid; grid-template-columns: 84px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 50px; font-size: 0.94rem; border-bottom: 1px solid var(--line); }
+    .pr { display: grid; grid-template-columns: 96px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 48px; font-size: 1rem; border-bottom: 2px dashed var(--ink); }
     .pr:last-child { border-bottom: none; }
-    .pr-status { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; text-align: center; color: var(--paper); }
+    .pr-status { font-family: 'Bangers', cursive; letter-spacing: 0.04em; font-size: 0.82rem; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; text-align: center; color: #fff; border: 2px solid var(--ink); }
     .pr-status.merged { background: var(--merged); }
     .pr-status.open { background: var(--open); }
-    .pr-status.closed { background: var(--closed); }
-    .pr-title a { color: var(--ink); text-decoration: none; transition: color 0.15s; }
-    .pr-title a:hover { color: var(--accent); }
-    .pr-num { font-family: 'DM Mono', monospace; color: var(--ink-faint); margin-right: 6px; font-size: 0.82rem; }
-    .pr-date { font-family: 'DM Mono', monospace; color: var(--ink-faint); font-size: 0.78rem; white-space: nowrap; }
+    .pr-status.closed { background: var(--accent); }
+    .pr-title a { color: var(--ink); text-decoration: none; }
+    .pr-title a:hover { color: var(--accent-2); text-decoration: underline; }
+    .pr-num { font-family: 'Bangers', cursive; color: var(--accent); margin-right: 6px; font-size: 0.95rem; }
+    .pr-date { color: var(--ink-faint); font-size: 0.82rem; white-space: nowrap; font-weight: 700; }
 
     .empty { color: var(--ink-faint); padding: 16px; }
-    footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); color: var(--ink-faint); font-size: 0.84rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'DM Mono', monospace; }
-    footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 2px solid var(--line); }
-    footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-    @media (max-width: 600px) { main { padding: 36px 18px 64px; } .pr { grid-template-columns: 74px 1fr; padding-left: 26px; } .pr-date { grid-column: 2; } }
+    footer { margin-top: 52px; padding-top: 20px; border-top: 4px solid var(--ink); color: var(--ink-soft); font-size: 0.9rem; font-weight: 700; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: var(--accent-2); text-decoration: none; }
+    footer a:hover { color: var(--accent); text-decoration: underline; }
+    @media (max-width: 600px) { main { padding: 32px 16px 64px; } .pr { grid-template-columns: 86px 1fr; padding-left: 24px; } .pr-date { grid-column: 2; } }
   </style>
 </head>
 <body>
@@ -96,9 +106,9 @@
     <a href="index.html">techno</a>
     <a href="index-pixels.html">pixels</a>
     <a href="index-modern.html">modern</a>
-    <a href="index-retro.html" class="current">retro</a>
+    <a href="index-retro.html">retro</a>
     <a href="index-news.html">newspaper</a>
-    <a href="index-comic.html">comic</a>
+    <a href="index-comic.html" class="current">comic</a>
     <a href="index-notebook.html">notebook</a>
   </nav>
 

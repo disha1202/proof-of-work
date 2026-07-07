@@ -18,6 +18,8 @@ THEMES = [
     ("index-modern.html", "modern", "modern"),
     ("index-retro.html",  "retro",  "retro"),
     ("index-news.html",   "news",   "newspaper"),
+    ("index-comic.html",  "comic",  "comic"),
+    ("index-notebook.html", "notebook", "notebook"),
 ]
 
 
@@ -625,12 +627,208 @@ NEWS_CSS = """    :root {
     @media (max-width: 600px) { main { padding: 28px 16px 64px; } .pr { grid-template-columns: 82px 1fr; padding-left: 24px; } .pr-date { grid-column: 2; } .stat + .stat { border-left: none; } }"""
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# THEME: COMIC — pop-art comic book, halftone dots, bold outlines, POW! energy
+# ─────────────────────────────────────────────────────────────────────────────
+COMIC_FONTS = """  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">"""
+COMIC_CSS = """    :root {
+      --bg: #ffe74c;
+      --bg-2: #fff4bf;
+      --paper: #ffffff;
+      --ink: #1a1a1a;
+      --ink-soft: #3a3a3a;
+      --ink-faint: #6b6b6b;
+      --line: #1a1a1a;
+      --accent: #ff2b4e;
+      --accent-2: #2b6cff;
+      --merged: #17a54a;
+      --open: #ff9d0a;
+      --closed: #ff2b4e;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif; font-weight: 700;
+      background-image: radial-gradient(circle, rgba(26,26,26,0.10) 1.6px, transparent 1.7px);
+      background-size: 18px 18px; background-attachment: fixed;
+    }
+    .bangers { font-family: 'Bangers', cursive; }
+    main { max-width: 920px; margin: 0 auto; padding: 52px 24px 96px; }
+
+    .switch { display: flex; gap: 10px; margin-bottom: 34px; flex-wrap: wrap; }
+    .switch a {
+      font-family: 'Bangers', cursive; letter-spacing: 0.06em; font-size: 1.05rem;
+      color: var(--ink); text-decoration: none; padding: 6px 16px; background: var(--paper);
+      border: 3px solid var(--ink); border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: transform 0.08s;
+    }
+    .switch a:hover { transform: translate(-1px,-1px); color: var(--accent-2); }
+    .switch a.current { background: var(--accent); color: #fff; }
+
+    .title {
+      font-family: 'Bangers', cursive; font-weight: 400; font-size: clamp(3.4rem, 11vw, 6.5rem);
+      letter-spacing: 0.02em; line-height: 0.9; margin: 0 0 14px; color: var(--open);
+      -webkit-text-stroke: 3px var(--ink); text-shadow: 6px 6px 0 var(--accent), 6px 6px 0 var(--ink);
+      transform: rotate(-2deg);
+    }
+    .subtitle { font-family: 'Bangers', cursive; letter-spacing: 0.04em; margin: 0 0 32px; color: var(--ink); font-size: 1.3rem; }
+    .subtitle b { color: var(--accent); }
+    .subtitle .dot { color: var(--accent-2); margin: 0 8px; }
+
+    .stats { display: flex; flex-wrap: wrap; gap: 16px; padding: 22px 24px; margin-bottom: 28px; background: var(--paper); border: 4px solid var(--ink); border-radius: 18px; box-shadow: 7px 7px 0 var(--ink); }
+    .stat { display: flex; flex-direction: column; gap: 2px; align-items: center; }
+    .stat .v { font-family: 'Bangers', cursive; font-size: 2.4rem; line-height: 1; color: var(--accent-2); -webkit-text-stroke: 1.5px var(--ink); }
+    .stat .l { font-family: 'Bangers', cursive; letter-spacing: 0.05em; font-size: 0.92rem; color: var(--ink-faint); text-transform: uppercase; }
+    .stat.merged .v { color: var(--merged); }
+    .stat.open .v { color: var(--open); }
+    .stat.closed .v { color: var(--accent); }
+
+    .filters { display: flex; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+    .filters button {
+      font-family: 'Bangers', cursive; letter-spacing: 0.05em; font-size: 1.05rem; color: var(--ink);
+      background: var(--paper); border: 3px solid var(--ink); padding: 6px 20px; cursor: pointer;
+      border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: transform 0.08s;
+    }
+    .filters button:hover { transform: translate(-1px,-1px); color: var(--accent-2); }
+    .filters button.active { background: var(--accent); color: #fff; }
+
+    .org { border: 4px solid var(--ink); background: var(--paper); border-radius: 16px; margin-bottom: 16px; overflow: hidden; box-shadow: 6px 6px 0 var(--ink); transition: transform 0.1s; }
+    .org:hover { transform: translate(-2px,-2px); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 15px 20px; cursor: pointer; user-select: none; }
+    .org-header:hover { background: var(--bg-2); }
+    .chev { color: var(--accent); font-size: 1rem; transition: transform 0.2s; width: 16px; }
+    .org.open .chev { transform: rotate(90deg); }
+    .org-logo { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 3px solid var(--ink); }
+    .org-name { flex: 1; font-family: 'Bangers', cursive; letter-spacing: 0.03em; font-size: 1.6rem; color: var(--ink); }
+    .org-meta { font-size: 0.9rem; color: var(--ink-soft); font-weight: 700; }
+    .org-meta b { color: var(--accent-2); }
+    .org-meta .pill { display: inline-block; padding: 2px 12px; border-radius: 999px; background: var(--merged); color: #fff; margin-left: 10px; font-size: 0.78rem; border: 2px solid var(--ink); }
+
+    .prs { display: none; border-top: 4px solid var(--ink); background: var(--bg-2); }
+    .org.open .prs { display: block; }
+    .pr { display: grid; grid-template-columns: 96px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 48px; font-size: 1rem; border-bottom: 2px dashed var(--ink); }
+    .pr:last-child { border-bottom: none; }
+    .pr-status { font-family: 'Bangers', cursive; letter-spacing: 0.04em; font-size: 0.82rem; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; text-align: center; color: #fff; border: 2px solid var(--ink); }
+    .pr-status.merged { background: var(--merged); }
+    .pr-status.open { background: var(--open); }
+    .pr-status.closed { background: var(--accent); }
+    .pr-title a { color: var(--ink); text-decoration: none; }
+    .pr-title a:hover { color: var(--accent-2); text-decoration: underline; }
+    .pr-num { font-family: 'Bangers', cursive; color: var(--accent); margin-right: 6px; font-size: 0.95rem; }
+    .pr-date { color: var(--ink-faint); font-size: 0.82rem; white-space: nowrap; font-weight: 700; }
+
+    .empty { color: var(--ink-faint); padding: 16px; }
+    footer { margin-top: 52px; padding-top: 20px; border-top: 4px solid var(--ink); color: var(--ink-soft); font-size: 0.9rem; font-weight: 700; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: var(--accent-2); text-decoration: none; }
+    footer a:hover { color: var(--accent); text-decoration: underline; }
+    @media (max-width: 600px) { main { padding: 32px 16px 64px; } .pr { grid-template-columns: 86px 1fr; padding-left: 24px; } .pr-date { grid-column: 2; } }"""
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# THEME: NOTEBOOK — hand-drawn, ruled paper, handwriting, sticky notes, doodles
+# ─────────────────────────────────────────────────────────────────────────────
+NOTEBOOK_FONTS = """  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">"""
+NOTEBOOK_CSS = """    :root {
+      --bg: #fbfaf3;
+      --bg-2: #f3f1e3;
+      --paper: #fffef8;
+      --ink: #2b2b3a;
+      --ink-soft: #4f4f63;
+      --ink-faint: #8a8a9c;
+      --line: #c9d4e6;
+      --accent: #d64545;
+      --accent-2: #3a5bbf;
+      --merged: #2f8f4e;
+      --open: #d68a1e;
+      --closed: #d64545;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: 'Patrick Hand', 'Comic Sans MS', cursive; font-size: 18px;
+      background-image:
+        linear-gradient(90deg, transparent 62px, rgba(214,69,69,0.35) 62px, rgba(214,69,69,0.35) 64px, transparent 64px),
+        repeating-linear-gradient(180deg, transparent 0 30px, var(--line) 30px 31px);
+      background-attachment: fixed;
+    }
+    .caveat { font-family: 'Caveat', cursive; }
+    main { max-width: 860px; margin: 0 auto; padding: 48px 24px 96px 84px; }
+
+    .switch { display: flex; gap: 12px; margin-bottom: 30px; flex-wrap: wrap; }
+    .switch a {
+      font-family: 'Caveat', cursive; font-weight: 700; font-size: 1.35rem;
+      color: var(--ink-soft); text-decoration: none; padding: 2px 14px; background: var(--paper);
+      border: 2px solid var(--ink); border-radius: 14px 10px 16px 8px / 8px 16px 10px 14px;
+      box-shadow: 2px 2px 0 rgba(43,43,58,0.5); transition: transform 0.1s;
+    }
+    .switch a:hover { transform: rotate(-2deg); color: var(--accent-2); }
+    .switch a.current { background: #fff6a8; color: var(--ink); }
+
+    .title { font-family: 'Caveat', cursive; font-weight: 700; font-size: clamp(3.4rem, 11vw, 6rem); line-height: 0.95; margin: 0 0 6px; color: var(--ink); transform: rotate(-1.5deg); }
+    .subtitle { font-family: 'Patrick Hand', cursive; margin: 0 0 34px; color: var(--ink-soft); font-size: 1.15rem; }
+    .subtitle b { color: var(--accent); text-decoration: underline wavy var(--accent); }
+    .subtitle .dot { color: var(--accent-2); margin: 0 6px; }
+
+    .stats { display: flex; flex-wrap: wrap; gap: 18px; padding: 8px 0; margin-bottom: 30px; background: transparent; }
+    .stat {
+      display: flex; flex-direction: column; gap: 0; align-items: center; padding: 14px 20px 16px;
+      background: #fff6a8; border: 1px solid rgba(43,43,58,0.4); box-shadow: 3px 4px 6px rgba(43,43,58,0.18);
+      min-width: 92px;
+    }
+    .stat:nth-child(2) { background: #cfe8ff; transform: rotate(1.5deg); }
+    .stat:nth-child(3) { background: #d8f5d8; transform: rotate(-1.5deg); }
+    .stat:nth-child(4) { background: #ffd6d6; transform: rotate(1deg); }
+    .stat:nth-child(5) { background: #ecd9ff; transform: rotate(-1deg); }
+    .stat .v { font-family: 'Caveat', cursive; font-weight: 700; font-size: 2.3rem; line-height: 1; color: var(--ink); }
+    .stat .l { font-family: 'Patrick Hand', cursive; font-size: 0.82rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+
+    .filters { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .filters button {
+      font-family: 'Caveat', cursive; font-weight: 700; font-size: 1.3rem; color: var(--ink-soft);
+      background: var(--paper); border: 2px solid var(--ink); padding: 1px 18px; cursor: pointer;
+      border-radius: 14px 8px 16px 10px / 10px 16px 8px 14px; box-shadow: 2px 2px 0 rgba(43,43,58,0.5); transition: transform 0.1s;
+    }
+    .filters button:hover { transform: rotate(-2deg); color: var(--accent-2); }
+    .filters button.active { background: #fff6a8; color: var(--ink); }
+
+    .org { border: 2px solid var(--ink); background: var(--paper); border-radius: 16px 10px 18px 8px / 8px 18px 10px 16px; margin-bottom: 16px; overflow: hidden; box-shadow: 3px 4px 0 rgba(43,43,58,0.35); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 14px 20px; cursor: pointer; user-select: none; }
+    .org-header:hover { background: var(--bg-2); }
+    .chev { color: var(--accent); font-size: 0.9rem; transition: transform 0.2s; width: 16px; }
+    .org.open .chev { transform: rotate(90deg); }
+    .org-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 2px solid var(--ink); }
+    .org-name { flex: 1; font-family: 'Caveat', cursive; font-weight: 700; font-size: 1.7rem; color: var(--ink); }
+    .org-meta { font-size: 1rem; color: var(--ink-soft); }
+    .org-meta b { color: var(--accent-2); }
+    .org-meta .pill { display: inline-block; padding: 1px 12px; border-radius: 999px; background: #d8f5d8; color: var(--merged); margin-left: 8px; font-size: 0.9rem; border: 1px solid var(--merged); }
+
+    .prs { display: none; border-top: 2px dashed var(--ink); background: var(--bg); }
+    .org.open .prs { display: block; }
+    .pr { display: grid; grid-template-columns: 92px 1fr auto; gap: 16px; align-items: baseline; padding: 11px 20px 11px 46px; font-size: 1.05rem; border-bottom: 1px solid var(--line); }
+    .pr:last-child { border-bottom: none; }
+    .pr-status { font-family: 'Patrick Hand', cursive; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; padding: 2px 10px; border-radius: 999px; text-align: center; border: 1.5px solid currentColor; }
+    .pr-status.merged { color: var(--merged); background: #eafaea; }
+    .pr-status.open { color: var(--open); background: #fdf3e0; }
+    .pr-status.closed { color: var(--closed); background: #fdeaea; }
+    .pr-title a { color: var(--ink); text-decoration: none; }
+    .pr-title a:hover { color: var(--accent-2); text-decoration: underline wavy; }
+    .pr-num { color: var(--accent); margin-right: 6px; font-size: 0.95rem; }
+    .pr-date { color: var(--ink-faint); font-size: 0.92rem; white-space: nowrap; }
+
+    .empty { color: var(--ink-faint); padding: 16px; }
+    footer { margin-top: 48px; padding-top: 18px; border-top: 2px dashed var(--ink); color: var(--ink-faint); font-size: 1rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: var(--accent-2); text-decoration: underline; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { main { padding: 32px 16px 64px 40px; } .pr { grid-template-columns: 82px 1fr; padding-left: 22px; } .pr-date { grid-column: 2; } }"""
+
+
 STYLES = {
     "techno": (TECHNO_FONTS, TECHNO_CSS),
     "pixels": (PIXELS_FONTS, PIXELS_CSS),
     "modern": (MODERN_FONTS, MODERN_CSS),
     "retro":  (RETRO_FONTS,  RETRO_CSS),
     "news":   (NEWS_FONTS,   NEWS_CSS),
+    "comic":  (COMIC_FONTS,  COMIC_CSS),
+    "notebook": (NOTEBOOK_FONTS, NOTEBOOK_CSS),
 }
 
 
