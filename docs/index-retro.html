@@ -91,20 +91,20 @@
 :root{ --display:'DM Serif Display',Georgia,serif; --radius:18px; --shadow:4px 4px 0 var(--ink); --tile-border:2px solid var(--ink); --avatar-radius:50%; }
 
     /* ── bento mosaic (shared across themes) ─────────────────────────── */
-    .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 140px; grid-auto-flow: row dense; gap: 14px; margin-bottom: 30px; }
+    .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 38px; grid-auto-flow: row dense; gap: 14px; margin-bottom: 30px; }
     .tile { background: var(--paper); border: var(--tile-border, 1px solid var(--line)); border-radius: var(--radius, 14px); box-shadow: var(--shadow, none); padding: 18px 20px; overflow: hidden; }
 
-    .tile-avatar { grid-column: span 2; grid-row: span 2; padding: 0; display: block; }
+    .tile-avatar { grid-column: span 2; grid-row: span 7; padding: 0; display: block; }
     .tile-avatar .avatar { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
     .tile-avatar:hover .avatar { transform: scale(1.04); }
 
-    .tile-head { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; justify-content: center; gap: 5px; }
+    .tile-head { grid-column: span 2; grid-row: span 5; display: flex; flex-direction: column; justify-content: center; gap: 5px; }
     .eyebrow { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-faint); }
     .pname { font-family: var(--display, inherit); font-weight: 700; font-size: clamp(1.9rem, 5vw, 2.8rem); line-height: 1.02; margin: 0; color: var(--ink); }
     .pbio { margin: 4px 0 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.45; }
     .pmeta { margin: 2px 0 0; color: var(--ink-faint); font-size: 0.82rem; }
 
-    .tile-lang { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+    .tile-lang { grid-column: span 2; grid-row: span 4; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
     .tile-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-faint); }
     .langbar { display: flex; height: 14px; border-radius: 999px; overflow: hidden; background: var(--bg-2); border: 1px solid var(--line); }
     .langseg { height: 100%; }
@@ -113,13 +113,15 @@
     .lang i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
     .lang b { color: var(--ink); font-weight: 600; }
 
-    .tile-social { display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; color: var(--ink); cursor: pointer; transition: transform 0.12s, border-color 0.15s, color 0.15s; }
+    .tile-social { grid-column: span 1; grid-row: span 4; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; color: var(--ink); cursor: pointer; transition: transform 0.12s, border-color 0.15s, color 0.15s; }
+    .sc-linkedin, .sc-twitter { grid-row: span 3; }
     .tile-social .sc-go { align-self: flex-end; color: var(--ink-faint); font-size: 1.25rem; line-height: 1; }
     .tile-social .sc-name { font-family: var(--display, inherit); font-weight: 700; font-size: 1.45rem; margin-top: auto; }
     .tile-social:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
     .tile-social:hover .sc-go { color: var(--accent); }
 
-    .num { display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+    .num { grid-column: span 1; grid-row: span 3; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+    .n-prs, .n-orgs, .n-following, .n-stars { grid-row: span 4; }
     .num .v { font-family: var(--display, inherit); font-weight: 700; font-size: 2rem; line-height: 1; color: var(--accent); }
     .num.merged .v { color: var(--merged); }
     .num .l { font-size: 0.7rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.06em; }
@@ -130,10 +132,10 @@
     .seg button.active { background: var(--accent); color: var(--paper); }
 
     @media (max-width: 760px) {
-      .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 132px; }
+      .bento { grid-template-columns: repeat(2, 1fr); }
       .tile-avatar, .tile-head, .tile-lang { grid-column: span 2; }
+      .tile-avatar { grid-row: span 6; }
     }
-    @media (max-width: 440px) { .bento { grid-auto-rows: 120px; } }
   </style>
 </head>
 <body>
