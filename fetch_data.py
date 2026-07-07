@@ -22,6 +22,9 @@ TOKEN = os.getenv("GITHUB_TOKEN")
 INCLUDE_OWN = os.getenv("INCLUDE_OWN") == "1"
 EMAIL = os.getenv("PROFILE_EMAIL", "dishatalreja1202@gmail.com")
 LINKEDIN = os.getenv("LINKEDIN_URL", "https://www.linkedin.com/in/dishatalreja/")
+# Profile overrides (GitHub profile values are ignored when these are set).
+COMPANY = os.getenv("PROFILE_COMPANY", "")            # blank = hide company
+LOCATION = os.getenv("PROFILE_LOCATION", "Bengaluru, India")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -146,8 +149,8 @@ def main():
             "login": USER,
             "avatar": p.get("avatar_url"),
             "bio": p.get("bio"),
-            "company": p.get("company"),
-            "location": p.get("location"),
+            "company": COMPANY or None,
+            "location": LOCATION or p.get("location"),
             "followers": p.get("followers"),
             "following": p.get("following"),
             "public_repos": p.get("public_repos"),
