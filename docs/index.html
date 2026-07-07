@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>disha1202 · proof of work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05070d;
+      --bg-2: #0b1120;
+      --paper: #0d1424;
+      --ink: #d7f5ff;
+      --ink-soft: #7fa6c4;
+      --ink-faint: #4d6b85;
+      --line: #14304a;
+      --accent: #00f0ff;
+      --accent-2: #ff2bd6;
+      --merged: #39ff14;
+      --open: #ffd23f;
+      --closed: #ff5470;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      background-image:
+        linear-gradient(rgba(0,240,255,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,240,255,0.045) 1px, transparent 1px),
+        radial-gradient(ellipse 800px 500px at 15% -10%, rgba(0,240,255,0.14), transparent 70%),
+        radial-gradient(ellipse 700px 400px at 100% 10%, rgba(255,43,214,0.12), transparent 70%);
+      background-size: 42px 42px, 42px 42px, 100% 100%, 100% 100%;
+      background-attachment: fixed;
+    }
+    main { max-width: 920px; margin: 0 auto; padding: 60px 24px 96px; }
+
+    .switch { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; }
+    .switch a {
+      color: var(--ink-soft); text-decoration: none; padding: 6px 14px;
+      border: 1px solid var(--line); background: rgba(13,20,36,0.6);
+      font-family: 'Share Tech Mono', monospace; transition: all 0.15s;
+      clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    }
+    .switch a:hover { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 12px rgba(0,240,255,0.4); }
+    .switch a.current { color: var(--bg); background: var(--accent); border-color: var(--accent); box-shadow: 0 0 18px rgba(0,240,255,0.6); }
+
+    .title {
+      font-family: 'Orbitron', sans-serif; font-weight: 900;
+      font-size: clamp(2.6rem, 8vw, 4.4rem); letter-spacing: 0.04em; line-height: 1;
+      margin: 0 0 10px; text-transform: uppercase; color: #fff;
+      text-shadow: 0 0 8px rgba(0,240,255,0.8), 0 0 28px rgba(0,240,255,0.5), 3px 3px 0 rgba(255,43,214,0.55);
+    }
+    .subtitle { margin: 0 0 34px; color: var(--ink-soft); font-size: 0.95rem; letter-spacing: 0.02em; }
+    .subtitle b { color: var(--accent); font-weight: 700; }
+    .subtitle .dot { color: var(--accent-2); margin: 0 6px; }
+
+    .stats {
+      display: flex; flex-wrap: wrap; gap: 28px; padding: 22px 26px; margin-bottom: 28px;
+      background: linear-gradient(135deg, rgba(13,20,36,0.9), rgba(11,17,32,0.9));
+      border: 1px solid var(--accent); border-radius: 4px;
+      box-shadow: 0 0 22px rgba(0,240,255,0.18), inset 0 0 30px rgba(0,240,255,0.05);
+    }
+    .stat { display: flex; flex-direction: column; gap: 4px; }
+    .stat .v { font-family: 'Orbitron', sans-serif; font-size: 1.7rem; font-weight: 700; line-height: 1; color: var(--accent); text-shadow: 0 0 10px rgba(0,240,255,0.5); }
+    .stat .l { font-size: 0.66rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.12em; }
+    .stat.merged .v { color: var(--merged); text-shadow: 0 0 10px rgba(57,255,20,0.5); }
+    .stat.open .v { color: var(--open); text-shadow: 0 0 10px rgba(255,210,63,0.5); }
+    .stat.closed .v { color: var(--closed); text-shadow: 0 0 10px rgba(255,84,112,0.5); }
+
+    .filters { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
+    .filters button {
+      background: rgba(13,20,36,0.6); color: var(--ink-soft); border: 1px solid var(--line);
+      padding: 8px 18px; font-family: 'Share Tech Mono', monospace; font-size: 0.82rem;
+      cursor: pointer; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.08em; transition: all 0.15s;
+    }
+    .filters button:hover { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 10px rgba(0,240,255,0.35); }
+    .filters button.active { color: var(--bg); background: var(--accent); border-color: var(--accent); box-shadow: 0 0 14px rgba(0,240,255,0.5); }
+
+    .org {
+      border: 1px solid var(--line); background: rgba(13,20,36,0.55); border-radius: 4px;
+      margin-bottom: 12px; overflow: hidden; transition: all 0.2s;
+    }
+    .org:hover { border-color: var(--accent); box-shadow: 0 0 18px rgba(0,240,255,0.22); }
+    .org.open { border-color: var(--accent); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; cursor: pointer; user-select: none; }
+    .org-header:hover { background: rgba(0,240,255,0.05); }
+    .chev { color: var(--accent); font-size: 0.8rem; transition: transform 0.2s; width: 14px; }
+    .org.open .chev { transform: rotate(90deg); }
+    .org-logo { width: 30px; height: 30px; border-radius: 3px; object-fit: cover; background: var(--bg-2); border: 1px solid var(--line); filter: saturate(1.2); }
+    .org-name { flex: 1; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.02rem; color: var(--ink); letter-spacing: 0.02em; }
+    .org-meta { font-size: 0.8rem; color: var(--ink-soft); font-family: 'Share Tech Mono', monospace; }
+    .org-meta b { color: var(--accent); }
+    .org-meta .pill { display: inline-block; padding: 2px 10px; border-radius: 2px; background: rgba(57,255,20,0.12); color: var(--merged); margin-left: 8px; font-size: 0.72rem; border: 1px solid rgba(57,255,20,0.3); }
+
+    .prs { display: none; border-top: 1px solid var(--line); background: rgba(5,7,13,0.5); }
+    .org.open .prs { display: block; }
+    .pr { display: grid; grid-template-columns: 88px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 50px; font-size: 0.88rem; border-bottom: 1px solid var(--line); }
+    .pr:last-child { border-bottom: none; }
+    .pr-status { font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 8px; border-radius: 2px; text-align: center; }
+    .pr-status.merged { background: rgba(57,255,20,0.12); color: var(--merged); border: 1px solid rgba(57,255,20,0.35); }
+    .pr-status.open { background: rgba(255,210,63,0.12); color: var(--open); border: 1px solid rgba(255,210,63,0.35); }
+    .pr-status.closed { background: rgba(255,84,112,0.12); color: var(--closed); border: 1px solid rgba(255,84,112,0.35); }
+    .pr-title a { color: var(--ink); text-decoration: none; transition: color 0.15s; }
+    .pr-title a:hover { color: var(--accent); text-shadow: 0 0 8px rgba(0,240,255,0.5); }
+    .pr-num { color: var(--accent-2); margin-right: 6px; font-size: 0.82rem; }
+    .pr-date { color: var(--ink-faint); font-size: 0.76rem; white-space: nowrap; font-family: 'Share Tech Mono', monospace; }
+
+    .empty { color: var(--ink-faint); padding: 16px; font-family: 'Share Tech Mono', monospace; }
+    footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 0.78rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'Share Tech Mono', monospace; }
+    footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
+    footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    @media (max-width: 600px) { main { padding: 32px 18px 64px; } .pr { grid-template-columns: 78px 1fr; padding-left: 26px; } .pr-date { grid-column: 2; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="switch">
+    <a href="index.html" class="current">techno</a>
+    <a href="index-pixels.html">pixels</a>
+    <a href="index-modern.html">modern</a>
+    <a href="index-retro.html">retro</a>
+  </nav>
+
+  <header class="head">
+    <h1 class="title">proof of work</h1>
+    <p class="subtitle">a collection of open-source contributions <span class="dot">·</span> <b id="user">disha1202</b></p>
+  </header>
+
+  <div class="stats" id="stats">
+    <div class="stat"><span class="v">—</span><span class="l">loading</span></div>
+  </div>
+
+  <div class="filters" id="filters" hidden>
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="merged">Merged</button>
+    <button data-filter="open">Open</button>
+    <button data-filter="closed">Closed</button>
+  </div>
+
+  <div id="list"></div>
+
+  <footer>
+    <span id="generated">&nbsp;</span>
+    <span>
+      <a href="https://github.com/disha1202" target="_blank" rel="noopener">github.com/disha1202</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/disha1202/proof-of-work" target="_blank" rel="noopener">source</a>
+    </span>
+  </footer>
+</main>
+
+<script>
+  const STATE_LABEL = { "Merged":"merged","Merged (indirect)":"merged","Open":"open","Closed":"closed" };
+  let currentFilter = "all";
+  let data = null;
+
+  function render() {
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+    const orgs = data.orgs.map(org => {
+      const visible = org.prs.filter(pr => currentFilter === "all" || STATE_LABEL[pr.state] === currentFilter);
+      return { ...org, visible };
+    }).filter(org => org.visible.length > 0);
+
+    if (orgs.length === 0) {
+      list.innerHTML = '<div class="empty">No entries match this filter.</div>';
+      return;
+    }
+
+    orgs.forEach(org => {
+      const card = document.createElement("div");
+      card.className = "org";
+      const header = document.createElement("div");
+      header.className = "org-header";
+      header.innerHTML = `
+        <span class="chev">&#9654;</span>
+        <img class="org-logo" alt="" src="https://github.com/${org.name}.png?size=64" onerror="this.style.visibility='hidden'">
+        <span class="org-name">${escapeHtml(org.name)}</span>
+        <span class="org-meta"><b>${org.visible.length}</b> ${org.visible.length === 1 ? "PR" : "PRs"}<span class="pill">${org.merged} merged</span></span>
+      `;
+      const prs = document.createElement("div");
+      prs.className = "prs";
+      org.visible.forEach(pr => {
+        const row = document.createElement("div");
+        row.className = "pr";
+        const label = STATE_LABEL[pr.state] || "open";
+        const date = pr.merged_at || pr.created_at;
+        const display = label === "merged" && pr.state.includes("indirect") ? "merged*" : label;
+        row.innerHTML = `
+          <span class="pr-status ${label}">${display}</span>
+          <span class="pr-title">${pr.number ? `<span class="pr-num">#${pr.number}</span>` : ""}<a href="${pr.url}" target="_blank" rel="noopener">${escapeHtml(pr.title)}</a></span>
+          <span class="pr-date">${date || ""}</span>
+        `;
+        prs.appendChild(row);
+      });
+      header.onclick = () => card.classList.toggle("open");
+      card.appendChild(header);
+      card.appendChild(prs);
+      list.appendChild(card);
+    });
+  }
+
+  function renderStats() {
+    const s = data.totals;
+    document.getElementById("stats").innerHTML = `
+      <div class="stat"><span class="v">${s.prs}</span><span class="l">total</span></div>
+      <div class="stat merged"><span class="v">${s.merged}</span><span class="l">merged</span></div>
+      <div class="stat open"><span class="v">${s.open}</span><span class="l">open</span></div>
+      <div class="stat closed"><span class="v">${s.closed}</span><span class="l">closed</span></div>
+      <div class="stat"><span class="v">${data.orgs.length}</span><span class="l">orgs</span></div>
+    `;
+    if (data.generated_at) document.getElementById("generated").textContent = "Generated " + data.generated_at;
+    if (data.username) document.getElementById("user").textContent = data.username;
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+  }
+
+  document.querySelectorAll("#filters button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#filters button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  fetch("./data.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error("data.json not found"); return r.json(); })
+    .then(json => { data = json; document.getElementById("filters").hidden = false; renderStats(); render(); })
+    .catch(err => {
+      document.getElementById("stats").innerHTML =
+        `<div class="empty">Failed to load data.json — ${escapeHtml(err.message)}</div>`;
+    });
+</script>
+</body>
+</html>

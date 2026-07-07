@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>disha1202 · proof of work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f2e4c9;
+      --bg-2: #e8d5ad;
+      --paper: #fbf3df;
+      --ink: #3a2718;
+      --ink-soft: #6b4f34;
+      --ink-faint: #9c7c56;
+      --line: #d8c199;
+      --accent: #d1622a;
+      --accent-2: #7a8b3c;
+      --merged: #5e7d2a;
+      --open: #cf9526;
+      --closed: #b5462f;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+      background-image:
+        radial-gradient(circle at 20% -5%, rgba(209,98,42,0.20), transparent 45%),
+        radial-gradient(circle at 90% 8%, rgba(122,139,60,0.18), transparent 42%),
+        repeating-linear-gradient(45deg, rgba(154,124,86,0.05) 0 2px, transparent 2px 8px);
+      background-attachment: fixed;
+    }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 60px 24px 96px; }
+
+    .switch { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; font-size: 0.82rem; }
+    .switch a { color: var(--ink-soft); text-decoration: none; padding: 7px 16px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); font-weight: 500; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
+    .switch a:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
+    .switch a.current { color: var(--paper); background: var(--accent); border-color: var(--ink); }
+
+    .title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-style: italic; font-size: clamp(3rem, 9vw, 5rem); letter-spacing: -0.01em; line-height: 0.95; margin: 0 0 12px; color: var(--accent); text-shadow: 3px 3px 0 var(--bg-2); }
+    .subtitle { margin: 0 0 36px; color: var(--ink-soft); font-size: 1.05rem; }
+    .subtitle b { color: var(--ink); font-weight: 600; }
+    .subtitle .dot { color: var(--accent); margin: 0 6px; }
+
+    .stats { display: flex; flex-wrap: wrap; gap: 28px; padding: 22px 26px; margin-bottom: 28px; background: var(--paper); border: 2px solid var(--ink); border-radius: 22px; box-shadow: 5px 5px 0 var(--ink); }
+    .stat { display: flex; flex-direction: column; gap: 3px; }
+    .stat .v { font-family: 'DM Serif Display', Georgia, serif; font-size: 2rem; line-height: 1; color: var(--ink); }
+    .stat .l { font-size: 0.72rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.1em; }
+    .stat.merged .v { color: var(--merged); }
+    .stat.open .v { color: var(--open); }
+    .stat.closed .v { color: var(--closed); }
+
+    .filters { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
+    .filters button { background: var(--paper); color: var(--ink-soft); border: 2px solid var(--ink); padding: 8px 18px; font-family: inherit; font-size: 0.86rem; font-weight: 600; cursor: pointer; border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
+    .filters button:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
+    .filters button.active { color: var(--paper); background: var(--accent); }
+
+    .org { border: 2px solid var(--ink); background: var(--paper); border-radius: 18px; margin-bottom: 16px; overflow: hidden; box-shadow: 4px 4px 0 var(--ink); transition: all 0.15s; }
+    .org:hover { transform: translate(-1px,-1px); box-shadow: 6px 6px 0 var(--ink); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; cursor: pointer; user-select: none; }
+    .org-header:hover { background: var(--bg-2); }
+    .chev { color: var(--accent); font-size: 0.85rem; transition: transform 0.2s; width: 14px; }
+    .org.open .chev { transform: rotate(90deg); }
+    .org-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 2px solid var(--ink); }
+    .org-name { flex: 1; font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--ink); }
+    .org-meta { font-size: 0.86rem; color: var(--ink-soft); font-family: 'DM Mono', monospace; }
+    .org-meta b { color: var(--ink); font-weight: 500; }
+    .org-meta .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent-2); color: var(--paper); margin-left: 8px; font-size: 0.74rem; }
+
+    .prs { display: none; border-top: 2px solid var(--ink); background: var(--bg); }
+    .org.open .prs { display: block; }
+    .pr { display: grid; grid-template-columns: 84px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 50px; font-size: 0.94rem; border-bottom: 1px solid var(--line); }
+    .pr:last-child { border-bottom: none; }
+    .pr-status { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; text-align: center; color: var(--paper); }
+    .pr-status.merged { background: var(--merged); }
+    .pr-status.open { background: var(--open); }
+    .pr-status.closed { background: var(--closed); }
+    .pr-title a { color: var(--ink); text-decoration: none; transition: color 0.15s; }
+    .pr-title a:hover { color: var(--accent); }
+    .pr-num { font-family: 'DM Mono', monospace; color: var(--ink-faint); margin-right: 6px; font-size: 0.82rem; }
+    .pr-date { font-family: 'DM Mono', monospace; color: var(--ink-faint); font-size: 0.78rem; white-space: nowrap; }
+
+    .empty { color: var(--ink-faint); padding: 16px; }
+    footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); color: var(--ink-faint); font-size: 0.84rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'DM Mono', monospace; }
+    footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 2px solid var(--line); }
+    footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    @media (max-width: 600px) { main { padding: 36px 18px 64px; } .pr { grid-template-columns: 74px 1fr; padding-left: 26px; } .pr-date { grid-column: 2; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="switch">
+    <a href="index.html">techno</a>
+    <a href="index-pixels.html">pixels</a>
+    <a href="index-modern.html">modern</a>
+    <a href="index-retro.html" class="current">retro</a>
+  </nav>
+
+  <header class="head">
+    <h1 class="title">proof of work</h1>
+    <p class="subtitle">a collection of open-source contributions <span class="dot">·</span> <b id="user">disha1202</b></p>
+  </header>
+
+  <div class="stats" id="stats">
+    <div class="stat"><span class="v">—</span><span class="l">loading</span></div>
+  </div>
+
+  <div class="filters" id="filters" hidden>
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="merged">Merged</button>
+    <button data-filter="open">Open</button>
+    <button data-filter="closed">Closed</button>
+  </div>
+
+  <div id="list"></div>
+
+  <footer>
+    <span id="generated">&nbsp;</span>
+    <span>
+      <a href="https://github.com/disha1202" target="_blank" rel="noopener">github.com/disha1202</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/disha1202/proof-of-work" target="_blank" rel="noopener">source</a>
+    </span>
+  </footer>
+</main>
+
+<script>
+  const STATE_LABEL = { "Merged":"merged","Merged (indirect)":"merged","Open":"open","Closed":"closed" };
+  let currentFilter = "all";
+  let data = null;
+
+  function render() {
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+    const orgs = data.orgs.map(org => {
+      const visible = org.prs.filter(pr => currentFilter === "all" || STATE_LABEL[pr.state] === currentFilter);
+      return { ...org, visible };
+    }).filter(org => org.visible.length > 0);
+
+    if (orgs.length === 0) {
+      list.innerHTML = '<div class="empty">No entries match this filter.</div>';
+      return;
+    }
+
+    orgs.forEach(org => {
+      const card = document.createElement("div");
+      card.className = "org";
+      const header = document.createElement("div");
+      header.className = "org-header";
+      header.innerHTML = `
+        <span class="chev">&#9654;</span>
+        <img class="org-logo" alt="" src="https://github.com/${org.name}.png?size=64" onerror="this.style.visibility='hidden'">
+        <span class="org-name">${escapeHtml(org.name)}</span>
+        <span class="org-meta"><b>${org.visible.length}</b> ${org.visible.length === 1 ? "PR" : "PRs"}<span class="pill">${org.merged} merged</span></span>
+      `;
+      const prs = document.createElement("div");
+      prs.className = "prs";
+      org.visible.forEach(pr => {
+        const row = document.createElement("div");
+        row.className = "pr";
+        const label = STATE_LABEL[pr.state] || "open";
+        const date = pr.merged_at || pr.created_at;
+        const display = label === "merged" && pr.state.includes("indirect") ? "merged*" : label;
+        row.innerHTML = `
+          <span class="pr-status ${label}">${display}</span>
+          <span class="pr-title">${pr.number ? `<span class="pr-num">#${pr.number}</span>` : ""}<a href="${pr.url}" target="_blank" rel="noopener">${escapeHtml(pr.title)}</a></span>
+          <span class="pr-date">${date || ""}</span>
+        `;
+        prs.appendChild(row);
+      });
+      header.onclick = () => card.classList.toggle("open");
+      card.appendChild(header);
+      card.appendChild(prs);
+      list.appendChild(card);
+    });
+  }
+
+  function renderStats() {
+    const s = data.totals;
+    document.getElementById("stats").innerHTML = `
+      <div class="stat"><span class="v">${s.prs}</span><span class="l">total</span></div>
+      <div class="stat merged"><span class="v">${s.merged}</span><span class="l">merged</span></div>
+      <div class="stat open"><span class="v">${s.open}</span><span class="l">open</span></div>
+      <div class="stat closed"><span class="v">${s.closed}</span><span class="l">closed</span></div>
+      <div class="stat"><span class="v">${data.orgs.length}</span><span class="l">orgs</span></div>
+    `;
+    if (data.generated_at) document.getElementById("generated").textContent = "Generated " + data.generated_at;
+    if (data.username) document.getElementById("user").textContent = data.username;
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+  }
+
+  document.querySelectorAll("#filters button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#filters button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  fetch("./data.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error("data.json not found"); return r.json(); })
+    .then(json => { data = json; document.getElementById("filters").hidden = false; renderStats(); render(); })
+    .catch(err => {
+      document.getElementById("stats").innerHTML =
+        `<div class="empty">Failed to load data.json — ${escapeHtml(err.message)}</div>`;
+    });
+</script>
+</body>
+</html>

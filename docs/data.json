@@ -1,0 +1,4446 @@
+{
+  "username": "disha1202",
+  "generated_at": "2026-07-07 09:46 UTC",
+  "totals": {
+    "prs": 482,
+    "merged": 378,
+    "open": 8,
+    "closed": 96
+  },
+  "orgs": [
+    {
+      "name": "hotwax",
+      "merged": 293,
+      "prs": [
+        {
+          "number": 201,
+          "title": "Added: extra product info in missing sku modal",
+          "url": "https://github.com/hotwax/import/pull/201",
+          "state": "Merged",
+          "created_at": "2023-03-03",
+          "merged_at": "2023-03-28",
+          "repo": "import"
+        },
+        {
+          "number": 200,
+          "title": "Fixed: Duplicate facility in facility switcher(#85zrpubf1)",
+          "url": "https://github.com/hotwax/bopis/pull/200",
+          "state": "Merged",
+          "created_at": "2023-03-03",
+          "merged_at": "2023-03-10",
+          "repo": "bopis"
+        },
+        {
+          "number": 197,
+          "title": "fix: Use ion-list in modals(#85zrptxr9)",
+          "url": "https://github.com/hotwax/import/pull/197",
+          "state": "Merged",
+          "created_at": "2023-03-03",
+          "merged_at": "2023-03-06",
+          "repo": "import"
+        },
+        {
+          "number": 197,
+          "title": "Moved packing slip and shipping order configuration from oms to app settings(#85zrpq1yd)",
+          "url": "https://github.com/hotwax/bopis/pull/197",
+          "state": "Merged",
+          "created_at": "2023-03-02",
+          "merged_at": "2023-03-02",
+          "repo": "bopis"
+        },
+        {
+          "number": 187,
+          "title": "implemented: support to add picker for ready to pick orders(#85zrnzf31)",
+          "url": "https://github.com/hotwax/bopis/pull/187",
+          "state": "Merged",
+          "created_at": "2023-02-23",
+          "merged_at": "2023-03-02",
+          "repo": "bopis"
+        },
+        {
+          "number": 195,
+          "title": "Updated: empty state text message(#85zrnzfn5)",
+          "url": "https://github.com/hotwax/import/pull/195",
+          "state": "Merged",
+          "created_at": "2023-02-23",
+          "merged_at": "2023-02-23",
+          "repo": "import"
+        },
+        {
+          "number": 194,
+          "title": "Updated: default dateTime format(#85zrnzcpm)",
+          "url": "https://github.com/hotwax/import/pull/194",
+          "state": "Merged",
+          "created_at": "2023-02-23",
+          "merged_at": "2023-02-23",
+          "repo": "import"
+        },
+        {
+          "number": 109,
+          "title": "updated: app for minor release",
+          "url": "https://github.com/hotwax/picking/pull/109",
+          "state": "Closed",
+          "created_at": "2023-02-22",
+          "merged_at": null,
+          "repo": "picking"
+        },
+        {
+          "number": 201,
+          "title": "updated: app for minor release",
+          "url": "https://github.com/hotwax/receiving/pull/201",
+          "state": "Closed",
+          "created_at": "2023-02-22",
+          "merged_at": null,
+          "repo": "receiving"
+        },
+        {
+          "number": 162,
+          "title": "updated: app for minor release",
+          "url": "https://github.com/hotwax/inventory-count/pull/162",
+          "state": "Merged",
+          "created_at": "2023-02-22",
+          "merged_at": "2023-02-22",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 188,
+          "title": "Added: default buttons in dateTime modal",
+          "url": "https://github.com/hotwax/available-to-promise/pull/188",
+          "state": "Merged",
+          "created_at": "2023-02-22",
+          "merged_at": "2023-02-22",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 192,
+          "title": "Updated: app for minor release",
+          "url": "https://github.com/hotwax/import/pull/192",
+          "state": "Merged",
+          "created_at": "2023-02-22",
+          "merged_at": "2023-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 200,
+          "title": "Implemented: logic to fetch receivers details(#85zrnfjuc)",
+          "url": "https://github.com/hotwax/receiving/pull/200",
+          "state": "Merged",
+          "created_at": "2023-02-21",
+          "merged_at": "2023-03-28",
+          "repo": "receiving"
+        },
+        {
+          "number": 199,
+          "title": "updated: UI for over receiving(#85zrnfx68)",
+          "url": "https://github.com/hotwax/receiving/pull/199",
+          "state": "Merged",
+          "created_at": "2023-02-17",
+          "merged_at": "2023-03-07",
+          "repo": "receiving"
+        },
+        {
+          "number": 198,
+          "title": "feat: display order and item status on POs(#85zrndfmd)",
+          "url": "https://github.com/hotwax/receiving/pull/198",
+          "state": "Merged",
+          "created_at": "2023-02-16",
+          "merged_at": "2023-03-20",
+          "repo": "receiving"
+        },
+        {
+          "number": 197,
+          "title": "Improved: show the most recent record in the history modal(#85zrna7wr)",
+          "url": "https://github.com/hotwax/receiving/pull/197",
+          "state": "Merged",
+          "created_at": "2023-02-16",
+          "merged_at": "2023-02-16",
+          "repo": "receiving"
+        },
+        {
+          "number": 184,
+          "title": "Fixed: select all not working",
+          "url": "https://github.com/hotwax/import/pull/184",
+          "state": "Merged",
+          "created_at": "2023-02-07",
+          "merged_at": "2023-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 183,
+          "title": "Fixed: save function when updating the missing product is not working",
+          "url": "https://github.com/hotwax/import/pull/183",
+          "state": "Merged",
+          "created_at": "2023-02-07",
+          "merged_at": "2023-02-09",
+          "repo": "import"
+        },
+        {
+          "number": 182,
+          "title": "fix: search not working on PO review page(#85zrmf7ed)",
+          "url": "https://github.com/hotwax/import/pull/182",
+          "state": "Merged",
+          "created_at": "2023-02-07",
+          "merged_at": "2023-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 156,
+          "title": "Fixed: search products not cleared on logout(#85zrjbxux)",
+          "url": "https://github.com/hotwax/inventory-count/pull/156",
+          "state": "Merged",
+          "created_at": "2023-02-03",
+          "merged_at": "2023-02-03",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 170,
+          "title": "Fix select deselect on purchase order detail page",
+          "url": "https://github.com/hotwax/import/pull/170",
+          "state": "Merged",
+          "created_at": "2023-02-02",
+          "merged_at": "2023-02-03",
+          "repo": "import"
+        },
+        {
+          "number": 169,
+          "title": "Fixed: missing sku not displayed in completed tab after updating",
+          "url": "https://github.com/hotwax/import/pull/169",
+          "state": "Merged",
+          "created_at": "2023-02-02",
+          "merged_at": "2023-02-03",
+          "repo": "import"
+        },
+        {
+          "number": 190,
+          "title": "fix: purchase order data not cleared on logout(#85zrkramx)",
+          "url": "https://github.com/hotwax/receiving/pull/190",
+          "state": "Merged",
+          "created_at": "2023-02-01",
+          "merged_at": "2023-02-02",
+          "repo": "receiving"
+        },
+        {
+          "number": 362,
+          "title": "Fixed: JobConfiguration component displaying runtime of draft jobs(#85zrjdd3b)",
+          "url": "https://github.com/hotwax/job-manager/pull/362",
+          "state": "Merged",
+          "created_at": "2023-02-01",
+          "merged_at": "2023-02-02",
+          "repo": "job-manager"
+        },
+        {
+          "number": 154,
+          "title": "fix: searched products not cleared if product not found on scanning or searching(#85zrkjneg)",
+          "url": "https://github.com/hotwax/inventory-count/pull/154",
+          "state": "Merged",
+          "created_at": "2023-01-31",
+          "merged_at": "2023-02-03",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 152,
+          "title": "fix: warning in console when clicking scan button(#85zrkj2ud)",
+          "url": "https://github.com/hotwax/inventory-count/pull/152",
+          "state": "Merged",
+          "created_at": "2023-01-31",
+          "merged_at": "2023-02-03",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 151,
+          "title": "fix: searched products not cleared on store change and logout(#85zrjbxux)",
+          "url": "https://github.com/hotwax/inventory-count/pull/151",
+          "state": "Closed",
+          "created_at": "2023-01-31",
+          "merged_at": null,
+          "repo": "inventory-count"
+        },
+        {
+          "number": 162,
+          "title": "fix: disable alert on token expire(#85zrkepcp)",
+          "url": "https://github.com/hotwax/import/pull/162",
+          "state": "Merged",
+          "created_at": "2023-01-30",
+          "merged_at": "2023-01-31",
+          "repo": "import"
+        },
+        {
+          "number": 149,
+          "title": "fixed: incorrect facility locations on product detail page(#85zrgfqdj)",
+          "url": "https://github.com/hotwax/inventory-count/pull/149",
+          "state": "Merged",
+          "created_at": "2023-01-27",
+          "merged_at": "2023-01-27",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 158,
+          "title": "Support for multiple POs",
+          "url": "https://github.com/hotwax/import/pull/158",
+          "state": "Merged",
+          "created_at": "2023-01-24",
+          "merged_at": "2023-02-01",
+          "repo": "import"
+        },
+        {
+          "number": 160,
+          "title": "Implemented logger using vue logger plugin(#21uxamh)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/160",
+          "state": "Merged",
+          "created_at": "2023-01-23",
+          "merged_at": "2023-01-24",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 357,
+          "title": "Implemented logger using vue logger plugin(#21uxamh)",
+          "url": "https://github.com/hotwax/job-manager/pull/357",
+          "state": "Merged",
+          "created_at": "2023-01-23",
+          "merged_at": "2023-01-24",
+          "repo": "job-manager"
+        },
+        {
+          "number": 155,
+          "title": "Implemented logger using vue logger plugin(#21uxamh)",
+          "url": "https://github.com/hotwax/import/pull/155",
+          "state": "Merged",
+          "created_at": "2023-01-19",
+          "merged_at": "2023-01-24",
+          "repo": "import"
+        },
+        {
+          "number": 153,
+          "title": "Implemented logic to make missingSku modal functional(#85zrjdpgc)",
+          "url": "https://github.com/hotwax/import/pull/153",
+          "state": "Closed",
+          "created_at": "2023-01-18",
+          "merged_at": null,
+          "repo": "import"
+        },
+        {
+          "number": 151,
+          "title": "Implemented static UI for missing sku modal(#85zrjbx58)",
+          "url": "https://github.com/hotwax/import/pull/151",
+          "state": "Merged",
+          "created_at": "2023-01-17",
+          "merged_at": "2023-01-18",
+          "repo": "import"
+        },
+        {
+          "number": 140,
+          "title": "Added support to scan products with all the product identifications(#85zrjbtxf)",
+          "url": "https://github.com/hotwax/inventory-count/pull/140",
+          "state": "Closed",
+          "created_at": "2023-01-17",
+          "merged_at": null,
+          "repo": "inventory-count"
+        },
+        {
+          "number": 182,
+          "title": "Added hotwax-apps-theme package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/182",
+          "state": "Merged",
+          "created_at": "2023-01-17",
+          "merged_at": "2023-01-17",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 46,
+          "title": "Added hotwax-apps-theme package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/46",
+          "state": "Merged",
+          "created_at": "2023-01-17",
+          "merged_at": "2023-01-17",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 156,
+          "title": "Added hotwax-apps-theme package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/156",
+          "state": "Merged",
+          "created_at": "2023-01-17",
+          "merged_at": "2023-01-17",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 100,
+          "title": "Added hotwax-apps-theme package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/picking/pull/100",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-17",
+          "repo": "picking"
+        },
+        {
+          "number": 136,
+          "title": "Added hotwax-apps-theme package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/inventory-count/pull/136",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-17",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 100,
+          "title": "Added hotwax-theme-apps package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/preorder/pull/100",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-17",
+          "repo": "preorder"
+        },
+        {
+          "number": 182,
+          "title": "Added hotwax-theme-apps package(#85zrj08rb)",
+          "url": "https://github.com/hotwax/receiving/pull/182",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 164,
+          "title": "Added hotwax-apps-theme package",
+          "url": "https://github.com/hotwax/bopis/pull/164",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-17",
+          "repo": "bopis"
+        },
+        {
+          "number": 4,
+          "title": "Jan2023",
+          "url": "https://github.com/hotwax/dxp-knowledgebase/pull/4",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-16",
+          "repo": "dxp-knowledgebase"
+        },
+        {
+          "number": 3,
+          "title": "Added app release info in jan 2023 plan",
+          "url": "https://github.com/hotwax/dxp-knowledgebase/pull/3",
+          "state": "Merged",
+          "created_at": "2023-01-16",
+          "merged_at": "2023-01-16",
+          "repo": "dxp-knowledgebase"
+        },
+        {
+          "number": 155,
+          "title": "Preparing app for minor release",
+          "url": "https://github.com/hotwax/available-to-promise/pull/155",
+          "state": "Merged",
+          "created_at": "2023-01-13",
+          "merged_at": "2023-01-13",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 8,
+          "title": "Added styles for settings page",
+          "url": "https://github.com/hotwax/hotwax-apps-theme/pull/8",
+          "state": "Merged",
+          "created_at": "2023-01-13",
+          "merged_at": "2023-01-18",
+          "repo": "hotwax-apps-theme"
+        },
+        {
+          "number": 345,
+          "title": "Added apps-theme package(#31nm26y)",
+          "url": "https://github.com/hotwax/job-manager/pull/345",
+          "state": "Merged",
+          "created_at": "2023-01-12",
+          "merged_at": "2023-01-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 7,
+          "title": "Updated the file name",
+          "url": "https://github.com/hotwax/hotwax-apps-theme/pull/7",
+          "state": "Merged",
+          "created_at": "2023-01-12",
+          "merged_at": "2023-01-12",
+          "repo": "hotwax-apps-theme"
+        },
+        {
+          "number": 147,
+          "title": "Used npm package for global styles(#31nm26y)",
+          "url": "https://github.com/hotwax/import/pull/147",
+          "state": "Merged",
+          "created_at": "2023-01-12",
+          "merged_at": "2023-01-12",
+          "repo": "import"
+        },
+        {
+          "number": 177,
+          "title": "Replaced moment by luxon(#2dewerv)",
+          "url": "https://github.com/hotwax/receiving/pull/177",
+          "state": "Closed",
+          "created_at": "2023-01-09",
+          "merged_at": null,
+          "repo": "receiving"
+        },
+        {
+          "number": 142,
+          "title": "Updated: app to prepare for major release",
+          "url": "https://github.com/hotwax/import/pull/142",
+          "state": "Merged",
+          "created_at": "2023-01-06",
+          "merged_at": "2023-01-06",
+          "repo": "import"
+        },
+        {
+          "number": 5,
+          "title": "Added initial styles(#31nm26y)",
+          "url": "https://github.com/hotwax/hotwax-apps-theme/pull/5",
+          "state": "Merged",
+          "created_at": "2023-01-06",
+          "merged_at": "2023-01-06",
+          "repo": "hotwax-apps-theme"
+        },
+        {
+          "number": 3,
+          "title": "Added initial styles(#31nm26y)",
+          "url": "https://github.com/hotwax/hotwax-apps-theme/pull/3",
+          "state": "Closed",
+          "created_at": "2023-01-06",
+          "merged_at": null,
+          "repo": "hotwax-apps-theme"
+        },
+        {
+          "number": 138,
+          "title": "Implemented logic to support multiple PO(#85zrh07mb)",
+          "url": "https://github.com/hotwax/import/pull/138",
+          "state": "Merged",
+          "created_at": "2023-01-04",
+          "merged_at": "2023-01-18",
+          "repo": "import"
+        },
+        {
+          "number": 150,
+          "title": "Implemented logic to change product store from side menu(#85zrh5nz6)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/150",
+          "state": "Closed",
+          "created_at": "2023-01-02",
+          "merged_at": null,
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 125,
+          "title": "Updated: app to prepare for a patch release",
+          "url": "https://github.com/hotwax/import/pull/125",
+          "state": "Merged",
+          "created_at": "2022-12-30",
+          "merged_at": "2022-12-30",
+          "repo": "import"
+        },
+        {
+          "number": 124,
+          "title": "Support for multiple PO's(#85zrh08cn)",
+          "url": "https://github.com/hotwax/import/pull/124",
+          "state": "Merged",
+          "created_at": "2022-12-29",
+          "merged_at": "2023-01-18",
+          "repo": "import"
+        },
+        {
+          "number": 120,
+          "title": "Implemented static UI for PO review page(#85zrgy1rw)",
+          "url": "https://github.com/hotwax/import/pull/120",
+          "state": "Merged",
+          "created_at": "2022-12-28",
+          "merged_at": "2023-01-06",
+          "repo": "import"
+        },
+        {
+          "number": 115,
+          "title": "Fixed: Cursor should change to pointer for drop down action menu for records(#85zrgxywt)",
+          "url": "https://github.com/hotwax/import/pull/115",
+          "state": "Merged",
+          "created_at": "2022-12-27",
+          "merged_at": "2022-12-30",
+          "repo": "import"
+        },
+        {
+          "number": 308,
+          "title": "Preparing for release 1.3.0",
+          "url": "https://github.com/hotwax/job-manager/pull/308",
+          "state": "Merged",
+          "created_at": "2022-12-02",
+          "merged_at": "2022-12-02",
+          "repo": "job-manager"
+        },
+        {
+          "number": 122,
+          "title": "Preparing for release 1.1.0",
+          "url": "https://github.com/hotwax/inventory-count/pull/122",
+          "state": "Merged",
+          "created_at": "2022-12-02",
+          "merged_at": "2022-12-02",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 146,
+          "title": "Preparing for release 1.1.0",
+          "url": "https://github.com/hotwax/available-to-promise/pull/146",
+          "state": "Merged",
+          "created_at": "2022-12-02",
+          "merged_at": "2022-12-02",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 1,
+          "title": "Added basic styles(#31nm26y)",
+          "url": "https://github.com/hotwax/hotwax-apps-theme/pull/1",
+          "state": "Merged",
+          "created_at": "2022-12-02",
+          "merged_at": "2023-01-06",
+          "repo": "hotwax-apps-theme"
+        },
+        {
+          "number": 106,
+          "title": "Implemented feature to import CSV to reset Inventory(#31a0f22)",
+          "url": "https://github.com/hotwax/import/pull/106",
+          "state": "Merged",
+          "created_at": "2022-11-28",
+          "merged_at": "2023-02-15",
+          "repo": "import"
+        },
+        {
+          "number": 105,
+          "title": "POC: Used npm package for global styles(#31nm26y)",
+          "url": "https://github.com/hotwax/import/pull/105",
+          "state": "Closed",
+          "created_at": "2022-11-25",
+          "merged_at": null,
+          "repo": "import"
+        },
+        {
+          "number": 95,
+          "title": "Fixed: alert not displayed after first upload(#30rz7pt)",
+          "url": "https://github.com/hotwax/import/pull/95",
+          "state": "Merged",
+          "created_at": "2022-11-18",
+          "merged_at": "2022-11-18",
+          "repo": "import"
+        },
+        {
+          "number": 94,
+          "title": "Fixed: alert displaying on PO upload(#30rz7pt)",
+          "url": "https://github.com/hotwax/import/pull/94",
+          "state": "Merged",
+          "created_at": "2022-11-16",
+          "merged_at": "2022-11-18",
+          "repo": "import"
+        },
+        {
+          "number": 43,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/43",
+          "state": "Closed",
+          "created_at": "2022-11-16",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 76,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/fulfillment/pull/76",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 142,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/142",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 178,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/178",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 88,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/picking/pull/88",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "picking"
+        },
+        {
+          "number": 119,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/inventory-count/pull/119",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 90,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/preorder/pull/90",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "preorder"
+        },
+        {
+          "number": 149,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/bopis/pull/149",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "bopis"
+        },
+        {
+          "number": 91,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/import/pull/91",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-14",
+          "repo": "import"
+        },
+        {
+          "number": 280,
+          "title": "Added support to alias specific instance URL with environment configuration(#30dkjp1)",
+          "url": "https://github.com/hotwax/job-manager/pull/280",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "job-manager"
+        },
+        {
+          "number": 41,
+          "title": "Upgraded ionic to 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/41",
+          "state": "Merged",
+          "created_at": "2022-11-14",
+          "merged_at": "2022-11-18",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 74,
+          "title": "Upgraded to ionic 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/fulfillment/pull/74",
+          "state": "Merged",
+          "created_at": "2022-11-09",
+          "merged_at": "2022-11-21",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 176,
+          "title": "Upgraded to ionic 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/176",
+          "state": "Merged",
+          "created_at": "2022-11-09",
+          "merged_at": "2022-11-24",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 140,
+          "title": "Upgraded to ionic 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/140",
+          "state": "Merged",
+          "created_at": "2022-11-09",
+          "merged_at": "2022-11-24",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 116,
+          "title": "Upgraded ionic to 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/inventory-count/pull/116",
+          "state": "Merged",
+          "created_at": "2022-11-09",
+          "merged_at": "2022-11-24",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 147,
+          "title": "Upgraded to Ionic 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/bopis/pull/147",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-21",
+          "repo": "bopis"
+        },
+        {
+          "number": 164,
+          "title": "Upgraded Ionic to 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/receiving/pull/164",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-24",
+          "repo": "receiving"
+        },
+        {
+          "number": 77,
+          "title": "Upgraded ionic to 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/dxp-components/pull/77",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-24",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 88,
+          "title": "Upgraded to ionic 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/preorder/pull/88",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-24",
+          "repo": "preorder"
+        },
+        {
+          "number": 273,
+          "title": "Upgraded Ionic to 6.2(#2w9wz26)",
+          "url": "https://github.com/hotwax/job-manager/pull/273",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-09",
+          "repo": "job-manager"
+        },
+        {
+          "number": 89,
+          "title": "Upgraded Ionic to 6.2(#2zb17hz)",
+          "url": "https://github.com/hotwax/import/pull/89",
+          "state": "Merged",
+          "created_at": "2022-11-08",
+          "merged_at": "2022-11-09",
+          "repo": "import"
+        },
+        {
+          "number": 88,
+          "title": "Implemented logic to display an alert before route change(#2ymay5f)",
+          "url": "https://github.com/hotwax/import/pull/88",
+          "state": "Merged",
+          "created_at": "2022-11-02",
+          "merged_at": "2022-11-14",
+          "repo": "import"
+        },
+        {
+          "number": 86,
+          "title": "Fixed: Reseting reverts to wrong info(#2yma5bp)",
+          "url": "https://github.com/hotwax/import/pull/86",
+          "state": "Merged",
+          "created_at": "2022-11-01",
+          "merged_at": "2022-11-03",
+          "repo": "import"
+        },
+        {
+          "number": 84,
+          "title": "Implemented logic for storing and applying multiple field mappings(#2hran7u)",
+          "url": "https://github.com/hotwax/import/pull/84",
+          "state": "Merged",
+          "created_at": "2022-11-01",
+          "merged_at": "2022-11-22",
+          "repo": "import"
+        },
+        {
+          "number": 80,
+          "title": "Fixed: Viewing upload logs should open in a new tab",
+          "url": "https://github.com/hotwax/import/pull/80",
+          "state": "Merged",
+          "created_at": "2022-10-31",
+          "merged_at": "2022-11-01",
+          "repo": "import"
+        },
+        {
+          "number": 147,
+          "title": "Added support to alias specific instance URL with environment configuration(#2wv2fh0)",
+          "url": "https://github.com/hotwax/receiving/pull/147",
+          "state": "Merged",
+          "created_at": "2022-10-12",
+          "merged_at": "2022-10-13",
+          "repo": "receiving"
+        },
+        {
+          "number": 39,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/39",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 64,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/dxp-components/pull/64",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 134,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/134",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 140,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/bopis/pull/140",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "bopis"
+        },
+        {
+          "number": 172,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/172",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 248,
+          "title": "Upgraded version of ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/job-manager/pull/248",
+          "state": "Merged",
+          "created_at": "2022-10-10",
+          "merged_at": "2022-10-12",
+          "repo": "job-manager"
+        },
+        {
+          "number": 102,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/inventory-count/pull/102",
+          "state": "Merged",
+          "created_at": "2022-10-06",
+          "merged_at": "2022-10-12",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 79,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/preorder/pull/79",
+          "state": "Merged",
+          "created_at": "2022-10-06",
+          "merged_at": "2022-10-12",
+          "repo": "preorder"
+        },
+        {
+          "number": 63,
+          "title": "Upgraded ionic to 6.1.15(#2uaz29u)",
+          "url": "https://github.com/hotwax/import/pull/63",
+          "state": "Merged",
+          "created_at": "2022-10-06",
+          "merged_at": "2022-10-07",
+          "repo": "import"
+        },
+        {
+          "number": 2,
+          "title": "Implemented static UI for Order routing rules(#2vjxcrj)",
+          "url": "https://github.com/hotwax/order-routing/pull/2",
+          "state": "Merged",
+          "created_at": "2022-10-03",
+          "merged_at": "2022-11-01",
+          "repo": "order-routing"
+        },
+        {
+          "number": 1,
+          "title": "Added ionic SDK content(#2vjxcqb)",
+          "url": "https://github.com/hotwax/order-routing/pull/1",
+          "state": "Merged",
+          "created_at": "2022-09-29",
+          "merged_at": "2022-10-07",
+          "repo": "order-routing"
+        },
+        {
+          "number": 244,
+          "title": "Implemented static UI for bulk editors page(#2vjxd96)",
+          "url": "https://github.com/hotwax/job-manager/pull/244",
+          "state": "Merged",
+          "created_at": "2022-09-28",
+          "merged_at": "2022-10-04",
+          "repo": "job-manager"
+        },
+        {
+          "number": 62,
+          "title": "Fixed: Product not added in PO if sku not found in csv(#2vjxfcn)",
+          "url": "https://github.com/hotwax/import/pull/62",
+          "state": "Closed",
+          "created_at": "2022-09-27",
+          "merged_at": null,
+          "repo": "import"
+        },
+        {
+          "number": 139,
+          "title": "Updated query for searching PO and fixed default facility location not set on item in case PO history does not exists",
+          "url": "https://github.com/hotwax/receiving/pull/139",
+          "state": "Merged",
+          "created_at": "2022-09-27",
+          "merged_at": "2022-10-03",
+          "repo": "receiving"
+        },
+        {
+          "number": 243,
+          "title": "Added shop selector to menu footer(#2a7ymj3)",
+          "url": "https://github.com/hotwax/job-manager/pull/243",
+          "state": "Merged",
+          "created_at": "2022-09-27",
+          "merged_at": "2022-12-06",
+          "repo": "job-manager"
+        },
+        {
+          "number": 128,
+          "title": "Added: support to set current location from PO details, shipment details page and return page (#238pmgz)",
+          "url": "https://github.com/hotwax/receiving/pull/128",
+          "state": "Merged",
+          "created_at": "2022-09-21",
+          "merged_at": "2022-09-27",
+          "repo": "receiving"
+        },
+        {
+          "number": 126,
+          "title": "Implemented search functionality on shipments page(#2v1npkr)",
+          "url": "https://github.com/hotwax/receiving/pull/126",
+          "state": "Merged",
+          "created_at": "2022-09-21",
+          "merged_at": "2022-09-21",
+          "repo": "receiving"
+        },
+        {
+          "number": 60,
+          "title": "Added support to configure date time format from settings page and updated UI of settings page(#2t2y3qq)",
+          "url": "https://github.com/hotwax/import/pull/60",
+          "state": "Merged",
+          "created_at": "2022-09-14",
+          "merged_at": "2022-11-15",
+          "repo": "import"
+        },
+        {
+          "number": 59,
+          "title": "Fixed: error in console when having empty field value for buffer days(#2r0myjj)",
+          "url": "https://github.com/hotwax/import/pull/59",
+          "state": "Merged",
+          "created_at": "2022-09-12",
+          "merged_at": "2022-09-14",
+          "repo": "import"
+        },
+        {
+          "number": 122,
+          "title": "Fixed: Incorrect information being displayed on PO details page(#2te5khn)",
+          "url": "https://github.com/hotwax/receiving/pull/122",
+          "state": "Merged",
+          "created_at": "2022-09-12",
+          "merged_at": "2022-09-20",
+          "repo": "receiving"
+        },
+        {
+          "number": 238,
+          "title": "Fixed: error in console due to empty shopify configuration on logout(#2tky1f3)",
+          "url": "https://github.com/hotwax/job-manager/pull/238",
+          "state": "Merged",
+          "created_at": "2022-09-09",
+          "merged_at": "2022-09-09",
+          "repo": "job-manager"
+        },
+        {
+          "number": 234,
+          "title": "Updated logic to fetch shopify config using fallback api for backward compatibility(#2r65b1c)",
+          "url": "https://github.com/hotwax/job-manager/pull/234",
+          "state": "Merged",
+          "created_at": "2022-09-05",
+          "merged_at": "2022-09-06",
+          "repo": "job-manager"
+        },
+        {
+          "number": 132,
+          "title": "Upgraded to ionic 6(#1wn39h6)",
+          "url": "https://github.com/hotwax/bopis/pull/132",
+          "state": "Merged",
+          "created_at": "2022-09-02",
+          "merged_at": "2022-09-02",
+          "repo": "bopis"
+        },
+        {
+          "number": 133,
+          "title": "Jobs are not refreshed when changing a job from the pipeline page(#2a7yg9j)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/133",
+          "state": "Closed",
+          "created_at": "2022-09-01",
+          "merged_at": null,
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 70,
+          "title": "Migrated from moment to luxon(#2dewerv)",
+          "url": "https://github.com/hotwax/fulfillment/pull/70",
+          "state": "Closed",
+          "created_at": "2022-08-30",
+          "merged_at": null,
+          "repo": "fulfillment"
+        },
+        {
+          "number": 61,
+          "title": "Updated: Used the correct dateTime format as per luxon(#1vy5ryh)",
+          "url": "https://github.com/hotwax/dxp-components/pull/61",
+          "state": "Closed",
+          "created_at": "2022-08-30",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 76,
+          "title": "Updated: pull request build check(#20k1511)",
+          "url": "https://github.com/hotwax/preorder/pull/76",
+          "state": "Merged",
+          "created_at": "2022-08-30",
+          "merged_at": "2022-08-30",
+          "repo": "preorder"
+        },
+        {
+          "number": 96,
+          "title": "User should be directly able to navigate to product detail page(#1yzcv99)",
+          "url": "https://github.com/hotwax/inventory-count/pull/96",
+          "state": "Merged",
+          "created_at": "2022-08-26",
+          "merged_at": "2022-08-26",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 228,
+          "title": "Jobs should be fetched and scheduled based upon the selected Shop(#2r65b1c)",
+          "url": "https://github.com/hotwax/job-manager/pull/228",
+          "state": "Merged",
+          "created_at": "2022-08-23",
+          "merged_at": "2022-09-01",
+          "repo": "job-manager"
+        },
+        {
+          "number": 227,
+          "title": "Fixed: job status not updated when api call fails(#2ftchbp)",
+          "url": "https://github.com/hotwax/job-manager/pull/227",
+          "state": "Closed",
+          "created_at": "2022-08-22",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 226,
+          "title": "Fixed: code to get 'eComStores' in 'getProfile' action instead of calling 'getEcomStores' action(#257v6ck)",
+          "url": "https://github.com/hotwax/job-manager/pull/226",
+          "state": "Merged",
+          "created_at": "2022-08-22",
+          "merged_at": "2022-08-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 225,
+          "title": "Improved: runTime set to start of the next day for 'EVERYDAY' frequency(#2ftb2vw)",
+          "url": "https://github.com/hotwax/job-manager/pull/225",
+          "state": "Merged",
+          "created_at": "2022-08-22",
+          "merged_at": "2022-08-26",
+          "repo": "job-manager"
+        },
+        {
+          "number": 220,
+          "title": "Added shopify config info at menu footer(#2q9mut9)",
+          "url": "https://github.com/hotwax/job-manager/pull/220",
+          "state": "Merged",
+          "created_at": "2022-08-17",
+          "merged_at": "2022-09-01",
+          "repo": "job-manager"
+        },
+        {
+          "number": 129,
+          "title": "Fixed: Service fails when scheduled without facilityId(#2pjpbek)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/129",
+          "state": "Merged",
+          "created_at": "2022-08-17",
+          "merged_at": "2022-08-18",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 218,
+          "title": "Implemented functionality to save auto cancel days(#2cxr1cx)",
+          "url": "https://github.com/hotwax/job-manager/pull/218",
+          "state": "Merged",
+          "created_at": "2022-08-16",
+          "merged_at": "2022-08-19",
+          "repo": "job-manager"
+        },
+        {
+          "number": 217,
+          "title": "Implemented: Add option to select shopify config from settings page(#2q9mut9)",
+          "url": "https://github.com/hotwax/job-manager/pull/217",
+          "state": "Merged",
+          "created_at": "2022-08-16",
+          "merged_at": "2022-08-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 216,
+          "title": "Implemented: Add additional job actions to job config component(#364tt29)",
+          "url": "https://github.com/hotwax/job-manager/pull/216",
+          "state": "Merged",
+          "created_at": "2022-08-16",
+          "merged_at": "2022-08-26",
+          "repo": "job-manager"
+        },
+        {
+          "number": 114,
+          "title": "Used performFind API for fetching shipments(#2p75u56)",
+          "url": "https://github.com/hotwax/receiving/pull/114",
+          "state": "Merged",
+          "created_at": "2022-08-10",
+          "merged_at": "2022-09-02",
+          "repo": "receiving"
+        },
+        {
+          "number": 17,
+          "title": "Fixed: Browser back button should not navigate to Login page after login(#2p7b92p)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/17",
+          "state": "Merged",
+          "created_at": "2022-08-10",
+          "merged_at": "2022-08-10",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 16,
+          "title": "Fixed: Error when fetching draft order after login(#2p773w5)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/16",
+          "state": "Merged",
+          "created_at": "2022-08-08",
+          "merged_at": "2022-08-09",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 15,
+          "title": "Fixed error handling when update draft order fails(#2p1eqhp)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/15",
+          "state": "Merged",
+          "created_at": "2022-08-05",
+          "merged_at": "2022-08-09",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 14,
+          "title": "Renamed line item property from Pickup Store to Store Pickup(#2nvxwh1)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/14",
+          "state": "Merged",
+          "created_at": "2022-08-04",
+          "merged_at": "2022-08-05",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 122,
+          "title": "Fixed: Implemented code to remove threshold rule through mutation(#2ngcqdd)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/122",
+          "state": "Merged",
+          "created_at": "2022-08-02",
+          "merged_at": "2022-08-03",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 121,
+          "title": "Fixed: warning icon should only be displayed if job id is paaed in route(#2ngcqdd)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/121",
+          "state": "Merged",
+          "created_at": "2022-08-02",
+          "merged_at": "2022-08-02",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 120,
+          "title": "Fixed: threshold rules not updated in state(#2ngcqdd)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/120",
+          "state": "Merged",
+          "created_at": "2022-08-02",
+          "merged_at": "2022-08-02",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 119,
+          "title": "Implemented functionality to update threshold rule from threshold update page(#2ngcqdd)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/119",
+          "state": "Merged",
+          "created_at": "2022-08-01",
+          "merged_at": "2022-08-02",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 117,
+          "title": "Implemented logic to apply threshold rule in threshold management page if jobId is passed in route parameter(#2mky6cn)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/117",
+          "state": "Merged",
+          "created_at": "2022-07-27",
+          "merged_at": "2022-08-01",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 12,
+          "title": "Updated redirect url after order update(#2mku11x)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/12",
+          "state": "Merged",
+          "created_at": "2022-07-26",
+          "merged_at": "2022-07-26",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 11,
+          "title": "Removed back button and updated code to access api key(#2mku11x)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/11",
+          "state": "Merged",
+          "created_at": "2022-07-26",
+          "merged_at": "2022-07-26",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 10,
+          "title": "Added comments and updated code to redirect to admin dashboard(#2mku11x)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/10",
+          "state": "Merged",
+          "created_at": "2022-07-26",
+          "merged_at": "2022-07-26",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 9,
+          "title": "Fixed: code to logout when token expires and shop changes. Stored route params in state(#2mku11x)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/9",
+          "state": "Merged",
+          "created_at": "2022-07-26",
+          "merged_at": "2022-07-26",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 8,
+          "title": "Fixed: code to display the correct estimated delivery date and Pre order/Back order radio buttons not working(#2me4rbb)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/8",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-26",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 7,
+          "title": "Updated isPreorderBackorderItem method(#2me4rbb)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/7",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-25",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 6,
+          "title": "Fixed: Used the correct label for getting estimated delivery date(#2me4rbb)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/6",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-25",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 5,
+          "title": "Fixed: Store name is not added in address(#2me4rbb)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/5",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-25",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 4,
+          "title": "Fixed: code to login only when getting stores(#2me4rbb)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/4",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-25",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 3,
+          "title": "Fixed: getShopifyDraftOrder method(#2k070cx)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/3",
+          "state": "Merged",
+          "created_at": "2022-07-25",
+          "merged_at": "2022-07-25",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 54,
+          "title": "Revert: Apply token encryption changes",
+          "url": "https://github.com/hotwax/import/pull/54",
+          "state": "Merged",
+          "created_at": "2022-07-19",
+          "merged_at": "2022-07-21",
+          "repo": "import"
+        },
+        {
+          "number": 58,
+          "title": "Revert: Apply token encryption changes",
+          "url": "https://github.com/hotwax/dxp-components/pull/58",
+          "state": "Merged",
+          "created_at": "2022-07-19",
+          "merged_at": "2022-07-21",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 113,
+          "title": "fixed: ShopifyConfig id is undefined when making api call while scheduling the job(#2kbpaux)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/113",
+          "state": "Merged",
+          "created_at": "2022-07-19",
+          "merged_at": "2022-07-22",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 199,
+          "title": "Updated: code to fetch shopifyConfigId corresponding to product store(#2kbnqzb)",
+          "url": "https://github.com/hotwax/job-manager/pull/199",
+          "state": "Merged",
+          "created_at": "2022-07-18",
+          "merged_at": "2022-07-19",
+          "repo": "job-manager"
+        },
+        {
+          "number": 53,
+          "title": "fix: Popover option on a searched product are not working correctly(#2k06eqx)",
+          "url": "https://github.com/hotwax/import/pull/53",
+          "state": "Merged",
+          "created_at": "2022-07-18",
+          "merged_at": "2022-10-17",
+          "repo": "import"
+        },
+        {
+          "number": 51,
+          "title": "fix: Deselecting a single product from a group, deselects all variants(#2kbkwnr)",
+          "url": "https://github.com/hotwax/import/pull/51",
+          "state": "Merged",
+          "created_at": "2022-07-18",
+          "merged_at": "2022-11-02",
+          "repo": "import"
+        },
+        {
+          "number": 49,
+          "title": "Implemented logic to close popover after selecting option(#24wcdrw)",
+          "url": "https://github.com/hotwax/import/pull/49",
+          "state": "Merged",
+          "created_at": "2022-07-18",
+          "merged_at": "2022-07-19",
+          "repo": "import"
+        },
+        {
+          "number": 110,
+          "title": "Updated the code so that search works on orderId and externalOrderId(#2k5zwr1)",
+          "url": "https://github.com/hotwax/receiving/pull/110",
+          "state": "Merged",
+          "created_at": "2022-07-15",
+          "merged_at": "2022-07-15",
+          "repo": "receiving"
+        },
+        {
+          "number": 2,
+          "title": "Added initial code(#2k5yk2b)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/2",
+          "state": "Merged",
+          "created_at": "2022-07-15",
+          "merged_at": "2022-07-15",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 1,
+          "title": "Implemented logic to add line item properties from shopify admin dashboard(#2k070cx)",
+          "url": "https://github.com/hotwax/shopify-admin-helper/pull/1",
+          "state": "Merged",
+          "created_at": "2022-07-13",
+          "merged_at": "2022-07-22",
+          "repo": "shopify-admin-helper"
+        },
+        {
+          "number": 23,
+          "title": "Implemented logic to mark a draft order store pickup(#2jufc9g)",
+          "url": "https://github.com/hotwax/shopify-bopis/pull/23",
+          "state": "Closed",
+          "created_at": "2022-07-11",
+          "merged_at": null,
+          "repo": "shopify-bopis"
+        },
+        {
+          "number": 22,
+          "title": "Implemented static UI for order detail page(#2jufbyp)",
+          "url": "https://github.com/hotwax/shopify-bopis/pull/22",
+          "state": "Closed",
+          "created_at": "2022-07-11",
+          "merged_at": null,
+          "repo": "shopify-bopis"
+        },
+        {
+          "number": 21,
+          "title": "Implemented login flow(#2jueprc)",
+          "url": "https://github.com/hotwax/shopify-bopis/pull/21",
+          "state": "Closed",
+          "created_at": "2022-07-11",
+          "merged_at": null,
+          "repo": "shopify-bopis"
+        },
+        {
+          "number": 46,
+          "title": "Implemented code to store field mappings as user preference(#2hran7u)",
+          "url": "https://github.com/hotwax/import/pull/46",
+          "state": "Closed",
+          "created_at": "2022-07-08",
+          "merged_at": null,
+          "repo": "import"
+        },
+        {
+          "number": 67,
+          "title": "Migrated from moment to luxon(#25k8h53)",
+          "url": "https://github.com/hotwax/preorder/pull/67",
+          "state": "Closed",
+          "created_at": "2022-07-07",
+          "merged_at": null,
+          "repo": "preorder"
+        },
+        {
+          "number": 61,
+          "title": "Added support to change timezone and migrated from moment to luxon(#25k8h53)",
+          "url": "https://github.com/hotwax/picking/pull/61",
+          "state": "Closed",
+          "created_at": "2022-07-06",
+          "merged_at": null,
+          "repo": "picking"
+        },
+        {
+          "number": 39,
+          "title": "Updated: UI for order detail page(#2h73ca1)",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/39",
+          "state": "Closed",
+          "created_at": "2022-07-06",
+          "merged_at": null,
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 90,
+          "title": "Added support to change timezone and migrated from moment to luxon(#25k8h53)",
+          "url": "https://github.com/hotwax/inventory-count/pull/90",
+          "state": "Merged",
+          "created_at": "2022-07-06",
+          "merged_at": "2023-01-30",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 168,
+          "title": "Added timezone support and migrated from moment to luxon(#25k8h53)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/168",
+          "state": "Closed",
+          "created_at": "2022-07-06",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 105,
+          "title": "Added: support to set current location from PO details and shipment details page (#238pmgz)",
+          "url": "https://github.com/hotwax/receiving/pull/105",
+          "state": "Merged",
+          "created_at": "2022-07-05",
+          "merged_at": "2022-09-27",
+          "repo": "receiving"
+        },
+        {
+          "number": 118,
+          "title": "Added user preference for packing slip document(#1x692wg)",
+          "url": "https://github.com/hotwax/bopis/pull/118",
+          "state": "Merged",
+          "created_at": "2022-07-04",
+          "merged_at": "2022-07-05",
+          "repo": "bopis"
+        },
+        {
+          "number": 38,
+          "title": "Implemented: code to fetch and update draft order(#2fz56t8)",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/38",
+          "state": "Closed",
+          "created_at": "2022-06-29",
+          "merged_at": null,
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 37,
+          "title": "Updated: the script to identify the cart form using class and iterated over all the forms present(#22hrqff) ",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/37",
+          "state": "Merged",
+          "created_at": "2022-06-28",
+          "merged_at": "2022-06-28",
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 36,
+          "title": "Implemented static UI for order detail page",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/36",
+          "state": "Closed",
+          "created_at": "2022-06-28",
+          "merged_at": null,
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 35,
+          "title": "Added: check for the inventory availability on the shopify(#22hrqff)",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/35",
+          "state": "Merged",
+          "created_at": "2022-06-28",
+          "merged_at": "2022-06-28",
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 34,
+          "title": "Implemented login flow(#2h198uc)",
+          "url": "https://github.com/hotwax/shopify-preorder-app/pull/34",
+          "state": "Merged",
+          "created_at": "2022-06-28",
+          "merged_at": "2022-07-01",
+          "repo": "shopify-preorder-app"
+        },
+        {
+          "number": 107,
+          "title": "Implemented: Add time zone support and migrated from moment to luxon(#25k8h53)",
+          "url": "https://github.com/hotwax/bopis/pull/107",
+          "state": "Closed",
+          "created_at": "2022-06-27",
+          "merged_at": null,
+          "repo": "bopis"
+        },
+        {
+          "number": 103,
+          "title": "Implemented: code to get and set user preference (#2g4w5hz)",
+          "url": "https://github.com/hotwax/bopis/pull/103",
+          "state": "Merged",
+          "created_at": "2022-06-27",
+          "merged_at": "2022-06-27",
+          "repo": "bopis"
+        },
+        {
+          "number": 98,
+          "title": "Implemented: code to get and set user preference(#2g4w5hz)",
+          "url": "https://github.com/hotwax/bopis/pull/98",
+          "state": "Merged",
+          "created_at": "2022-06-24",
+          "merged_at": "2022-06-27",
+          "repo": "bopis"
+        },
+        {
+          "number": 97,
+          "title": "Improved: code to use solr query for fetching packed orders and implemented search functionality(#2gg3yeb)",
+          "url": "https://github.com/hotwax/bopis/pull/97",
+          "state": "Merged",
+          "created_at": "2022-06-23",
+          "merged_at": "2022-06-27",
+          "repo": "bopis"
+        },
+        {
+          "number": 161,
+          "title": "Updated and internationalized cancel job and skip job toast strings(#2d92am7)",
+          "url": "https://github.com/hotwax/job-manager/pull/161",
+          "state": "Merged",
+          "created_at": "2022-05-23",
+          "merged_at": "2022-05-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 160,
+          "title": "Updated and internationalized update job toast string(#2d92am7)",
+          "url": "https://github.com/hotwax/job-manager/pull/160",
+          "state": "Merged",
+          "created_at": "2022-05-23",
+          "merged_at": "2022-05-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 147,
+          "title": "[WIP]Implemented logic to use Job type for setting and displaying Job information(#2cja6pv)",
+          "url": "https://github.com/hotwax/job-manager/pull/147",
+          "state": "Closed",
+          "created_at": "2022-05-16",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 143,
+          "title": "Added types for storing job information(#24b1ket)",
+          "url": "https://github.com/hotwax/job-manager/pull/143",
+          "state": "Closed",
+          "created_at": "2022-05-16",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 142,
+          "title": "Removed: lastUpdatedStamp from jobConfiguration component and initialLoad page and Updated en.json file",
+          "url": "https://github.com/hotwax/job-manager/pull/142",
+          "state": "Merged",
+          "created_at": "2022-05-16",
+          "merged_at": "2022-05-16",
+          "repo": "job-manager"
+        },
+        {
+          "number": 41,
+          "title": "Updated the code to use hc facilityId when applying facility on PO details page(#2admaej)",
+          "url": "https://github.com/hotwax/import/pull/41",
+          "state": "Merged",
+          "created_at": "2022-05-16",
+          "merged_at": "2022-07-15",
+          "repo": "import"
+        },
+        {
+          "number": 40,
+          "title": "Implemented logic to clear order state and uploaded data on logout(#2admadb)",
+          "url": "https://github.com/hotwax/import/pull/40",
+          "state": "Merged",
+          "created_at": "2022-05-11",
+          "merged_at": "2022-07-18",
+          "repo": "import"
+        },
+        {
+          "number": 39,
+          "title": "Fixed: facilities not updated on login & logout(#2adma3f)",
+          "url": "https://github.com/hotwax/import/pull/39",
+          "state": "Merged",
+          "created_at": "2022-05-11",
+          "merged_at": "2022-05-16",
+          "repo": "import"
+        },
+        {
+          "number": 78,
+          "title": "Updated the code to search aside element in threshold updates page instead of whole document(#1ye5xcw)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/78",
+          "state": "Merged",
+          "created_at": "2022-05-11",
+          "merged_at": "2022-05-19",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 37,
+          "title": "Added interface popover to close it after field select(#2adm9yq)",
+          "url": "https://github.com/hotwax/import/pull/37",
+          "state": "Merged",
+          "created_at": "2022-05-11",
+          "merged_at": "2022-05-16",
+          "repo": "import"
+        },
+        {
+          "number": 76,
+          "title": "Fixed: animation not working on initial load on thresholdUpdates page(#1ye5xcw)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/76",
+          "state": "Merged",
+          "created_at": "2022-05-11",
+          "merged_at": "2022-05-11",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 130,
+          "title": "Removed unwanted action for clearing pending jobs(#2a23fur)",
+          "url": "https://github.com/hotwax/job-manager/pull/130",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "job-manager"
+        },
+        {
+          "number": 55,
+          "title": "Removed unwanted action for clearing pending jobs(#2a23fur)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/55",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 54,
+          "title": "Fixed: Job list is not fetched on initial page load(#2a233bk)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/54",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 53,
+          "title": "Updated the code to reset threshold value and keyword text on page leave(#2a236fw)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/53",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 48,
+          "title": "Fixed: search keyword is not cleared when filters are applied(#29wgvxk)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/48",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-09",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 47,
+          "title": "Fixed: Product list not updating on login and logout(#29wgthu)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/47",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 46,
+          "title": "Updated the code to display color and size only if available(#29wgtvt)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/46",
+          "state": "Merged",
+          "created_at": "2022-05-06",
+          "merged_at": "2022-05-06",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 39,
+          "title": "Updated selectProduct page UI(#29pux36)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/39",
+          "state": "Merged",
+          "created_at": "2022-05-04",
+          "merged_at": "2022-05-05",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 38,
+          "title": "Implemented logic to make selectProduct page functional(#29pt6c6)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/38",
+          "state": "Merged",
+          "created_at": "2022-05-04",
+          "merged_at": "2022-05-05",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 125,
+          "title": "Improved: code to add support to fetch jobs based on 'None' option this should only show jobs which are not associated with any shop (#28mcgq3).",
+          "url": "https://github.com/hotwax/job-manager/pull/125",
+          "state": "Closed",
+          "created_at": "2022-05-02",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 35,
+          "title": "Implemented logic to make threshold updates page functional(#295eve6)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/35",
+          "state": "Merged",
+          "created_at": "2022-04-29",
+          "merged_at": "2022-05-04",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 123,
+          "title": "Updated DateTime code for job history modal and history segment(#2894bh1)",
+          "url": "https://github.com/hotwax/job-manager/pull/123",
+          "state": "Merged",
+          "created_at": "2022-04-29",
+          "merged_at": "2022-04-29",
+          "repo": "job-manager"
+        },
+        {
+          "number": 33,
+          "title": "Implemented search functionality on select product page(#28zvkef)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/33",
+          "state": "Closed",
+          "created_at": "2022-04-27",
+          "merged_at": null,
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 30,
+          "title": "Implemented logic to fetch products and render the data on selectProduct page(#28zu62r)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/30",
+          "state": "Closed",
+          "created_at": "2022-04-27",
+          "merged_at": null,
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 120,
+          "title": "Displayed store name at the bottom of the menu(#28mf5yu)",
+          "url": "https://github.com/hotwax/job-manager/pull/120",
+          "state": "Closed",
+          "created_at": "2022-04-27",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 113,
+          "title": "Displayed shop information at the bottom of the menu(#28mf5yu)",
+          "url": "https://github.com/hotwax/job-manager/pull/113",
+          "state": "Merged",
+          "created_at": "2022-04-25",
+          "merged_at": "2022-04-27",
+          "repo": "job-manager"
+        },
+        {
+          "number": 112,
+          "title": "Implemented functionality to change route when on the mobile view to display the job configuration component(#24b1ket)",
+          "url": "https://github.com/hotwax/job-manager/pull/112",
+          "state": "Merged",
+          "created_at": "2022-04-25",
+          "merged_at": "2022-05-20",
+          "repo": "job-manager"
+        },
+        {
+          "number": 156,
+          "title": "Make data dynamic for the users on the settings page(#2893jhg)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/156",
+          "state": "Closed",
+          "created_at": "2022-04-25",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 151,
+          "title": "Created pre build queries for home page dashboard(#1x695h8-updated)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/151",
+          "state": "Merged",
+          "created_at": "2022-04-22",
+          "merged_at": "2022-05-02",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 136,
+          "title": "Displayed order and items count on find order page and virtual and variant count on the product inventory page(#2838bb1)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/136",
+          "state": "Merged",
+          "created_at": "2022-04-20",
+          "merged_at": "2022-05-02",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 134,
+          "title": "Implemented logic to fetch customer address and shipping address and display on order detail page(#27qwrtg)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/134",
+          "state": "Closed",
+          "created_at": "2022-04-20",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 104,
+          "title": "Implemented logic to fetch facility details and make the facility data dynamic on the details page(#27j0311)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/104",
+          "state": "Closed",
+          "created_at": "2022-04-15",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 92,
+          "title": "Created pre build queries for home page dashboard(#1x695h8)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/92",
+          "state": "Closed",
+          "created_at": "2022-04-06",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 75,
+          "title": "Implemented logic to store draft jobs on login and clear on logout(#24gtw1w)",
+          "url": "https://github.com/hotwax/job-manager/pull/75",
+          "state": "Closed",
+          "created_at": "2022-04-01",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 72,
+          "title": "Implemented logic to handle date time with user's selected timezone(#24wbwt2)",
+          "url": "https://github.com/hotwax/job-manager/pull/72",
+          "state": "Closed",
+          "created_at": "2022-04-01",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 64,
+          "title": "Fix: error of infinite scroll when there are no records(#24w686f)",
+          "url": "https://github.com/hotwax/job-manager/pull/64",
+          "state": "Merged",
+          "created_at": "2022-03-30",
+          "merged_at": "2022-03-31",
+          "repo": "job-manager"
+        },
+        {
+          "number": 63,
+          "title": "Displayed enum name instead of Job Name and Enum description on pipeline page(#24w5y8a)",
+          "url": "https://github.com/hotwax/job-manager/pull/63",
+          "state": "Merged",
+          "created_at": "2022-03-30",
+          "merged_at": "2022-03-30",
+          "repo": "job-manager"
+        },
+        {
+          "number": 28,
+          "title": "Updated the code to make date format configurable through env file(#24gtujf)",
+          "url": "https://github.com/hotwax/import/pull/28",
+          "state": "Merged",
+          "created_at": "2022-03-30",
+          "merged_at": "2022-03-31",
+          "repo": "import"
+        },
+        {
+          "number": 27,
+          "title": "Block user navigating to details page if no records after review action(#24pp0fm)",
+          "url": "https://github.com/hotwax/import/pull/27",
+          "state": "Merged",
+          "created_at": "2022-03-30",
+          "merged_at": "2022-11-21",
+          "repo": "import"
+        },
+        {
+          "number": 25,
+          "title": "Implemented logic to handle case when the product sku is not present on server(#245fb8k)",
+          "url": "https://github.com/hotwax/import/pull/25",
+          "state": "Merged",
+          "created_at": "2022-03-30",
+          "merged_at": "2022-03-31",
+          "repo": "import"
+        },
+        {
+          "number": 62,
+          "title": "Implemented logic to show  alert when there are changes in the detail component(#245eu5u)",
+          "url": "https://github.com/hotwax/job-manager/pull/62",
+          "state": "Closed",
+          "created_at": "2022-03-30",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 59,
+          "title": "Added support to select timezone(#245b1ce)",
+          "url": "https://github.com/hotwax/job-manager/pull/59",
+          "state": "Merged",
+          "created_at": "2022-03-28",
+          "merged_at": "2022-03-31",
+          "repo": "job-manager"
+        },
+        {
+          "number": 45,
+          "title": "Implemented history segment on pipeline page(#245a0ux)",
+          "url": "https://github.com/hotwax/job-manager/pull/45",
+          "state": "Merged",
+          "created_at": "2022-03-23",
+          "merged_at": "2022-03-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 41,
+          "title": "Implemented skip functionality on pipeline page(#23zj8cv)",
+          "url": "https://github.com/hotwax/job-manager/pull/41",
+          "state": "Merged",
+          "created_at": "2022-03-21",
+          "merged_at": "2022-03-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 40,
+          "title": "Removed unwanted code(#23twj34)",
+          "url": "https://github.com/hotwax/job-manager/pull/40",
+          "state": "Merged",
+          "created_at": "2022-03-21",
+          "merged_at": "2022-03-23",
+          "repo": "job-manager"
+        },
+        {
+          "number": 80,
+          "title": "Added theme color in index.html file",
+          "url": "https://github.com/hotwax/bopis/pull/80",
+          "state": "Merged",
+          "created_at": "2022-03-21",
+          "merged_at": "2022-03-21",
+          "repo": "bopis"
+        },
+        {
+          "number": 92,
+          "title": "Added theme color in index.html file",
+          "url": "https://github.com/hotwax/receiving/pull/92",
+          "state": "Merged",
+          "created_at": "2022-03-21",
+          "merged_at": "2022-03-21",
+          "repo": "receiving"
+        },
+        {
+          "number": 39,
+          "title": "Displayed fallback string when no frequency found for a job on pipeline view(#23tw3xk)",
+          "url": "https://github.com/hotwax/job-manager/pull/39",
+          "state": "Merged",
+          "created_at": "2022-03-17",
+          "merged_at": "2022-03-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 38,
+          "title": "Implemented alert before cancel job on pipeline page(#23twj4e)",
+          "url": "https://github.com/hotwax/job-manager/pull/38",
+          "state": "Merged",
+          "created_at": "2022-03-17",
+          "merged_at": "2022-03-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 37,
+          "title": "Removed store selection from the settings page(#23tw4ey)",
+          "url": "https://github.com/hotwax/job-manager/pull/37",
+          "state": "Merged",
+          "created_at": "2022-03-17",
+          "merged_at": "2022-03-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 34,
+          "title": "Implemented infinite scroll on pipeline page(#23twj34)",
+          "url": "https://github.com/hotwax/job-manager/pull/34",
+          "state": "Merged",
+          "created_at": "2022-03-17",
+          "merged_at": "2022-03-17",
+          "repo": "job-manager"
+        },
+        {
+          "number": 30,
+          "title": "Implemented: logic to fetch job description(#23m58yw)",
+          "url": "https://github.com/hotwax/job-manager/pull/30",
+          "state": "Merged",
+          "created_at": "2022-03-16",
+          "merged_at": "2022-03-16",
+          "repo": "job-manager"
+        },
+        {
+          "number": 22,
+          "title": "Implemented revert functionality#22xdxhp",
+          "url": "https://github.com/hotwax/import/pull/22",
+          "state": "Merged",
+          "created_at": "2022-03-16",
+          "merged_at": "2022-03-30",
+          "repo": "import"
+        },
+        {
+          "number": 25,
+          "title": "Implemented: cancel functionality for pipeline page(#23m58yw)",
+          "url": "https://github.com/hotwax/job-manager/pull/25",
+          "state": "Merged",
+          "created_at": "2022-03-15",
+          "merged_at": "2022-03-15",
+          "repo": "job-manager"
+        },
+        {
+          "number": 21,
+          "title": "Implemented logic to display the first facility selected and upload file with the original file name(#23ek494)",
+          "url": "https://github.com/hotwax/import/pull/21",
+          "state": "Merged",
+          "created_at": "2022-03-15",
+          "merged_at": "2022-10-07",
+          "repo": "import"
+        },
+        {
+          "number": 20,
+          "title": "Updated logic to display physical facilities(#23ek494)",
+          "url": "https://github.com/hotwax/import/pull/20",
+          "state": "Merged",
+          "created_at": "2022-03-14",
+          "merged_at": "2022-03-14",
+          "repo": "import"
+        },
+        {
+          "number": 20,
+          "title": "Implemented UI of pipeline page and logic to render data on it(#238tn3z)",
+          "url": "https://github.com/hotwax/job-manager/pull/20",
+          "state": "Merged",
+          "created_at": "2022-03-10",
+          "merged_at": "2022-03-11",
+          "repo": "job-manager"
+        },
+        {
+          "number": 72,
+          "title": "Implemented logic to handle product with no features(#238tkgm)",
+          "url": "https://github.com/hotwax/inventory-count/pull/72",
+          "state": "Merged",
+          "created_at": "2022-03-10",
+          "merged_at": "2022-03-10",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 18,
+          "title": "Implemented logic to show alerts before save and leave page(#238mr4d)",
+          "url": "https://github.com/hotwax/import/pull/18",
+          "state": "Merged",
+          "created_at": "2022-03-08",
+          "merged_at": "2022-03-08",
+          "repo": "import"
+        },
+        {
+          "number": 16,
+          "title": "Updated logic to clear orders list through actions(#2335ca9)",
+          "url": "https://github.com/hotwax/import/pull/16",
+          "state": "Merged",
+          "created_at": "2022-03-08",
+          "merged_at": "2022-03-30",
+          "repo": "import"
+        },
+        {
+          "number": 15,
+          "title": "Implemented logic to display toast for success/error after upload act…",
+          "url": "https://github.com/hotwax/import/pull/15",
+          "state": "Merged",
+          "created_at": "2022-03-08",
+          "merged_at": "2022-03-08",
+          "repo": "import"
+        },
+        {
+          "number": 14,
+          "title": "Implemented logic to search products on order detail page(#22xdyku)",
+          "url": "https://github.com/hotwax/import/pull/14",
+          "state": "Merged",
+          "created_at": "2022-03-08",
+          "merged_at": "2022-03-08",
+          "repo": "import"
+        },
+        {
+          "number": 13,
+          "title": "Implemented logic to save updated data(#2334jke)",
+          "url": "https://github.com/hotwax/import/pull/13",
+          "state": "Merged",
+          "created_at": "2022-03-07",
+          "merged_at": "2022-03-07",
+          "repo": "import"
+        },
+        {
+          "number": 12,
+          "title": "Implemented logic to update facility(#22xdyng)",
+          "url": "https://github.com/hotwax/import/pull/12",
+          "state": "Merged",
+          "created_at": "2022-03-07",
+          "merged_at": "2022-03-07",
+          "repo": "import"
+        },
+        {
+          "number": 11,
+          "title": "Implemented logic to check/uncheck products(#22xdye3)",
+          "url": "https://github.com/hotwax/import/pull/11",
+          "state": "Merged",
+          "created_at": "2022-03-04",
+          "merged_at": "2022-03-07",
+          "repo": "import"
+        },
+        {
+          "number": 8,
+          "title": "Implemented: logic to edit data #22c8vgh",
+          "url": "https://github.com/hotwax/import/pull/8",
+          "state": "Merged",
+          "created_at": "2022-03-01",
+          "merged_at": "2022-03-04",
+          "repo": "import"
+        },
+        {
+          "number": 70,
+          "title": "Impelented: logic to select location on pdp page(#22qm8pq)",
+          "url": "https://github.com/hotwax/inventory-count/pull/70",
+          "state": "Merged",
+          "created_at": "2022-03-01",
+          "merged_at": "2022-03-24",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 67,
+          "title": "Updated: title of orders page to facility name(#22x7jng)",
+          "url": "https://github.com/hotwax/bopis/pull/67",
+          "state": "Merged",
+          "created_at": "2022-02-28",
+          "merged_at": "2022-02-28",
+          "repo": "bopis"
+        },
+        {
+          "number": 7,
+          "title": "Upgraded to ionic 6(#22c8vcc)",
+          "url": "https://github.com/hotwax/import/pull/7",
+          "state": "Merged",
+          "created_at": "2022-02-24",
+          "merged_at": "2022-02-25",
+          "repo": "import"
+        },
+        {
+          "number": 5,
+          "title": "Implemeted Static UI for displaying parsed csv and Implemented logic …",
+          "url": "https://github.com/hotwax/import/pull/5",
+          "state": "Closed",
+          "created_at": "2022-02-23",
+          "merged_at": null,
+          "repo": "import"
+        },
+        {
+          "number": 4,
+          "title": "Implemented: logic to parse csv file and display in console(#22c8vdr)",
+          "url": "https://github.com/hotwax/import/pull/4",
+          "state": "Merged",
+          "created_at": "2022-02-22",
+          "merged_at": "2022-02-23",
+          "repo": "import"
+        },
+        {
+          "number": 3,
+          "title": "Implemented static UI for purchase order page(#22c8vdc)",
+          "url": "https://github.com/hotwax/import/pull/3",
+          "state": "Merged",
+          "created_at": "2022-02-22",
+          "merged_at": "2022-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 2,
+          "title": "Updated Readme with app specific instructions(#22hrju8)",
+          "url": "https://github.com/hotwax/import/pull/2",
+          "state": "Merged",
+          "created_at": "2022-02-22",
+          "merged_at": "2022-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 1,
+          "title": "Renamed: ionic sdk to import(#22c8vaw)",
+          "url": "https://github.com/hotwax/import/pull/1",
+          "state": "Merged",
+          "created_at": "2022-02-22",
+          "merged_at": "2022-02-22",
+          "repo": "import"
+        },
+        {
+          "number": 63,
+          "title": "Option to hide shipping orders in orders tabs(#1xxumed)",
+          "url": "https://github.com/hotwax/bopis/pull/63",
+          "state": "Merged",
+          "created_at": "2022-02-21",
+          "merged_at": "2022-02-22",
+          "repo": "bopis"
+        },
+        {
+          "number": 41,
+          "title": "Upgraded to Ionic 6(#1wn39h6)",
+          "url": "https://github.com/hotwax/dxp-components/pull/41",
+          "state": "Merged",
+          "created_at": "2022-02-21",
+          "merged_at": "2022-09-19",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 61,
+          "title": "Upgraded to ionic 6(#1wn39h6)",
+          "url": "https://github.com/hotwax/bopis/pull/61",
+          "state": "Merged",
+          "created_at": "2022-02-21",
+          "merged_at": "2022-09-02",
+          "repo": "bopis"
+        },
+        {
+          "number": 82,
+          "title": "Added maskable icons and updated manifest.json",
+          "url": "https://github.com/hotwax/receiving/pull/82",
+          "state": "Merged",
+          "created_at": "2022-02-18",
+          "merged_at": "2022-02-19",
+          "repo": "receiving"
+        },
+        {
+          "number": 69,
+          "title": "Updated manifest.json",
+          "url": "https://github.com/hotwax/inventory-count/pull/69",
+          "state": "Merged",
+          "created_at": "2022-02-18",
+          "merged_at": "2022-02-18",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 80,
+          "title": "Updated: manifest.json",
+          "url": "https://github.com/hotwax/receiving/pull/80",
+          "state": "Merged",
+          "created_at": "2022-02-18",
+          "merged_at": "2022-02-18",
+          "repo": "receiving"
+        },
+        {
+          "number": 68,
+          "title": "Updated manifest.json and added icons",
+          "url": "https://github.com/hotwax/inventory-count/pull/68",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 79,
+          "title": "Updated manifest.json and added icons",
+          "url": "https://github.com/hotwax/receiving/pull/79",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 66,
+          "title": "Added: icons and manifest.json",
+          "url": "https://github.com/hotwax/inventory-count/pull/66",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 75,
+          "title": "Updated: manifest.json and added icons",
+          "url": "https://github.com/hotwax/receiving/pull/75",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 64,
+          "title": "Added PWA configuration(#226cynn)",
+          "url": "https://github.com/hotwax/inventory-count/pull/64",
+          "state": "Closed",
+          "created_at": "2022-02-17",
+          "merged_at": null,
+          "repo": "inventory-count"
+        },
+        {
+          "number": 72,
+          "title": "Added PWA configuration(#226cynn)",
+          "url": "https://github.com/hotwax/receiving/pull/72",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 69,
+          "title": "Updated: findProduct action to use product name for searching product…",
+          "url": "https://github.com/hotwax/receiving/pull/69",
+          "state": "Merged",
+          "created_at": "2022-02-17",
+          "merged_at": "2022-02-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 67,
+          "title": "Updated order state mutations and actions to pass current directly to mutation(#220vhcr)",
+          "url": "https://github.com/hotwax/receiving/pull/67",
+          "state": "Merged",
+          "created_at": "2022-02-16",
+          "merged_at": "2022-04-07",
+          "repo": "receiving"
+        },
+        {
+          "number": 66,
+          "title": "Implemented logic to Update shipment with product added via add to pr…",
+          "url": "https://github.com/hotwax/receiving/pull/66",
+          "state": "Merged",
+          "created_at": "2022-02-16",
+          "merged_at": "2022-02-17",
+          "repo": "receiving"
+        },
+        {
+          "number": 62,
+          "title": "Added: load more purchase order button(#20e32ra)",
+          "url": "https://github.com/hotwax/receiving/pull/62",
+          "state": "Merged",
+          "created_at": "2022-02-16",
+          "merged_at": "2022-02-16",
+          "repo": "receiving"
+        },
+        {
+          "number": 60,
+          "title": "Implemented: Add products to purchase order model(#1xhj6qe)",
+          "url": "https://github.com/hotwax/receiving/pull/60",
+          "state": "Merged",
+          "created_at": "2022-02-16",
+          "merged_at": "2022-02-16",
+          "repo": "receiving"
+        },
+        {
+          "number": 59,
+          "title": "Implemented: use Receving app as shopify embedded app(#220uq6w)",
+          "url": "https://github.com/hotwax/receiving/pull/59",
+          "state": "Merged",
+          "created_at": "2022-02-16",
+          "merged_at": "2022-02-16",
+          "repo": "receiving"
+        },
+        {
+          "number": 58,
+          "title": "Updated: names of components and title of receiving page(#220qzdj)",
+          "url": "https://github.com/hotwax/receiving/pull/58",
+          "state": "Merged",
+          "created_at": "2022-02-15",
+          "merged_at": "2022-02-15",
+          "repo": "receiving"
+        },
+        {
+          "number": 55,
+          "title": "Updated the code to resolve warnings(#220ktrc)",
+          "url": "https://github.com/hotwax/receiving/pull/55",
+          "state": "Merged",
+          "created_at": "2022-02-15",
+          "merged_at": "2022-02-15",
+          "repo": "receiving"
+        },
+        {
+          "number": 54,
+          "title": "Updated code to display the date only if estimatedDeliveryDate field …",
+          "url": "https://github.com/hotwax/receiving/pull/54",
+          "state": "Merged",
+          "created_at": "2022-02-15",
+          "merged_at": "2022-02-15",
+          "repo": "receiving"
+        },
+        {
+          "number": 52,
+          "title": "Implemented scanner on purchase order detail page(#1xx6hbj)",
+          "url": "https://github.com/hotwax/receiving/pull/52",
+          "state": "Merged",
+          "created_at": "2022-02-15",
+          "merged_at": "2022-02-16",
+          "repo": "receiving"
+        },
+        {
+          "number": 59,
+          "title": "Implemented: flow to get and show product on Catalog page#1uvvc2n",
+          "url": "https://github.com/hotwax/bopis/pull/59",
+          "state": "Closed",
+          "created_at": "2022-02-11",
+          "merged_at": null,
+          "repo": "bopis"
+        },
+        {
+          "number": 26,
+          "title": "Added: pull request build check(#20k1511)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/26",
+          "state": "Merged",
+          "created_at": "2022-02-11",
+          "merged_at": "2022-02-11",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 18,
+          "title": "Added: pull request build check(#20k1511)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/18",
+          "state": "Merged",
+          "created_at": "2022-02-11",
+          "merged_at": "2022-02-11",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 40,
+          "title": "Added: pull request build check(#20k1511)",
+          "url": "https://github.com/hotwax/dxp-components/pull/40",
+          "state": "Merged",
+          "created_at": "2022-02-10",
+          "merged_at": "2022-02-11",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 17,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/17",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 25,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/25",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 61,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/inventory-count/pull/61",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "inventory-count"
+        },
+        {
+          "number": 48,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/picking/pull/48",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "picking"
+        },
+        {
+          "number": 50,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/50",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 50,
+          "title": "Implemented encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/preorder/pull/50",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "preorder"
+        },
+        {
+          "number": 56,
+          "title": "Implemented: encryption and decryption of data(#207jut0)",
+          "url": "https://github.com/hotwax/bopis/pull/56",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "bopis"
+        },
+        {
+          "number": 16,
+          "title": "Fixed build failure for node 16(node-16)",
+          "url": "https://github.com/hotwax/job-manager/pull/16",
+          "state": "Closed",
+          "created_at": "2022-02-09",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 55,
+          "title": "Removed: unused ionNote component(#1y2ract)",
+          "url": "https://github.com/hotwax/bopis/pull/55",
+          "state": "Merged",
+          "created_at": "2022-02-09",
+          "merged_at": "2022-02-10",
+          "repo": "bopis"
+        },
+        {
+          "number": 49,
+          "title": "Fixed: build failure for node 16 due to jest and eslint dependency mismatch",
+          "url": "https://github.com/hotwax/commerce-hub/pull/49",
+          "state": "Merged",
+          "created_at": "2022-02-08",
+          "merged_at": "2022-02-08",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 41,
+          "title": "Implemented code to encrypt and decrypt data(#207jut0)",
+          "url": "https://github.com/hotwax/receiving/pull/41",
+          "state": "Closed",
+          "created_at": "2022-02-07",
+          "merged_at": null,
+          "repo": "receiving"
+        },
+        {
+          "number": 15,
+          "title": "Implemented code to encrypt and decrypt data(#207jut0)",
+          "url": "https://github.com/hotwax/job-manager/pull/15",
+          "state": "Closed",
+          "created_at": "2022-02-07",
+          "merged_at": null,
+          "repo": "job-manager"
+        },
+        {
+          "number": 50,
+          "title": "Implemented code to encrypt and decrypt data(#207jut0)",
+          "url": "https://github.com/hotwax/fulfillment/pull/50",
+          "state": "Closed",
+          "created_at": "2022-02-07",
+          "merged_at": null,
+          "repo": "fulfillment"
+        },
+        {
+          "number": 49,
+          "title": "Improved store change method code(#20jv1ft)",
+          "url": "https://github.com/hotwax/fulfillment/pull/49",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-02-07",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 54,
+          "title": "Updated the code to display orderName or orderId instead of order ide…",
+          "url": "https://github.com/hotwax/bopis/pull/54",
+          "state": "Closed",
+          "created_at": "2022-02-07",
+          "merged_at": null,
+          "repo": "bopis"
+        },
+        {
+          "number": 53,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/bopis/pull/53",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-02-24",
+          "repo": "bopis"
+        },
+        {
+          "number": 13,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/job-manager/pull/13",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-03-11",
+          "repo": "job-manager"
+        },
+        {
+          "number": 60,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/inventory-count/pull/60",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-04-06",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 47,
+          "title": "Added firebase deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/picking/pull/47",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-02-23",
+          "repo": "picking"
+        },
+        {
+          "number": 49,
+          "title": "Added firebase deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/preorder/pull/49",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-03-29",
+          "repo": "preorder"
+        },
+        {
+          "number": 24,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/24",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-04-08",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 48,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/fulfillment/pull/48",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-04-08",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 40,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/receiving/pull/40",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-04-06",
+          "repo": "receiving"
+        },
+        {
+          "number": 16,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/16",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-04-08",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 39,
+          "title": "Added firebase auto deployment configuration(#20d6xcu)",
+          "url": "https://github.com/hotwax/dxp-components/pull/39",
+          "state": "Closed",
+          "created_at": "2022-02-07",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 15,
+          "title": "Updated the UI of settings page(#1z54hy7)",
+          "url": "https://github.com/hotwax/available-to-promise/pull/15",
+          "state": "Merged",
+          "created_at": "2022-02-07",
+          "merged_at": "2022-02-11",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 23,
+          "title": "Updated UI of settings page(#1z54hy7)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/23",
+          "state": "Merged",
+          "created_at": "2022-02-04",
+          "merged_at": "2022-02-10",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 48,
+          "title": "Updated the UI of settings page(#1z54hy7)",
+          "url": "https://github.com/hotwax/preorder/pull/48",
+          "state": "Merged",
+          "created_at": "2022-02-04",
+          "merged_at": "2022-02-07",
+          "repo": "preorder"
+        },
+        {
+          "number": 38,
+          "title": "Updated the UI(#1z54hy7)",
+          "url": "https://github.com/hotwax/dxp-components/pull/38",
+          "state": "Merged",
+          "created_at": "2022-02-04",
+          "merged_at": "2022-02-11",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 46,
+          "title": "Upgraded to Ionic 6(#1yky488)",
+          "url": "https://github.com/hotwax/fulfillment/pull/46",
+          "state": "Merged",
+          "created_at": "2022-02-04",
+          "merged_at": "2022-11-02",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 46,
+          "title": "Improved settings page(#207gtk6)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/46",
+          "state": "Merged",
+          "created_at": "2022-02-02",
+          "merged_at": "2022-02-04",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 39,
+          "title": "Implemented scanner on the shipment page #1xhmv5x",
+          "url": "https://github.com/hotwax/receiving/pull/39",
+          "state": "Merged",
+          "created_at": "2022-02-02",
+          "merged_at": "2022-02-15",
+          "repo": "receiving"
+        },
+        {
+          "number": 45,
+          "title": "Implemented code to make the in progress orders flow functional(#201pbe2)",
+          "url": "https://github.com/hotwax/fulfillment/pull/45",
+          "state": "Closed",
+          "created_at": "2022-02-01",
+          "merged_at": null,
+          "repo": "fulfillment"
+        },
+        {
+          "number": 11,
+          "title": " Upgraded to ionic 6(#1zw3kg9)",
+          "url": "https://github.com/hotwax/job-manager/pull/11",
+          "state": "Merged",
+          "created_at": "2022-01-28",
+          "merged_at": "2022-02-07",
+          "repo": "job-manager"
+        },
+        {
+          "number": 10,
+          "title": "Added OMS information on settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/job-manager/pull/10",
+          "state": "Merged",
+          "created_at": "2022-01-28",
+          "merged_at": "2022-02-01",
+          "repo": "job-manager"
+        },
+        {
+          "number": 42,
+          "title": "Added OMS information on settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/fulfillment/pull/42",
+          "state": "Merged",
+          "created_at": "2022-01-28",
+          "merged_at": "2022-02-04",
+          "repo": "fulfillment"
+        },
+        {
+          "number": 35,
+          "title": "Added OMS information on settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/receiving/pull/35",
+          "state": "Merged",
+          "created_at": "2022-01-28",
+          "merged_at": "2022-02-04",
+          "repo": "receiving"
+        },
+        {
+          "number": 43,
+          "title": "Updated the version of vue barcode reader(#1zax2tg)",
+          "url": "https://github.com/hotwax/picking/pull/43",
+          "state": "Merged",
+          "created_at": "2022-01-25",
+          "merged_at": "2022-02-04",
+          "repo": "picking"
+        },
+        {
+          "number": 34,
+          "title": "Updgraded the version of vue barcode reader(#1zax2tg)",
+          "url": "https://github.com/hotwax/dxp-components/pull/34",
+          "state": "Closed",
+          "created_at": "2022-01-24",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 56,
+          "title": "Updated the code to navigate to the product page after scanning(#1z59ah8)",
+          "url": "https://github.com/hotwax/inventory-count/pull/56",
+          "state": "Closed",
+          "created_at": "2022-01-24",
+          "merged_at": null,
+          "repo": "inventory-count"
+        },
+        {
+          "number": 45,
+          "title": "Upgraded preorder from ionic 5 to ionic 6(#1yky3t5)",
+          "url": "https://github.com/hotwax/preorder/pull/45",
+          "state": "Merged",
+          "created_at": "2022-01-24",
+          "merged_at": "2022-09-02",
+          "repo": "preorder"
+        },
+        {
+          "number": 53,
+          "title": "Upgraded the version of vue barcode reader(#1zawzz8)",
+          "url": "https://github.com/hotwax/inventory-count/pull/53",
+          "state": "Merged",
+          "created_at": "2022-01-24",
+          "merged_at": "2022-01-24",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 36,
+          "title": "Added OMS information n settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/36",
+          "state": "Merged",
+          "created_at": "2022-01-21",
+          "merged_at": "2022-01-27",
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 19,
+          "title": "Added OMS information on settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/19",
+          "state": "Merged",
+          "created_at": "2022-01-21",
+          "merged_at": "2022-01-27",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 12,
+          "title": "Added OMS information on settings page#1y2ract",
+          "url": "https://github.com/hotwax/available-to-promise/pull/12",
+          "state": "Merged",
+          "created_at": "2022-01-21",
+          "merged_at": "2022-01-27",
+          "repo": "available-to-promise"
+        },
+        {
+          "number": 42,
+          "title": "Updated the markup #1y2ract",
+          "url": "https://github.com/hotwax/picking/pull/42",
+          "state": "Merged",
+          "created_at": "2022-01-21",
+          "merged_at": "2022-01-27",
+          "repo": "picking"
+        },
+        {
+          "number": 43,
+          "title": "updated markup(#1y2ract)",
+          "url": "https://github.com/hotwax/preorder/pull/43",
+          "state": "Merged",
+          "created_at": "2022-01-19",
+          "merged_at": "2022-01-27",
+          "repo": "preorder"
+        },
+        {
+          "number": 46,
+          "title": "Updated the markup #1y2ract",
+          "url": "https://github.com/hotwax/bopis/pull/46",
+          "state": "Merged",
+          "created_at": "2022-01-19",
+          "merged_at": "2022-01-27",
+          "repo": "bopis"
+        },
+        {
+          "number": 32,
+          "title": "Updated the markup(#1y2ract)",
+          "url": "https://github.com/hotwax/dxp-components/pull/32",
+          "state": "Merged",
+          "created_at": "2022-01-19",
+          "merged_at": "2022-01-27",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 44,
+          "title": "Updated the markup(#1y2ract)",
+          "url": "https://github.com/hotwax/inventory-count/pull/44",
+          "state": "Merged",
+          "created_at": "2022-01-19",
+          "merged_at": "2022-01-19",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 43,
+          "title": "Added support to search products by scanning barcode(#47gzm1)",
+          "url": "https://github.com/hotwax/inventory-count/pull/43",
+          "state": "Merged",
+          "created_at": "2022-01-18",
+          "merged_at": "2022-01-21",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 37,
+          "title": "Implemented code to display OMS information on settings page(#1ytrtk0)",
+          "url": "https://github.com/hotwax/inventory-count/pull/37",
+          "state": "Merged",
+          "created_at": "2022-01-17",
+          "merged_at": "2022-01-17",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 44,
+          "title": "Used Solr Query API to show missing details(#1ytqbz6)",
+          "url": "https://github.com/hotwax/bopis/pull/44",
+          "state": "Closed",
+          "created_at": "2022-01-17",
+          "merged_at": null,
+          "repo": "bopis"
+        },
+        {
+          "number": 15,
+          "title": "Removed code to set and change store(#1ytq8gj)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/15",
+          "state": "Merged",
+          "created_at": "2022-01-17",
+          "merged_at": "2022-01-17",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 35,
+          "title": "Upgraded ionic 5 to ionic 6(#1yky426)",
+          "url": "https://github.com/hotwax/inventory-count/pull/35",
+          "state": "Merged",
+          "created_at": "2022-01-13",
+          "merged_at": "2022-09-09",
+          "repo": "inventory-count"
+        },
+        {
+          "number": 29,
+          "title": "Used luxon instead of moment #1vy5ryh",
+          "url": "https://github.com/hotwax/dxp-components/pull/29",
+          "state": "Merged",
+          "created_at": "2022-01-12",
+          "merged_at": "2022-02-04",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 28,
+          "title": "Added support to change the current time zone(#1y8m51y)",
+          "url": "https://github.com/hotwax/dxp-components/pull/28",
+          "state": "Merged",
+          "created_at": "2022-01-11",
+          "merged_at": "2022-01-20",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 38,
+          "title": "Implemented code to display current OMS information on settings page(…",
+          "url": "https://github.com/hotwax/picking/pull/38",
+          "state": "Merged",
+          "created_at": "2022-01-10",
+          "merged_at": "2022-01-11",
+          "repo": "picking"
+        },
+        {
+          "number": 39,
+          "title": "Implemented code to display current OMS information on settings page(…",
+          "url": "https://github.com/hotwax/bopis/pull/39",
+          "state": "Merged",
+          "created_at": "2022-01-10",
+          "merged_at": "2022-01-11",
+          "repo": "bopis"
+        },
+        {
+          "number": 40,
+          "title": "Implemented code to display current OMS information on settings page(#1y2ract)",
+          "url": "https://github.com/hotwax/preorder/pull/40",
+          "state": "Merged",
+          "created_at": "2022-01-10",
+          "merged_at": "2022-01-11",
+          "repo": "preorder"
+        },
+        {
+          "number": 27,
+          "title": "Implemented code to display current OMS information on Settings page(…",
+          "url": "https://github.com/hotwax/dxp-components/pull/27",
+          "state": "Merged",
+          "created_at": "2022-01-10",
+          "merged_at": "2022-01-11",
+          "repo": "dxp-components"
+        },
+        {
+          "number": 36,
+          "title": "Implemented logic for single sign-on(#1xx0wm1)",
+          "url": "https://github.com/hotwax/preorder/pull/36",
+          "state": "Closed",
+          "created_at": "2022-01-05",
+          "merged_at": null,
+          "repo": "preorder"
+        },
+        {
+          "number": 24,
+          "title": "Implemented logic for single sign-on(#1xx0wm1)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/24",
+          "state": "Closed",
+          "created_at": "2022-01-05",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 34,
+          "title": "Implemented logic to show product variants on the basis of the selected attribute(#1xc2eqg)",
+          "url": "https://github.com/hotwax/preorder/pull/34",
+          "state": "Merged",
+          "created_at": "2022-01-04",
+          "merged_at": "2022-01-05",
+          "repo": "preorder"
+        },
+        {
+          "number": 33,
+          "title": "Displayed the product attributes dynamically #1xc2ecd",
+          "url": "https://github.com/hotwax/preorder/pull/33",
+          "state": "Merged",
+          "created_at": "2021-12-29",
+          "merged_at": "2022-09-01",
+          "repo": "preorder"
+        },
+        {
+          "number": 32,
+          "title": "Displayed the attribute value as comma-separated(#1xc2cfg)",
+          "url": "https://github.com/hotwax/preorder/pull/32",
+          "state": "Merged",
+          "created_at": "2021-12-29",
+          "merged_at": "2022-02-28",
+          "repo": "preorder"
+        },
+        {
+          "number": 31,
+          "title": "Implemented logic to auto fill input field on the click of a badge(#2hfv0u)",
+          "url": "https://github.com/hotwax/preorder/pull/31",
+          "state": "Merged",
+          "created_at": "2021-12-29",
+          "merged_at": "2023-03-24",
+          "repo": "preorder"
+        },
+        {
+          "number": 16,
+          "title": "Added options to pin routes(##1x6691g)",
+          "url": "https://github.com/hotwax/commerce-hub/pull/16",
+          "state": "Closed",
+          "created_at": "2021-12-27",
+          "merged_at": null,
+          "repo": "commerce-hub"
+        },
+        {
+          "number": 22,
+          "title": "Implemented deep linking using firebase dynamic links(#1wn3wrh)",
+          "url": "https://github.com/hotwax/dxp-components/pull/22",
+          "state": "Closed",
+          "created_at": "2021-12-23",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 21,
+          "title": "Implemented custom context menu on right click(#1vrd2na)",
+          "url": "https://github.com/hotwax/dxp-components/pull/21",
+          "state": "Closed",
+          "created_at": "2021-12-22",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 23,
+          "title": "Added support to pass instance url on the login page(#1wuu9z4)",
+          "url": "https://github.com/hotwax/bopis/pull/23",
+          "state": "Merged",
+          "created_at": "2021-12-20",
+          "merged_at": "2021-12-21",
+          "repo": "bopis"
+        },
+        {
+          "number": 33,
+          "title": "Updated the interface of scanner(#1wfbq8e)",
+          "url": "https://github.com/hotwax/picking/pull/33",
+          "state": "Closed",
+          "created_at": "2021-12-16",
+          "merged_at": null,
+          "repo": "picking"
+        },
+        {
+          "number": 30,
+          "title": "Implemented PDF generation component",
+          "url": "https://github.com/hotwax/picking/pull/30",
+          "state": "Closed",
+          "created_at": "2021-12-10",
+          "merged_at": null,
+          "repo": "picking"
+        },
+        {
+          "number": 10,
+          "title": "Implemented: PDF generator(#1w3w78x)",
+          "url": "https://github.com/hotwax/dxp-components/pull/10",
+          "state": "Closed",
+          "created_at": "2021-12-06",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 7,
+          "title": "Implemented: custom context menu on right click(1vrd2na)",
+          "url": "https://github.com/hotwax/dxp-components/pull/7",
+          "state": "Closed",
+          "created_at": "2021-12-01",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 15,
+          "title": "Implemented barcode/qrcode scanner ",
+          "url": "https://github.com/hotwax/picking/pull/15",
+          "state": "Merged",
+          "created_at": "2021-11-29",
+          "merged_at": "2021-12-03",
+          "repo": "picking"
+        },
+        {
+          "number": 3,
+          "title": "Implemented a barcode/QR code scanner(1uvpmn4)",
+          "url": "https://github.com/hotwax/dxp-components/pull/3",
+          "state": "Closed",
+          "created_at": "2021-11-26",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 2,
+          "title": "Implemented a barcode and qrcode scanner(1uvpmn4)",
+          "url": "https://github.com/hotwax/dxp-components/pull/2",
+          "state": "Closed",
+          "created_at": "2021-11-24",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 1,
+          "title": "Implemented barcode and QRcode generator component(#1uvvc6h)",
+          "url": "https://github.com/hotwax/dxp-components/pull/1",
+          "state": "Closed",
+          "created_at": "2021-11-23",
+          "merged_at": null,
+          "repo": "dxp-components"
+        },
+        {
+          "number": 6,
+          "title": "Implemented the UI for reroute fulfilment app(#1ttma4h)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/6",
+          "state": "Merged",
+          "created_at": "2021-11-01",
+          "merged_at": "2021-12-10",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 5,
+          "title": "Initial Ionic SDK commit (#1ttd6wt)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/5",
+          "state": "Merged",
+          "created_at": "2021-11-01",
+          "merged_at": "2021-11-01",
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 4,
+          "title": "Initial commit",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/4",
+          "state": "Closed",
+          "created_at": "2021-10-30",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 3,
+          "title": "initial commit",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/3",
+          "state": "Closed",
+          "created_at": "2021-10-29",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 2,
+          "title": "initial commit (#1ttd6wt)",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/2",
+          "state": "Closed",
+          "created_at": "2021-10-29",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        },
+        {
+          "number": 1,
+          "title": "initial commit",
+          "url": "https://github.com/hotwax/reroute-fulfilment/pull/1",
+          "state": "Closed",
+          "created_at": "2021-10-29",
+          "merged_at": null,
+          "repo": "reroute-fulfilment"
+        }
+      ]
+    },
+    {
+      "name": "PalisadoesFoundation",
+      "merged": 31,
+      "prs": [
+        {
+          "number": 2394,
+          "title": "fix: removed unused references of group chat and direct chat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2394",
+          "state": "Merged",
+          "created_at": "2024-10-31",
+          "merged_at": "2024-11-01",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2629,
+          "title": "fix: removed all references to direct chat and group chat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2629",
+          "state": "Merged",
+          "created_at": "2024-10-31",
+          "merged_at": "2024-11-01",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2625,
+          "title": "Add mutations to mark chat messages as read, update message, update group chat info, add user to group chat, share images in chats, and create dedicated group chats for events",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2625",
+          "state": "Merged",
+          "created_at": "2024-10-29",
+          "merged_at": "2024-12-28",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2360,
+          "title": "Added features to filter chats, edit messages, add users to group chat, share images as messages, and create dedicated group chats for events",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2360",
+          "state": "Merged",
+          "created_at": "2024-10-27",
+          "merged_at": "2024-12-28",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2611,
+          "title": "feat: functionality to view unread messages in chat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2611",
+          "state": "Merged",
+          "created_at": "2024-10-25",
+          "merged_at": "2024-12-28",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2353,
+          "title": "feat: functionality to view unread messages and mark messages as read.",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2353",
+          "state": "Closed",
+          "created_at": "2024-10-25",
+          "merged_at": null,
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2584,
+          "title": "feat: implemented Reply functionality for chat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2584",
+          "state": "Merged",
+          "created_at": "2024-10-13",
+          "merged_at": "2024-10-21",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2286,
+          "title": "Feat: updated chat related functionality to work with the updated chat schema",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2286",
+          "state": "Merged",
+          "created_at": "2024-09-22",
+          "merged_at": "2024-10-20",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2466,
+          "title": "Updated chat schema",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2466",
+          "state": "Merged",
+          "created_at": "2024-08-18",
+          "merged_at": "2024-10-21",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2142,
+          "title": "Reply functionality for Group Chat and DirectChat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2142",
+          "state": "Merged",
+          "created_at": "2024-07-31",
+          "merged_at": "2024-10-21",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2420,
+          "title": "Implemented Reply functionality for DirectChat and GroupChat",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2420",
+          "state": "Merged",
+          "created_at": "2024-07-28",
+          "merged_at": "2024-10-12",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2407,
+          "title": "Added mutations for directChat and groupChat and fix subscriptions",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2407",
+          "state": "Merged",
+          "created_at": "2024-07-18",
+          "merged_at": "2024-07-23",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 2095,
+          "title": "Implemented direct chat and group chat features",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2095",
+          "state": "Merged",
+          "created_at": "2024-07-15",
+          "merged_at": "2024-07-26",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2061,
+          "title": "feat: updated the ui of chat screen and api integration",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2061",
+          "state": "Closed",
+          "created_at": "2024-06-27",
+          "merged_at": null,
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2046,
+          "title": "Updated user post screen UI",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/2046",
+          "state": "Merged",
+          "created_at": "2024-06-17",
+          "merged_at": "2024-07-04",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1933,
+          "title": "Redesign User sidebar",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1933",
+          "state": "Merged",
+          "created_at": "2024-04-27",
+          "merged_at": "2024-04-27",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 2226,
+          "title": "fix: invalid url error while fetching advertisements",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/2226",
+          "state": "Merged",
+          "created_at": "2024-04-18",
+          "merged_at": "2024-04-27",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 1901,
+          "title": "Updated get advertisements query and implemented infinite scroll",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1901",
+          "state": "Merged",
+          "created_at": "2024-04-12",
+          "merged_at": "2024-04-17",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 800,
+          "title": "removed references to the deprecated Docusaurus v1.14.7",
+          "url": "https://github.com/PalisadoesFoundation/talawa-docs/pull/800",
+          "state": "Merged",
+          "created_at": "2024-04-08",
+          "merged_at": "2024-04-08",
+          "repo": "talawa-docs"
+        },
+        {
+          "number": 1866,
+          "title": "removed adminApproved field",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1866",
+          "state": "Merged",
+          "created_at": "2024-04-03",
+          "merged_at": "2024-04-03",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1844,
+          "title": "Fix add existing user functionality",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1844",
+          "state": "Merged",
+          "created_at": "2024-03-29",
+          "merged_at": "2024-03-30",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1719,
+          "title": "Added support to add members in an organization",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1719",
+          "state": "Merged",
+          "created_at": "2024-03-12",
+          "merged_at": "2024-03-13",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1919,
+          "title": "Refactor: Advertisement functionality",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/1919",
+          "state": "Merged",
+          "created_at": "2024-02-29",
+          "merged_at": "2024-03-03",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 1628,
+          "title": "redesign: user portal organization screen",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1628",
+          "state": "Merged",
+          "created_at": "2024-02-28",
+          "merged_at": "2024-03-02",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1529,
+          "title": "feat: implemented support to upload media while creating and updating advertisements",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1529",
+          "state": "Merged",
+          "created_at": "2024-02-02",
+          "merged_at": "2024-02-27",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1461,
+          "title": "feat: setup script for .env configuration file",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1461",
+          "state": "Merged",
+          "created_at": "2024-01-20",
+          "merged_at": "2024-01-20",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1459,
+          "title": "feat: setup script for .env configuration file",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1459",
+          "state": "Closed",
+          "created_at": "2024-01-20",
+          "merged_at": null,
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1350,
+          "title": "Setup script for .env configuration file",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1350",
+          "state": "Closed",
+          "created_at": "2024-01-02",
+          "merged_at": null,
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1585,
+          "title": "rename variable link to mediaUrl",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/1585",
+          "state": "Merged",
+          "created_at": "2023-12-27",
+          "merged_at": "2024-02-27",
+          "repo": "talawa-api"
+        },
+        {
+          "number": 1248,
+          "title": "feat: implemented support to upload media in advertisement register component",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1248",
+          "state": "Merged",
+          "created_at": "2023-12-22",
+          "merged_at": "2024-02-01",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1154,
+          "title": "feat: updated position of the organization name",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1154",
+          "state": "Merged",
+          "created_at": "2023-12-07",
+          "merged_at": "2023-12-08",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1151,
+          "title": "feat: added dependabot",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1151",
+          "state": "Merged",
+          "created_at": "2023-12-07",
+          "merged_at": "2023-12-07",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 1144,
+          "title": "feat: added dependabot",
+          "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/1144",
+          "state": "Merged",
+          "created_at": "2023-12-06",
+          "merged_at": "2023-12-07",
+          "repo": "talawa-admin"
+        },
+        {
+          "number": 693,
+          "title": "Multiple user guide",
+          "url": "https://github.com/PalisadoesFoundation/talawa-docs/pull/693",
+          "state": "Merged",
+          "created_at": "2023-11-29",
+          "merged_at": "2023-12-03",
+          "repo": "talawa-docs"
+        },
+        {
+          "number": 690,
+          "title": "feat: Update Docusaurus from v2 to v3",
+          "url": "https://github.com/PalisadoesFoundation/talawa-docs/pull/690",
+          "state": "Merged",
+          "created_at": "2023-11-22",
+          "merged_at": "2023-12-19",
+          "repo": "talawa-docs"
+        }
+      ]
+    },
+    {
+      "name": "MyLlama",
+      "merged": 23,
+      "prs": [
+        {
+          "number": 20,
+          "title": "created an image card component and implemented code to pick  color and background color from image",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/20",
+          "state": "Merged",
+          "created_at": "2023-11-10",
+          "merged_at": "2023-11-10",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 19,
+          "title": "implemented bottom sheet for checklist, made things to do dynamic, up…",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/19",
+          "state": "Merged",
+          "created_at": "2023-11-08",
+          "merged_at": "2023-11-08",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 15,
+          "title": "Implemented logic to fetch current course",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/15",
+          "state": "Merged",
+          "created_at": "2023-11-03",
+          "merged_at": "2023-11-06",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 14,
+          "title": "Implemented logic to fetch current course",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/14",
+          "state": "Merged",
+          "created_at": "2023-11-03",
+          "merged_at": "2023-11-03",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 10,
+          "title": "Updated the useage of iconsax icons",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/10",
+          "state": "Merged",
+          "created_at": "2023-10-31",
+          "merged_at": "2023-10-31",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 9,
+          "title": "fix: build error",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/9",
+          "state": "Merged",
+          "created_at": "2023-10-31",
+          "merged_at": "2023-10-31",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 8,
+          "title": "Implemented static UI of home page ",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/8",
+          "state": "Merged",
+          "created_at": "2023-10-30",
+          "merged_at": "2023-10-31",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 7,
+          "title": "internationalize static text",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/7",
+          "state": "Merged",
+          "created_at": "2023-10-27",
+          "merged_at": "2023-10-27",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 6,
+          "title": "Implemented basic layout and Header, SideBar, BottomNavigation components",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/6",
+          "state": "Merged",
+          "created_at": "2023-10-26",
+          "merged_at": "2023-10-26",
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 3,
+          "title": "Implemented user state and logic to fetch user profile",
+          "url": "https://github.com/MyLlama/EmployeeApp/pull/3",
+          "state": "Closed",
+          "created_at": "2023-10-25",
+          "merged_at": null,
+          "repo": "EmployeeApp"
+        },
+        {
+          "number": 21,
+          "title": "Implemented login functionality",
+          "url": "https://github.com/MyLlama/slack_app/pull/21",
+          "state": "Open",
+          "created_at": "2023-10-23",
+          "merged_at": null,
+          "repo": "slack_app"
+        },
+        {
+          "number": 19,
+          "title": "Implemented logic to send welcome message when user visits the app home for the first time",
+          "url": "https://github.com/MyLlama/slack_app/pull/19",
+          "state": "Merged",
+          "created_at": "2023-10-20",
+          "merged_at": "2023-10-20",
+          "repo": "slack_app"
+        },
+        {
+          "number": 9,
+          "title": "feat: implemented logic to make daily checkins view dynamic",
+          "url": "https://github.com/MyLlama/slack_app/pull/9",
+          "state": "Merged",
+          "created_at": "2023-10-12",
+          "merged_at": "2023-10-12",
+          "repo": "slack_app"
+        },
+        {
+          "number": 7,
+          "title": "Implemented push notifications",
+          "url": "https://github.com/MyLlama/AdminApp/pull/7",
+          "state": "Open",
+          "created_at": "2023-09-14",
+          "merged_at": null,
+          "repo": "AdminApp"
+        },
+        {
+          "number": 2,
+          "title": "Daily check in",
+          "url": "https://github.com/MyLlama/llama-slack-app/pull/2",
+          "state": "Merged",
+          "created_at": "2023-09-06",
+          "merged_at": "2023-09-06",
+          "repo": "llama-slack-app"
+        },
+        {
+          "number": 1,
+          "title": "Implemented slash command(#85ztvq1pt)",
+          "url": "https://github.com/MyLlama/llama-slack-app/pull/1",
+          "state": "Merged",
+          "created_at": "2023-08-29",
+          "merged_at": "2023-09-06",
+          "repo": "llama-slack-app"
+        },
+        {
+          "number": 8,
+          "title": "Desc",
+          "url": "https://github.com/MyLlama/AskLlama2.0/pull/8",
+          "state": "Closed",
+          "created_at": "2023-08-16",
+          "merged_at": null,
+          "repo": "AskLlama2.0"
+        },
+        {
+          "number": 7,
+          "title": "Fix: footer position",
+          "url": "https://github.com/MyLlama/AskLlama2.0/pull/7",
+          "state": "Merged",
+          "created_at": "2023-08-16",
+          "merged_at": "2023-08-16",
+          "repo": "AskLlama2.0"
+        },
+        {
+          "number": 6,
+          "title": "fix: chatbox ui",
+          "url": "https://github.com/MyLlama/AskLlama2.0/pull/6",
+          "state": "Merged",
+          "created_at": "2023-08-16",
+          "merged_at": "2023-08-16",
+          "repo": "AskLlama2.0"
+        },
+        {
+          "number": 4,
+          "title": "UI chnages",
+          "url": "https://github.com/MyLlama/AskLlama2.0/pull/4",
+          "state": "Merged",
+          "created_at": "2023-08-11",
+          "merged_at": "2023-08-11",
+          "repo": "AskLlama2.0"
+        },
+        {
+          "number": 2,
+          "title": "Changed finish attempt to submit and Done: receive a grade to Done",
+          "url": "https://github.com/MyLlama/llama_moodle/pull/2",
+          "state": "Merged",
+          "created_at": "2023-07-21",
+          "merged_at": "2023-07-21",
+          "repo": "llama_moodle"
+        },
+        {
+          "number": 1,
+          "title": "LMS changes",
+          "url": "https://github.com/MyLlama/llama_moodle/pull/1",
+          "state": "Merged",
+          "created_at": "2023-07-18",
+          "merged_at": "2023-07-18",
+          "repo": "llama_moodle"
+        },
+        {
+          "number": 5,
+          "title": "Added activity tracker in a scrollable div(#85ztabh22)",
+          "url": "https://github.com/MyLlama/AdminApp/pull/5",
+          "state": "Open",
+          "created_at": "2023-07-02",
+          "merged_at": null,
+          "repo": "AdminApp"
+        },
+        {
+          "number": 3,
+          "title": "fix: font in chatbox",
+          "url": "https://github.com/MyLlama/AskLlamaPWA/pull/3",
+          "state": "Merged",
+          "created_at": "2023-06-27",
+          "merged_at": "2023-06-27",
+          "repo": "AskLlamaPWA"
+        },
+        {
+          "number": 4,
+          "title": "Updated favicon, login page image, back button, added logout popover and active and completed courses on user details page(#85ztabh22)",
+          "url": "https://github.com/MyLlama/AdminApp/pull/4",
+          "state": "Merged",
+          "created_at": "2023-06-27",
+          "merged_at": "2023-06-27",
+          "repo": "AdminApp"
+        },
+        {
+          "number": 3,
+          "title": "Implemented logout and activity tracker functionality(#85ztabh22)",
+          "url": "https://github.com/MyLlama/AdminApp/pull/3",
+          "state": "Merged",
+          "created_at": "2023-06-26",
+          "merged_at": "2023-06-27",
+          "repo": "AdminApp"
+        },
+        {
+          "number": 2,
+          "title": "fix: hardcoded image url on courseDetails page(#85ztabh22)",
+          "url": "https://github.com/MyLlama/AdminApp/pull/2",
+          "state": "Merged",
+          "created_at": "2023-06-23",
+          "merged_at": "2023-06-26",
+          "repo": "AdminApp"
+        },
+        {
+          "number": 1,
+          "title": "Implemented UI of login page(#85ztabh22)",
+          "url": "https://github.com/MyLlama/AdminApp/pull/1",
+          "state": "Merged",
+          "created_at": "2023-06-21",
+          "merged_at": "2023-06-23",
+          "repo": "AdminApp"
+        }
+      ]
+    },
+    {
+      "name": "llaske",
+      "merged": 15,
+      "prs": [
+        {
+          "number": 179,
+          "title": "fix: run all skips first exercise and run all not working in evaluation mode",
+          "url": "https://github.com/llaske/ExerciserReact/pull/179",
+          "state": "Merged",
+          "created_at": "2023-04-15",
+          "merged_at": "2023-04-22",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 178,
+          "title": "fix: incorrect information on score details screen",
+          "url": "https://github.com/llaske/ExerciserReact/pull/178",
+          "state": "Merged",
+          "created_at": "2023-04-15",
+          "merged_at": "2023-04-16",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 1350,
+          "title": "Sugarizer Vue-js activity development tutorial",
+          "url": "https://github.com/llaske/sugarizer/pull/1350",
+          "state": "Closed",
+          "created_at": "2023-03-29",
+          "merged_at": null,
+          "repo": "sugarizer"
+        },
+        {
+          "number": 147,
+          "title": "UI improvements",
+          "url": "https://github.com/llaske/ExerciserReact/pull/147",
+          "state": "Merged",
+          "created_at": "2023-03-06",
+          "merged_at": "2023-03-08",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 143,
+          "title": "replaced reactour by introJs-react",
+          "url": "https://github.com/llaske/ExerciserReact/pull/143",
+          "state": "Merged",
+          "created_at": "2023-03-01",
+          "merged_at": "2023-03-04",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 141,
+          "title": "fix: two clicks to validate mcq answers in evaluation mode",
+          "url": "https://github.com/llaske/ExerciserReact/pull/141",
+          "state": "Merged",
+          "created_at": "2023-02-23",
+          "merged_at": "2023-02-23",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 140,
+          "title": "fix: MCQ answers should be in rows",
+          "url": "https://github.com/llaske/ExerciserReact/pull/140",
+          "state": "Merged",
+          "created_at": "2023-02-21",
+          "merged_at": "2023-02-21",
+          "repo": "ExerciserReact"
+        },
+        {
+          "number": 1132,
+          "title": "Replaced bootstrap-tour by Introjs in constellation activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1132",
+          "state": "Merged",
+          "created_at": "2023-01-06",
+          "merged_at": "2023-01-08",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1131,
+          "title": "Replaced bootstrap-tour by IntroJs in ColorMyWorld activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1131",
+          "state": "Merged",
+          "created_at": "2023-01-03",
+          "merged_at": "2023-01-04",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1130,
+          "title": "Replaced bootstrap-tour by IntroJs in ChatPrototype activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1130",
+          "state": "Merged",
+          "created_at": "2023-01-02",
+          "merged_at": "2023-01-04",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1129,
+          "title": "Replaced bootstrap-tour by introJs in Blockrain activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1129",
+          "state": "Merged",
+          "created_at": "2023-01-02",
+          "merged_at": "2023-01-08",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1127,
+          "title": "Replaced bootstrap-tour by introJs in calligra activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1127",
+          "state": "Merged",
+          "created_at": "2022-12-30",
+          "merged_at": "2023-01-04",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1104,
+          "title": "Downgraded the version of IntroJs in Moon activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1104",
+          "state": "Merged",
+          "created_at": "2022-09-06",
+          "merged_at": "2022-09-06",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1103,
+          "title": "Refactor: Removed unwanted code from paint activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1103",
+          "state": "Merged",
+          "created_at": "2022-09-05",
+          "merged_at": "2022-09-05",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1101,
+          "title": "Fixed: Paint canvas crops instead of resizing on window resize",
+          "url": "https://github.com/llaske/sugarizer/pull/1101",
+          "state": "Closed",
+          "created_at": "2022-09-01",
+          "merged_at": null,
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1099,
+          "title": "Replaced Bootstrap-tour by IntroJs in Paint activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1099",
+          "state": "Merged",
+          "created_at": "2022-09-01",
+          "merged_at": "2022-09-05",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1098,
+          "title": "Fixed: Tooltip text in Paint activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1098",
+          "state": "Closed",
+          "created_at": "2022-09-01",
+          "merged_at": null,
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1095,
+          "title": "Replaced Bootstrap tour by IntroJs in Moon activity",
+          "url": "https://github.com/llaske/sugarizer/pull/1095",
+          "state": "Merged",
+          "created_at": "2022-08-31",
+          "merged_at": "2022-08-31",
+          "repo": "sugarizer"
+        },
+        {
+          "number": 1008,
+          "title": "Fixed: tooltip issue in paint activity under filters",
+          "url": "https://github.com/llaske/sugarizer/pull/1008",
+          "state": "Closed",
+          "created_at": "2022-03-16",
+          "merged_at": null,
+          "repo": "sugarizer"
+        }
+      ]
+    },
+    {
+      "name": "CircuitVerse",
+      "merged": 7,
+      "prs": [
+        {
+          "number": 192,
+          "title": "Updated the Readme with setup information and pending tasks",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/192",
+          "state": "Merged",
+          "created_at": "2023-10-22",
+          "merged_at": "2023-10-23",
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 4128,
+          "title": "fix: search projects title",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/4128",
+          "state": "Merged",
+          "created_at": "2023-10-06",
+          "merged_at": "2023-11-14",
+          "repo": "CircuitVerse"
+        },
+        {
+          "number": 3575,
+          "title": "feat: integrate story-book for previewing componets",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/3575",
+          "state": "Closed",
+          "created_at": "2023-02-16",
+          "merged_at": null,
+          "repo": "CircuitVerse"
+        },
+        {
+          "number": 3499,
+          "title": "fix: alignment of elements in a comment",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/3499",
+          "state": "Merged",
+          "created_at": "2023-01-19",
+          "merged_at": "2023-02-01",
+          "repo": "CircuitVerse"
+        },
+        {
+          "number": 45,
+          "title": "refactor: removed JQuery dependency from listeners.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/45",
+          "state": "Closed",
+          "created_at": "2023-01-02",
+          "merged_at": null,
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 40,
+          "title": "refactor: removed JQuery dependency from plotArea.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/40",
+          "state": "Closed",
+          "created_at": "2022-12-31",
+          "merged_at": null,
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 35,
+          "title": "refactor: removed JQuery dependency from restrictedElementDiv.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/35",
+          "state": "Merged",
+          "created_at": "2022-12-29",
+          "merged_at": "2022-12-30",
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 34,
+          "title": "refactor: removed JQuery dependency from verilog.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/34",
+          "state": "Merged",
+          "created_at": "2022-12-29",
+          "merged_at": "2022-12-30",
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 29,
+          "title": "refactor: removed JQuery dependency in tutorials.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/29",
+          "state": "Merged",
+          "created_at": "2022-11-02",
+          "merged_at": "2022-11-06",
+          "repo": "cv-frontend-vue"
+        },
+        {
+          "number": 28,
+          "title": "refactor: removed JQuery dependency in Verilog2CV.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/28",
+          "state": "Merged",
+          "created_at": "2022-11-02",
+          "merged_at": "2022-11-08",
+          "repo": "cv-frontend-vue"
+        }
+      ]
+    },
+    {
+      "name": "sugarlabs",
+      "merged": 3,
+      "prs": [
+        {
+          "number": 303,
+          "title": "feat(common):[components] add WCheckbox",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/303",
+          "state": "Merged",
+          "created_at": "2023-01-23",
+          "merged_at": "2023-01-23",
+          "repo": "musicblocks-v4"
+        },
+        {
+          "number": 278,
+          "title": "feat(common): [components] add WTextButton",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/278",
+          "state": "Merged",
+          "created_at": "2023-01-19",
+          "merged_at": "2023-01-21",
+          "repo": "musicblocks-v4"
+        },
+        {
+          "number": 269,
+          "title": "fixed(build): Added type reference for vite-pwa",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/269",
+          "state": "Closed",
+          "created_at": "2023-01-18",
+          "merged_at": null,
+          "repo": "musicblocks-v4"
+        },
+        {
+          "number": 263,
+          "title": "fixed(build): [vite] updated pwa config and added sw.ts file",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/263",
+          "state": "Closed",
+          "created_at": "2023-01-16",
+          "merged_at": null,
+          "repo": "musicblocks-v4"
+        },
+        {
+          "number": 254,
+          "title": "feat: reusable image component",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/254",
+          "state": "Merged",
+          "created_at": "2023-01-13",
+          "merged_at": "2023-01-13",
+          "repo": "musicblocks-v4"
+        },
+        {
+          "number": 250,
+          "title": "feat: create reusable image component",
+          "url": "https://github.com/sugarlabs/musicblocks-v4/pull/250",
+          "state": "Closed",
+          "created_at": "2023-01-11",
+          "merged_at": null,
+          "repo": "musicblocks-v4"
+        }
+      ]
+    },
+    {
+      "name": "moja-global",
+      "merged": 2,
+      "prs": [
+        {
+          "number": 341,
+          "title": "[WIP]refactor: Removed contributors section and updated sponsors section",
+          "url": "https://github.com/moja-global/community-website/pull/341",
+          "state": "Closed",
+          "created_at": "2022-07-12",
+          "merged_at": null,
+          "repo": "community-website"
+        },
+        {
+          "number": 340,
+          "title": "refactor: Removed contributers section and updated sponsors section",
+          "url": "https://github.com/moja-global/community-website/pull/340",
+          "state": "Closed",
+          "created_at": "2022-07-12",
+          "merged_at": null,
+          "repo": "community-website"
+        },
+        {
+          "number": 340,
+          "title": "refactor: Migrated Table.vue to Vue 3",
+          "url": "https://github.com/moja-global/FLINT-UI/pull/340",
+          "state": "Merged",
+          "created_at": "2022-07-07",
+          "merged_at": "2022-07-24",
+          "repo": "FLINT-UI"
+        },
+        {
+          "number": 335,
+          "title": "Updated the UI of landing page",
+          "url": "https://github.com/moja-global/community-website/pull/335",
+          "state": "Merged",
+          "created_at": "2022-06-21",
+          "merged_at": "2022-07-22",
+          "repo": "community-website"
+        }
+      ]
+    },
+    {
+      "name": "adityasharma7",
+      "merged": 1,
+      "prs": [
+        {
+          "number": 1,
+          "title": "Vue3 compatible",
+          "url": "https://github.com/adityasharma7/vue-barcode-reader/pull/1",
+          "state": "Merged",
+          "created_at": "2021-11-29",
+          "merged_at": "2022-01-18",
+          "repo": "vue-barcode-reader"
+        },
+        {
+          "number": 13,
+          "title": "Phase1 evaluation assignment vue3",
+          "url": "https://github.com/adityasharma7/hc-js-assignment/pull/13",
+          "state": "Open",
+          "created_at": "2021-10-11",
+          "merged_at": null,
+          "repo": "hc-js-assignment"
+        }
+      ]
+    },
+    {
+      "name": "ymaheshwari1",
+      "merged": 1,
+      "prs": [
+        {
+          "number": 1,
+          "title": "Renamed line item property from Pickup Store to Store Pickup(#2nvxwh1)",
+          "url": "https://github.com/ymaheshwari1/shopify-bopis/pull/1",
+          "state": "Merged",
+          "created_at": "2022-08-04",
+          "merged_at": "2022-08-04",
+          "repo": "shopify-bopis"
+        }
+      ]
+    },
+    {
+      "name": "olefirenko",
+      "merged": 1,
+      "prs": [
+        {
+          "number": 26,
+          "title": "Added support to disable camera when the component is destroyed in vue3 ",
+          "url": "https://github.com/olefirenko/vue-barcode-reader/pull/26",
+          "state": "Merged",
+          "created_at": "2022-01-07",
+          "merged_at": "2022-01-22",
+          "repo": "vue-barcode-reader"
+        }
+      ]
+    },
+    {
+      "name": "vuestorefront",
+      "merged": 1,
+      "prs": [
+        {
+          "number": 682,
+          "title": "Updated: the links of banners in product page(#445)",
+          "url": "https://github.com/vuestorefront/vsf-capybara/pull/682",
+          "state": "Merged",
+          "created_at": "2021-12-03",
+          "merged_at": "2021-12-03",
+          "repo": "vsf-capybara"
+        }
+      ]
+    },
+    {
+      "name": "calipho-sib",
+      "merged": 0,
+      "prs": [
+        {
+          "number": 64,
+          "title": "Improved alignment of input container in multiple variant popover",
+          "url": "https://github.com/calipho-sib/feature-viewer/pull/64",
+          "state": "Open",
+          "created_at": "2022-03-20",
+          "merged_at": null,
+          "repo": "feature-viewer"
+        },
+        {
+          "number": 62,
+          "title": "Improved the position of + Add Variant button",
+          "url": "https://github.com/calipho-sib/feature-viewer/pull/62",
+          "state": "Open",
+          "created_at": "2022-03-19",
+          "merged_at": null,
+          "repo": "feature-viewer"
+        },
+        {
+          "number": 60,
+          "title": "Fixed: single popover width issue",
+          "url": "https://github.com/calipho-sib/feature-viewer/pull/60",
+          "state": "Open",
+          "created_at": "2022-03-18",
+          "merged_at": null,
+          "repo": "feature-viewer"
+        }
+      ]
+    },
+    {
+      "name": "calcom",
+      "merged": 0,
+      "prs": [
+        {
+          "number": 21432,
+          "title": "Fix #21417: Add missing Polish translations for the credits tab",
+          "url": "https://github.com/calcom/cal.diy/pull/21432",
+          "state": "Closed",
+          "created_at": "2025-05-21",
+          "merged_at": null,
+          "repo": "cal.diy"
+        }
+      ]
+    },
+    {
+      "name": "Attendize",
+      "merged": 0,
+      "prs": [
+        {
+          "number": 1141,
+          "title": "Added Cashfree",
+          "url": "https://github.com/Attendize/Attendize/pull/1141",
+          "state": "Closed",
+          "created_at": "2024-08-20",
+          "merged_at": null,
+          "repo": "Attendize"
+        }
+      ]
+    },
+    {
+      "name": "azkyakhan",
+      "merged": 0,
+      "prs": [
+        {
+          "number": 1,
+          "title": "Implemented logic for copy job details and made job history modal functional(#295eve6)",
+          "url": "https://github.com/azkyakhan/threshold-management/pull/1",
+          "state": "Open",
+          "created_at": "2022-04-29",
+          "merged_at": null,
+          "repo": "threshold-management"
+        }
+      ]
+    },
+    {
+      "name": "vuestorefront-community",
+      "merged": 0,
+      "prs": [
+        {
+          "number": 179,
+          "title": "perf: updated SFUI version to 0.12.0",
+          "url": "https://github.com/vuestorefront-community/vendure/pull/179",
+          "state": "Closed",
+          "created_at": "2022-03-02",
+          "merged_at": null,
+          "repo": "vendure"
+        }
+      ]
+    }
+  ]
+}
