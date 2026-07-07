@@ -1,40 +1,50 @@
 # Proof of Work
 
-A curated view of my open-source pull requests, rendered in four themes:
-**techno**, **pixels**, **modern**, and **retro**.
+A personal open-source dashboard rendered as a **bento grid**, in four themes:
+**notebook**, **comic**, **retro**, and **newspaper**.
 
 Live: `https://disha1202.github.io/proof-of-work/`
 
+## What it shows
+
+- **Profile tile** — avatar, name, bio, company/location, and links (GitHub, LinkedIn, Twitter, email).
+- **Top languages** — byte-weighted breakdown across your repos (Java, Vue, TypeScript, …).
+- **Stat tiles** — pull requests, merged, issues opened, organizations, followers, following, public repos, stars.
+- **Contributions** — a `Pull Requests` / `Issues` toggle; each groups entries by organization with
+  All / Merged / Open / Closed filters (issues use All / Open / Closed).
+
 ## How it works
 
-- `fetch_data.py` queries the GitHub API for all PRs authored by the user
-  (across all time, excluding the user's own repos) and writes `docs/data.json`.
-- `docs/index*.html` are standalone themed pages that fetch `data.json` and
-  render stats, per-org cards, and filterable PR rows. The markup and JavaScript
-  are identical across themes — only the styling differs.
-- `build_site.py` generates those four HTML files from a single source of truth
-  (shared body + JS, per-theme CSS). Run it after editing themes.
+- `fetch_data.py` queries the GitHub API for your profile, all authored PRs and issues
+  (across all time, excluding your own repos), and language stats, then writes `docs/data.json`.
+- `docs/index*.html` are standalone themed pages that fetch `data.json` and render the bento.
+  Markup and JavaScript are shared (generated from one source); only styling differs per theme.
+- `build_site.py` generates the four HTML files: shared body + JS, per-theme CSS, plus a shared
+  bento layout parametrized by each theme's CSS variables. Run it after editing themes.
 - A GitHub Actions workflow refreshes `data.json` daily.
 
 ## Themes
 
-| File                     | Theme  | Style                         |
-|--------------------------|--------|-------------------------------|
-| `docs/index.html`        | techno | neon cyberpunk, dark, glow    |
-| `docs/index-pixels.html` | pixels | 8-bit retro game, pixel font  |
-| `docs/index-modern.html` | modern | clean, light, minimal         |
-| `docs/index-retro.html`  | retro  | 70s vintage, warm, groovy     |
+| File | Theme | Look |
+|------|-------|------|
+| `docs/index.html` | **notebook** (default) | ruled paper, handwriting, sticky-note tiles |
+| `docs/index-comic.html` | **comic** | pop-art halftone, bold outlines, POW! energy |
+| `docs/index-retro.html` | **retro** | 70s vintage, warm, groovy serif |
+| `docs/index-news.html` | **newspaper** | broadsheet serif, thin rules, square avatar |
+
+Theme CSS for the retired techno/pixels/modern themes is retained (unused) in `build_site.py`;
+re-add any by adding a row to the `THEMES` list.
 
 ## Local development
 
 ```bash
-# regenerate the four themed pages after editing build_site.py
+# regenerate the themed pages after editing build_site.py
 python3 build_site.py
 
-# refresh contribution data (optional: export GITHUB_TOKEN for higher rate limits)
+# refresh data (GITHUB_TOKEN raises the API rate limit; LINKEDIN_URL / PROFILE_EMAIL are configurable)
 GITHUB_USER=disha1202 python3 fetch_data.py
 
-# preview
+# preview — must be served over HTTP (browsers block fetch() on file://)
 python3 -m http.server -d docs 8000   # open http://localhost:8000
 ```
 

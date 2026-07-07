@@ -100,6 +100,42 @@
     footer a { color: var(--accent-2); text-decoration: underline; }
     footer a:hover { color: var(--accent); }
     @media (max-width: 600px) { main { padding: 32px 16px 64px 40px; } .pr { grid-template-columns: 82px 1fr; padding-left: 22px; } .pr-date { grid-column: 2; } }
+:root{ --display:'Caveat',cursive; --radius:16px 10px 18px 8px / 8px 18px 10px 16px; --shadow:3px 4px 0 rgba(43,43,58,0.35); --tile-border:2px solid var(--ink); --avatar-radius:50%; }
+
+    /* ── bento layout (shared across themes) ─────────────────────────── */
+    .bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 30px; }
+    .tile { background: var(--paper); border: var(--tile-border, 1px solid var(--line)); border-radius: var(--radius, 14px); box-shadow: var(--shadow, none); padding: 18px 20px; }
+    .tile-profile { grid-column: span 2; grid-row: span 2; display: flex; gap: 18px; align-items: flex-start; }
+    .tile-lang { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+    .num { display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+    .avatar { width: 96px; height: 96px; border-radius: var(--avatar-radius, 50%); object-fit: cover; border: 2px solid var(--line); background: var(--bg-2); flex-shrink: 0; }
+    .pinfo { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+    .eyebrow { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-faint); }
+    .pname { font-family: var(--display, inherit); font-weight: 700; font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.02; margin: 0; color: var(--ink); }
+    .pbio { margin: 3px 0 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.45; }
+    .pmeta { margin: 2px 0 0; color: var(--ink-faint); font-size: 0.82rem; }
+    .socials { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .social { font-size: 0.76rem; text-decoration: none; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px; transition: all 0.15s; }
+    .social:hover { color: var(--accent); border-color: var(--accent); }
+    .tile-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-faint); }
+    .langbar { display: flex; height: 14px; border-radius: 999px; overflow: hidden; background: var(--bg-2); border: 1px solid var(--line); }
+    .langseg { height: 100%; }
+    .langlegend { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+    .lang { font-size: 0.8rem; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
+    .lang i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+    .lang b { color: var(--ink); font-weight: 600; }
+    .num .v { font-family: var(--display, inherit); font-weight: 700; font-size: 2rem; line-height: 1; color: var(--accent); }
+    .num.merged .v { color: var(--merged); }
+    .num .l { font-size: 0.7rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.06em; }
+    .seg { display: inline-flex; gap: 4px; margin-bottom: 18px; padding: 4px; border: var(--tile-border, 1px solid var(--line)); border-radius: 999px; background: var(--bg-2); }
+    .seg button { border: none; background: transparent; color: var(--ink-soft); font-family: inherit; font-size: 0.9rem; font-weight: 600; padding: 6px 20px; border-radius: 999px; cursor: pointer; transition: all 0.15s; }
+    .seg button:hover { color: var(--accent); }
+    .seg button.active { background: var(--accent); color: var(--paper); }
+    @media (max-width: 760px) {
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      .tile-profile, .tile-lang { grid-column: span 2; grid-row: auto; }
+    }
+    @media (max-width: 440px) { .tile-profile { flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -111,21 +147,40 @@
     <a href="index-news.html">newspaper</a>
   </nav>
 
-  <header class="head">
-    <h1 class="title">proof of work</h1>
-    <p class="subtitle">a collection of open-source contributions <span class="dot">·</span> <b id="user">disha1202</b></p>
-  </header>
+  <section class="bento" id="bento">
+    <div class="tile tile-profile">
+      <img class="avatar" id="avatar" alt="">
+      <div class="pinfo">
+        <span class="eyebrow">proof of work</span>
+        <h1 class="pname" id="name">disha1202</h1>
+        <p class="pbio" id="bio"></p>
+        <p class="pmeta" id="pmeta"></p>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
 
-  <div class="stats" id="stats">
-    <div class="stat"><span class="v">—</span><span class="l">loading</span></div>
+    <div class="tile tile-lang">
+      <span class="tile-label">top languages</span>
+      <div class="langbar" id="langbar"></div>
+      <div class="langlegend" id="langlegend"></div>
+    </div>
+
+    <div class="tile num n-prs"><span class="v" id="s-prs">—</span><span class="l">pull requests</span></div>
+    <div class="tile num n-merged merged"><span class="v" id="s-merged">—</span><span class="l">merged</span></div>
+    <div class="tile num n-issues"><span class="v" id="s-issues">—</span><span class="l">issues opened</span></div>
+    <div class="tile num n-orgs"><span class="v" id="s-orgs">—</span><span class="l">organizations</span></div>
+    <div class="tile num n-followers"><span class="v" id="s-followers">—</span><span class="l">followers</span></div>
+    <div class="tile num n-following"><span class="v" id="s-following">—</span><span class="l">following</span></div>
+    <div class="tile num n-repos"><span class="v" id="s-repos">—</span><span class="l">public repos</span></div>
+    <div class="tile num n-stars"><span class="v" id="s-stars">—</span><span class="l">stars earned</span></div>
+  </section>
+
+  <div class="seg" id="seg" hidden>
+    <button data-mode="prs" class="active">Pull Requests</button>
+    <button data-mode="issues">Issues</button>
   </div>
 
-  <div class="filters" id="filters" hidden>
-    <button data-filter="all" class="active">All</button>
-    <button data-filter="merged">Merged</button>
-    <button data-filter="open">Open</button>
-    <button data-filter="closed">Closed</button>
-  </div>
+  <div class="filters" id="filters" hidden></div>
 
   <div id="list"></div>
 
@@ -141,87 +196,106 @@
 
 <script>
   const STATE_LABEL = { "Merged":"merged","Merged (indirect)":"merged","Open":"open","Closed":"closed" };
-  let currentFilter = "all";
-  let data = null;
+  const LANG_COLORS = { Java:"#b07219", Vue:"#41b883", TypeScript:"#3178c6", JavaScript:"#f1e05a", HTML:"#e34c26", CSS:"#563d7c", Python:"#3572A5", Shell:"#89e051", "C++":"#f34b7d", C:"#555555", Go:"#00ADD8", Ruby:"#701516", Dockerfile:"#384d54", Makefile:"#427819", SCSS:"#c6538c", Kotlin:"#A97BFF" };
+  const FILTERS = { prs: [["all","All"],["merged","Merged"],["open","Open"],["closed","Closed"]], issues: [["all","All"],["open","Open"],["closed","Closed"]] };
+  let mode = "prs", currentFilter = "all", data = null;
 
-  function render() {
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c])); }
+
+  function renderProfile(){
+    const p = data.profile || {};
+    if (p.avatar) document.getElementById("avatar").src = p.avatar;
+    document.getElementById("name").textContent = p.name || data.username;
+    document.getElementById("bio").textContent = p.bio || "";
+    document.getElementById("pmeta").textContent = [p.company, p.location].filter(Boolean).join("  ·  ");
+    const links = [];
+    if (p.github)   links.push(["GitHub", p.github]);
+    if (p.linkedin) links.push(["LinkedIn", p.linkedin]);
+    if (p.twitter)  links.push(["Twitter", "https://twitter.com/" + p.twitter]);
+    if (p.email)    links.push(["Email", "mailto:" + p.email]);
+    if (p.blog)     links.push(["Website", p.blog]);
+    document.getElementById("socials").innerHTML = links.map(([t,h]) =>
+      `<a class="social" href="${h}" target="_blank" rel="noopener">${t}</a>`).join("");
+  }
+
+  function renderLanguages(){
+    const langs = data.languages || [];
+    document.getElementById("langbar").innerHTML = langs.map(l =>
+      `<span class="langseg" style="width:${l.pct}%;background:${LANG_COLORS[l.name]||'#888'}" title="${escapeHtml(l.name)} ${l.pct}%"></span>`).join("");
+    document.getElementById("langlegend").innerHTML = langs.map(l =>
+      `<span class="lang"><i style="background:${LANG_COLORS[l.name]||'#888'}"></i>${escapeHtml(l.name)} <b>${l.pct}%</b></span>`).join("");
+  }
+
+  function renderStats(){
+    const pr = data.contributions.prs.totals, is = data.contributions.issues.totals, p = data.profile || {};
+    const set = (id,v) => { const e=document.getElementById(id); if(e) e.textContent = (v==null?"—":v); };
+    set("s-prs", pr.total); set("s-merged", pr.merged); set("s-issues", is.total);
+    set("s-orgs", data.contributions.prs.orgs.length);
+    set("s-followers", p.followers); set("s-following", p.following);
+    set("s-repos", p.public_repos); set("s-stars", p.stars);
+    if (data.generated_at) document.getElementById("generated").textContent = "Updated " + data.generated_at;
+  }
+
+  function renderFilters(){
+    const f = document.getElementById("filters");
+    f.innerHTML = FILTERS[mode].map(([k,l]) =>
+      `<button data-filter="${k}"${k===currentFilter?' class="active"':''}>${l}</button>`).join("");
+    f.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+      currentFilter = btn.dataset.filter; renderFilters(); render();
+    }));
+  }
+
+  function render(){
+    const src = data.contributions[mode];
     const list = document.getElementById("list");
     list.innerHTML = "";
-    const orgs = data.orgs.map(org => {
-      const visible = org.prs.filter(pr => currentFilter === "all" || STATE_LABEL[pr.state] === currentFilter);
-      return { ...org, visible };
-    }).filter(org => org.visible.length > 0);
-
-    if (orgs.length === 0) {
-      list.innerHTML = '<div class="empty">No entries match this filter.</div>';
-      return;
-    }
-
+    const orgs = src.orgs.map(org => ({ ...org, visible: org.items.filter(it => currentFilter==="all" || STATE_LABEL[it.state]===currentFilter) }))
+                         .filter(org => org.visible.length > 0);
+    if (orgs.length === 0){ list.innerHTML = '<div class="empty">No entries match this filter.</div>'; return; }
+    const noun = mode==="prs" ? ["PR","PRs"] : ["issue","issues"];
     orgs.forEach(org => {
-      const card = document.createElement("div");
-      card.className = "org";
-      const header = document.createElement("div");
-      header.className = "org-header";
+      const card = document.createElement("div"); card.className = "org";
+      const header = document.createElement("div"); header.className = "org-header";
+      const pill = mode==="prs" ? `${org.merged} merged` : `${org.closed} closed`;
       header.innerHTML = `
         <span class="chev">&#9654;</span>
         <img class="org-logo" alt="" src="https://github.com/${org.name}.png?size=64" onerror="this.style.visibility='hidden'">
         <span class="org-name">${escapeHtml(org.name)}</span>
-        <span class="org-meta"><b>${org.visible.length}</b> ${org.visible.length === 1 ? "PR" : "PRs"}<span class="pill">${org.merged} merged</span></span>
-      `;
-      const prs = document.createElement("div");
-      prs.className = "prs";
-      org.visible.forEach(pr => {
-        const row = document.createElement("div");
-        row.className = "pr";
-        const label = STATE_LABEL[pr.state] || "open";
-        const date = pr.merged_at || pr.created_at;
-        const display = label === "merged" && pr.state.includes("indirect") ? "merged*" : label;
+        <span class="org-meta"><b>${org.visible.length}</b> ${org.visible.length===1?noun[0]:noun[1]}<span class="pill">${pill}</span></span>`;
+      const rows = document.createElement("div"); rows.className = "prs";
+      org.visible.forEach(it => {
+        const row = document.createElement("div"); row.className = "pr";
+        const label = STATE_LABEL[it.state] || "open";
+        const date = it.merged_at || it.created_at;
         row.innerHTML = `
-          <span class="pr-status ${label}">${display}</span>
-          <span class="pr-title">${pr.number ? `<span class="pr-num">#${pr.number}</span>` : ""}<a href="${pr.url}" target="_blank" rel="noopener">${escapeHtml(pr.title)}</a></span>
-          <span class="pr-date">${date || ""}</span>
-        `;
-        prs.appendChild(row);
+          <span class="pr-status ${label}">${label}</span>
+          <span class="pr-title">${it.number ? `<span class="pr-num">#${it.number}</span>` : ""}<a href="${it.url}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a></span>
+          <span class="pr-date">${date || ""}</span>`;
+        rows.appendChild(row);
       });
       header.onclick = () => card.classList.toggle("open");
-      card.appendChild(header);
-      card.appendChild(prs);
-      list.appendChild(card);
+      card.appendChild(header); card.appendChild(rows); list.appendChild(card);
     });
   }
 
-  function renderStats() {
-    const s = data.totals;
-    document.getElementById("stats").innerHTML = `
-      <div class="stat"><span class="v">${s.prs}</span><span class="l">total</span></div>
-      <div class="stat merged"><span class="v">${s.merged}</span><span class="l">merged</span></div>
-      <div class="stat open"><span class="v">${s.open}</span><span class="l">open</span></div>
-      <div class="stat closed"><span class="v">${s.closed}</span><span class="l">closed</span></div>
-      <div class="stat"><span class="v">${data.orgs.length}</span><span class="l">orgs</span></div>
-    `;
-    if (data.generated_at) document.getElementById("generated").textContent = "Generated " + data.generated_at;
-    if (data.username) document.getElementById("user").textContent = data.username;
+  function setMode(m){
+    mode = m; currentFilter = "all";
+    document.querySelectorAll("#seg button").forEach(b => b.classList.toggle("active", b.dataset.mode===m));
+    renderFilters(); render();
   }
 
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
-  }
-
-  document.querySelectorAll("#filters button").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll("#filters button").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentFilter = btn.dataset.filter;
-      render();
-    });
-  });
+  document.querySelectorAll("#seg button").forEach(btn => btn.addEventListener("click", () => setMode(btn.dataset.mode)));
 
   fetch("./data.json", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error("data.json not found"); return r.json(); })
-    .then(json => { data = json; document.getElementById("filters").hidden = false; renderStats(); render(); })
+    .then(json => {
+      data = json;
+      document.getElementById("seg").hidden = false;
+      document.getElementById("filters").hidden = false;
+      renderProfile(); renderLanguages(); renderStats(); setMode("prs");
+    })
     .catch(err => {
-      document.getElementById("stats").innerHTML =
-        `<div class="empty">Failed to load data.json — ${escapeHtml(err.message)}</div>`;
+      document.getElementById("list").innerHTML = `<div class="empty">Failed to load data.json — ${escapeHtml(err.message)}</div>`;
     });
 </script>
 </body>
