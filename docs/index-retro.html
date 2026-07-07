@@ -91,6 +91,7 @@
 :root{ --display:'DM Serif Display',Georgia,serif; --radius:18px; --shadow:4px 4px 0 var(--ink); --tile-border:2px solid var(--ink); --avatar-radius:50%; }
 
     /* ── bento layout (shared across themes) ─────────────────────────── */
+    .masthead { display: none; }  /* only the newspaper theme shows a masthead */
     .bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 30px; }
     .tile { background: var(--paper); border: var(--tile-border, 1px solid var(--line)); border-radius: var(--radius, 14px); box-shadow: var(--shadow, none); padding: 18px 20px; }
     .tile-profile { grid-column: span 2; grid-row: span 2; display: flex; gap: 18px; align-items: flex-start; }
@@ -124,10 +125,17 @@
       .tile-profile, .tile-lang { grid-column: span 2; grid-row: auto; }
     }
     @media (max-width: 440px) { .tile-profile { flex-direction: column; } }
+
   </style>
 </head>
 <body>
 <main>
+  <div class="masthead" aria-hidden="true">
+    <div class="mh-top"><span>Late Edition</span><span>Vol. MMXXVI &middot; No. VII</span><span>Bengaluru, India</span></div>
+    <div class="mh-title">Proof of Work</div>
+    <div class="mh-sub">&ldquo;All the code that&rsquo;s fit to merge&rdquo;</div>
+  </div>
+
   <nav class="switch">
     <a href="index.html">notebook</a>
     <a href="index-comic.html">comic</a>

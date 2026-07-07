@@ -33,6 +33,12 @@ def nav_html(current_key):
 # Shared body markup. Class names are identical across themes so the JS works everywhere.
 BODY = """<body>
 <main>
+  <div class="masthead" aria-hidden="true">
+    <div class="mh-top"><span>Late Edition</span><span>Vol. MMXXVI &middot; No. VII</span><span>Bengaluru, India</span></div>
+    <div class="mh-title">Proof of Work</div>
+    <div class="mh-sub">&ldquo;All the code that&rsquo;s fit to merge&rdquo;</div>
+  </div>
+
   <nav class="switch">
 {nav}
   </nav>
@@ -581,7 +587,7 @@ RETRO_CSS = """    :root {
 # ─────────────────────────────────────────────────────────────────────────────
 # THEME: NEWSPAPER — classic broadsheet, newsprint, serif, thin rules, masthead
 # ─────────────────────────────────────────────────────────────────────────────
-NEWS_FONTS = """  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">"""
+NEWS_FONTS = """  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">"""
 NEWS_CSS = """    :root {
       --bg: #f4f1e9;
       --bg-2: #e9e4d6;
@@ -880,6 +886,7 @@ BENTO_VARS = {
 # Shared bento layout — uses each theme's CSS variables so it adapts automatically.
 BENTO_CSS = """
     /* ── bento layout (shared across themes) ─────────────────────────── */
+    .masthead { display: none; }  /* only the newspaper theme shows a masthead */
     .bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 30px; }
     .tile { background: var(--paper); border: var(--tile-border, 1px solid var(--line)); border-radius: var(--radius, 14px); box-shadow: var(--shadow, none); padding: 18px 20px; }
     .tile-profile { grid-column: span 2; grid-row: span 2; display: flex; gap: 18px; align-items: flex-start; }
@@ -915,11 +922,33 @@ BENTO_CSS = """
     @media (max-width: 440px) { .tile-profile { flex-direction: column; } }"""
 
 
+# Per-theme CSS appended AFTER the shared bento so it overrides shared rules.
+NEWS_OVERRIDES = """
+    /* ── newspaper: masthead + boxed-clipping styling ────────────────── */
+    main { padding-top: 30px; }
+    .masthead { display: block; text-align: center; margin-bottom: 26px; border-bottom: 4px double var(--rule); }
+    .mh-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.62rem; color: var(--ink-soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 5px 2px; }
+    .mh-title { font-family: 'UnifrakturMaguntia', 'Playfair Display', serif; font-weight: 400; font-size: clamp(3rem, 12vw, 7rem); line-height: 1.05; color: var(--ink); margin: 12px 0 4px; }
+    .mh-sub { font-family: 'PT Serif', serif; font-style: italic; font-size: 0.92rem; color: var(--ink-soft); padding-bottom: 14px; }
+    .switch { margin-top: 20px; }
+    .eyebrow { display: none; }
+    /* sharpen everything into print boxes */
+    .tile-label { border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-bottom: 2px; }
+    .langbar, .langseg { border-radius: 0; }
+    .social { border-radius: 0; border-color: var(--rule); }
+    .seg, .seg button { border-radius: 0; }
+    .pname { font-weight: 900; letter-spacing: -0.01em; }"""
+
+THEME_OVERRIDES = {
+    "news": NEWS_OVERRIDES,
+}
+
+
 def build():
     os.makedirs(DOCS, exist_ok=True)
     for fname, key, label in THEMES:
         fonts, css = STYLES[key]
-        css = css + "\n" + BENTO_VARS.get(key, "") + "\n" + BENTO_CSS
+        css = css + "\n" + BENTO_VARS.get(key, "") + "\n" + BENTO_CSS + "\n" + THEME_OVERRIDES.get(key, "")
         body = BODY.replace("{nav}", nav_html(key)).replace("{username}", USERNAME)
         html = (PAGE.replace("{username}", USERNAME)
                     .replace("{fonts}", fonts)
