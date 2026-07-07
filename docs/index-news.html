@@ -6,88 +6,88 @@
   <title>disha1202 · proof of work</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f2e4c9;
-      --bg-2: #e8d5ad;
-      --paper: #fbf3df;
-      --ink: #3a2718;
-      --ink-soft: #6b4f34;
-      --ink-faint: #9c7c56;
-      --line: #d8c199;
-      --accent: #d1622a;
-      --accent-2: #7a8b3c;
-      --merged: #5e7d2a;
-      --open: #cf9526;
-      --closed: #b5462f;
+      --bg: #f4f1e9;
+      --bg-2: #e9e4d6;
+      --paper: #faf8f1;
+      --ink: #17140f;
+      --ink-soft: #46413a;
+      --ink-faint: #857e70;
+      --line: #cfc7b5;
+      --rule: #17140f;
+      --accent: #8b1a1a;
+      --merged: #2f5a2f;
+      --open: #8a5a12;
+      --closed: #8b1a1a;
     }
     * { box-sizing: border-box; }
     html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; min-height: 100%; }
     body {
-      font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-      background-image:
-        radial-gradient(circle at 20% -5%, rgba(209,98,42,0.20), transparent 45%),
-        radial-gradient(circle at 90% 8%, rgba(122,139,60,0.18), transparent 42%),
-        repeating-linear-gradient(45deg, rgba(154,124,86,0.05) 0 2px, transparent 2px 8px);
-      background-attachment: fixed;
+      font-family: 'PT Serif', Georgia, serif;
+      background-image: repeating-linear-gradient(0deg, rgba(23,20,15,0.014) 0 1px, transparent 1px 3px);
     }
-    .serif { font-family: 'DM Serif Display', Georgia, serif; }
-    main { max-width: 900px; margin: 0 auto; padding: 60px 24px 96px; }
+    .oswald { font-family: 'Oswald', sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 24px 96px; }
 
-    .switch { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; font-size: 0.82rem; }
-    .switch a { color: var(--ink-soft); text-decoration: none; padding: 7px 16px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); font-weight: 500; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
-    .switch a:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
-    .switch a.current { color: var(--paper); background: var(--accent); border-color: var(--ink); }
+    .switch { display: flex; justify-content: center; gap: 22px; margin-bottom: 22px; flex-wrap: wrap; font-family: 'Oswald', sans-serif; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.14em; }
+    .switch a { color: var(--ink-soft); text-decoration: none; padding-bottom: 3px; border-bottom: 2px solid transparent; transition: all 0.15s; }
+    .switch a:hover { color: var(--accent); }
+    .switch a.current { color: var(--ink); border-bottom-color: var(--accent); }
 
-    .title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-style: italic; font-size: clamp(3rem, 9vw, 5rem); letter-spacing: -0.01em; line-height: 0.95; margin: 0 0 12px; color: var(--accent); text-shadow: 3px 3px 0 var(--bg-2); }
-    .subtitle { margin: 0 0 36px; color: var(--ink-soft); font-size: 1.05rem; }
+    .head { text-align: center; border-top: 4px double var(--rule); border-bottom: 1px solid var(--rule); padding: 16px 0 14px; margin-bottom: 4px; }
+    .title { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.8rem, 9vw, 5.2rem); letter-spacing: -0.01em; line-height: 0.98; margin: 0; color: var(--ink); }
+    .subtitle { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.18em; margin: 12px 0 0; color: var(--ink-soft); font-size: 0.76rem; }
     .subtitle b { color: var(--ink); font-weight: 600; }
-    .subtitle .dot { color: var(--accent); margin: 0 6px; }
+    .subtitle .dot { color: var(--accent); margin: 0 8px; }
+    .stats, .filters, #list { border-top: none; }
+    .head + .stats { border-top: 2px solid var(--rule); margin-top: 0; }
 
-    .stats { display: flex; flex-wrap: wrap; gap: 28px; padding: 22px 26px; margin-bottom: 28px; background: var(--paper); border: 2px solid var(--ink); border-radius: 22px; box-shadow: 5px 5px 0 var(--ink); }
-    .stat { display: flex; flex-direction: column; gap: 3px; }
-    .stat .v { font-family: 'DM Serif Display', Georgia, serif; font-size: 2rem; line-height: 1; color: var(--ink); }
-    .stat .l { font-size: 0.72rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.1em; }
+    .stats { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 18px 8px; margin: 0 0 26px; border-bottom: 2px solid var(--rule); }
+    .stat { display: flex; flex-direction: column; gap: 2px; align-items: center; text-align: center; flex: 1; min-width: 90px; }
+    .stat + .stat { border-left: 1px solid var(--line); }
+    .stat .v { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: 2rem; line-height: 1; color: var(--ink); }
+    .stat .l { font-family: 'Oswald', sans-serif; font-size: 0.66rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.14em; }
     .stat.merged .v { color: var(--merged); }
     .stat.open .v { color: var(--open); }
     .stat.closed .v { color: var(--closed); }
 
     .filters { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
-    .filters button { background: var(--paper); color: var(--ink-soft); border: 2px solid var(--ink); padding: 8px 18px; font-family: inherit; font-size: 0.86rem; font-weight: 600; cursor: pointer; border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); transition: all 0.12s; }
-    .filters button:hover { color: var(--accent); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
-    .filters button.active { color: var(--paper); background: var(--accent); }
+    .filters button { background: transparent; color: var(--ink-soft); border: 1px solid var(--rule); padding: 7px 18px; font-family: 'Oswald', sans-serif; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; border-radius: 0; transition: all 0.15s; }
+    .filters button:hover { color: var(--accent); border-color: var(--accent); }
+    .filters button.active { color: var(--paper); background: var(--ink); border-color: var(--ink); }
 
-    .org { border: 2px solid var(--ink); background: var(--paper); border-radius: 18px; margin-bottom: 16px; overflow: hidden; box-shadow: 4px 4px 0 var(--ink); transition: all 0.15s; }
-    .org:hover { transform: translate(-1px,-1px); box-shadow: 6px 6px 0 var(--ink); }
-    .org-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; cursor: pointer; user-select: none; }
+    .org { border: 1px solid var(--rule); background: var(--paper); border-radius: 0; margin-bottom: -1px; overflow: hidden; }
+    .org.open { border-color: var(--rule); }
+    .org-header { display: flex; align-items: center; gap: 14px; padding: 14px 20px; cursor: pointer; user-select: none; }
     .org-header:hover { background: var(--bg-2); }
-    .chev { color: var(--accent); font-size: 0.85rem; transition: transform 0.2s; width: 14px; }
+    .chev { color: var(--accent); font-size: 0.8rem; transition: transform 0.2s; width: 14px; }
     .org.open .chev { transform: rotate(90deg); }
-    .org-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: var(--bg-2); border: 2px solid var(--ink); }
-    .org-name { flex: 1; font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--ink); }
-    .org-meta { font-size: 0.86rem; color: var(--ink-soft); font-family: 'DM Mono', monospace; }
-    .org-meta b { color: var(--ink); font-weight: 500; }
-    .org-meta .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent-2); color: var(--paper); margin-left: 8px; font-size: 0.74rem; }
+    .org-logo { width: 30px; height: 30px; border-radius: 0; object-fit: cover; background: var(--bg-2); border: 1px solid var(--rule); filter: grayscale(1) contrast(1.05); }
+    .org-name { flex: 1; font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.3rem; color: var(--ink); }
+    .org-meta { font-family: 'Oswald', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); }
+    .org-meta b { color: var(--ink); font-weight: 600; }
+    .org-meta .pill { display: inline-block; padding: 2px 10px; border: 1px solid var(--merged); color: var(--merged); margin-left: 10px; font-size: 0.68rem; }
 
-    .prs { display: none; border-top: 2px solid var(--ink); background: var(--bg); }
+    .prs { display: none; border-top: 1px solid var(--rule); background: var(--bg); }
     .org.open .prs { display: block; }
-    .pr { display: grid; grid-template-columns: 84px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 50px; font-size: 0.94rem; border-bottom: 1px solid var(--line); }
+    .pr { display: grid; grid-template-columns: 92px 1fr auto; gap: 16px; align-items: baseline; padding: 12px 20px 12px 50px; font-size: 0.98rem; border-bottom: 1px solid var(--line); }
     .pr:last-child { border-bottom: none; }
-    .pr-status { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; text-align: center; color: var(--paper); }
-    .pr-status.merged { background: var(--merged); }
-    .pr-status.open { background: var(--open); }
-    .pr-status.closed { background: var(--closed); }
+    .pr-status { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 0; text-align: center; border: 1px solid currentColor; }
+    .pr-status.merged { color: var(--merged); }
+    .pr-status.open { color: var(--open); }
+    .pr-status.closed { color: var(--closed); }
     .pr-title a { color: var(--ink); text-decoration: none; transition: color 0.15s; }
-    .pr-title a:hover { color: var(--accent); }
-    .pr-num { font-family: 'DM Mono', monospace; color: var(--ink-faint); margin-right: 6px; font-size: 0.82rem; }
-    .pr-date { font-family: 'DM Mono', monospace; color: var(--ink-faint); font-size: 0.78rem; white-space: nowrap; }
+    .pr-title a:hover { color: var(--accent); text-decoration: underline; }
+    .pr-num { font-family: 'Oswald', sans-serif; color: var(--ink-faint); margin-right: 6px; font-size: 0.82rem; }
+    .pr-date { font-family: 'Oswald', sans-serif; color: var(--ink-faint); font-size: 0.74rem; letter-spacing: 0.04em; white-space: nowrap; }
 
-    .empty { color: var(--ink-faint); padding: 16px; }
-    footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); color: var(--ink-faint); font-size: 0.84rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'DM Mono', monospace; }
-    footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 2px solid var(--line); }
+    .empty { color: var(--ink-faint); padding: 16px; font-style: italic; }
+    footer { margin-top: 48px; padding-top: 18px; border-top: 4px double var(--rule); color: var(--ink-faint); font-family: 'Oswald', sans-serif; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
     footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-    @media (max-width: 600px) { main { padding: 36px 18px 64px; } .pr { grid-template-columns: 74px 1fr; padding-left: 26px; } .pr-date { grid-column: 2; } }
+    @media (max-width: 600px) { main { padding: 28px 16px 64px; } .pr { grid-template-columns: 82px 1fr; padding-left: 24px; } .pr-date { grid-column: 2; } .stat + .stat { border-left: none; } }
   </style>
 </head>
 <body>
@@ -96,8 +96,8 @@
     <a href="index.html">techno</a>
     <a href="index-pixels.html">pixels</a>
     <a href="index-modern.html">modern</a>
-    <a href="index-retro.html" class="current">retro</a>
-    <a href="index-news.html">newspaper</a>
+    <a href="index-retro.html">retro</a>
+    <a href="index-news.html" class="current">newspaper</a>
   </nav>
 
   <header class="head">
