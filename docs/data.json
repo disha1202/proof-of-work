@@ -1,6 +1,6 @@
 {
   "username": "disha1202",
-  "generated_at": "2026-09-17 08:10 UTC",
+  "generated_at": "2026-09-18 07:45 UTC",
   "profile": {
     "name": "Disha Talreja",
     "login": "disha1202",
@@ -10,7 +10,7 @@
     "location": "Bengaluru, India",
     "followers": 69,
     "following": 14,
-    "public_repos": 106,
+    "public_repos": 105,
     "stars": 20,
     "github": "https://github.com/disha1202",
     "twitter": "Dishaaaaaa_12",
@@ -20,28 +20,28 @@
   },
   "languages": [
     {
-      "name": "TypeScript",
-      "pct": 50.4
-    },
-    {
       "name": "Java",
-      "pct": 13.2
+      "pct": 24.1
     },
     {
       "name": "Vue",
-      "pct": 12.7
+      "pct": 23.3
     },
     {
       "name": "Python",
-      "pct": 10.5
+      "pct": 19.2
+    },
+    {
+      "name": "TypeScript",
+      "pct": 17.4
     },
     {
       "name": "JavaScript",
-      "pct": 6.1
+      "pct": 6.2
     },
     {
-      "name": "CSS",
-      "pct": 3.4
+      "name": "HTML",
+      "pct": 4.6
     }
   ],
   "contributions": {
