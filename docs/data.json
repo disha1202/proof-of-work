@@ -1,6 +1,6 @@
 {
   "username": "disha1202",
-  "generated_at": "2026-10-12 09:59 UTC",
+  "generated_at": "2026-10-13 09:52 UTC",
   "profile": {
     "name": "Disha Talreja",
     "login": "disha1202",
@@ -8,7 +8,7 @@
     "bio": "FDE @superleapai | GSoC'2024 @PalisadoesFoundation | Open Source Enthusiast",
     "company": null,
     "location": "Bengaluru, India",
-    "followers": 70,
+    "followers": 69,
     "following": 14,
     "public_repos": 105,
     "stars": 20,
@@ -21,27 +21,27 @@
   "languages": [
     {
       "name": "Java",
-      "pct": 24.1
-    },
-    {
-      "name": "Vue",
       "pct": 23.3
     },
     {
+      "name": "Vue",
+      "pct": 22.5
+    },
+    {
       "name": "Python",
-      "pct": 19.2
+      "pct": 21.9
     },
     {
       "name": "TypeScript",
-      "pct": 17.4
+      "pct": 16.8
     },
     {
       "name": "JavaScript",
-      "pct": 6.2
+      "pct": 6.0
     },
     {
       "name": "HTML",
-      "pct": 4.6
+      "pct": 4.4
     }
   ],
   "contributions": {
